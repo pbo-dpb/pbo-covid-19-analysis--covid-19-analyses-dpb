@@ -1,0 +1,183 @@
+<style scoped>
+tr {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid lightgray;
+  border-top: 1px solid lightgray;
+}
+
+tr > td {
+  padding: 0.25em;
+}
+
+.measure-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.is-not-pbo-costing {
+  color: #888;
+}
+
+.covid-badge {
+  margin-left: 0.5em;
+}
+
+.note-button {
+  margin-left: 0.5em;
+  color: #315470;
+  cursor: pointer;
+}
+.note-button:hover,
+.note-button:active {
+  color: #0582ca;
+}
+
+.fade-enter-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+@media only screen and (max-width: 768px) {
+}
+</style>
+<template>
+  <tr class="covidcostings-row" :class="{'is-not-pbo-costing': !costing.isPboCosting}" @click="log">
+    <td>
+      <div class="measure-name">
+        <qs-pbo-costed-glyph v-if="$root.showFullTable && costing.isPboCosting" />
+        <div>
+          <component
+            :is="currentCostingUrl ? 'a' : 'span'"
+            :href="currentCostingUrl"
+            target="_blank"
+          >{{ costing['title_' + $root.language] }}</component>
+
+          <div v-if="comparedCostingUrl">
+            <small class="archived">
+              (
+              <a :href="comparedCostingUrl" target="_blank">{{ $root.strings.read_previous_pdf }}</a>)
+            </small>
+          </div>
+        </div>
+        <div
+          v-if="note"
+          class="note-button"
+          role="button"
+          :active="displayNote"
+          :aria-pressed="displayNote"
+          :aria-label="$root.strings.display_note"
+          @click="displayNote=!displayNote"
+        >
+          <i class="far fa-sticky-note" v-if="!displayNote"></i>
+          <i class="fas fa-sticky-note" v-if="displayNote"></i>
+        </div>
+        <span v-if="costing.isNew" class="covid-badge">{{ $root.strings.new }}</span>
+        <span
+          v-if="costing.hasUpdatedArtifact"
+          class="covid-badge"
+        >{{ $root.strings.updated_artifact }}</span>
+        <span
+          v-if="costing.hasUpdatedNumbers"
+          class="covid-badge"
+        >{{ $root.strings.updated_numbers }}</span>
+      </div>
+
+      <transition name="fade">
+        <qs-costings-note v-if="displayNote" :note="note"></qs-costings-note>
+      </transition>
+    </td>
+
+    <template v-if="!shouldAppearAsOtherCosting">
+      <td
+        v-for="(value, key) in currentCostingUpdate.numbers"
+        :key="'curr_'+key"
+        style="width: 10%;text-align:right"
+      >
+        <costings-number :value="value" />
+      </td>
+
+      <template v-if="compareWithUpdate">
+        <td
+          class="comparative-cell"
+          v-for="(value, key) in compareWithUpdate.numbers"
+          style="width: 10%;text-align:right"
+          :key="'comp_'+key"
+        >
+          <costings-number :value="value" />
+        </td>
+      </template>
+      <template v-if="!compareWithUpdate && $root.compareWithUpdate">
+        <td class="comparative-cell" style="width: 10%;text-align:right">N/A</td>
+        <td class="comparative-cell" style="width: 10%;text-align:right">N/A</td>
+      </template>
+    </template>
+  </tr>
+</template>
+<script>
+export default {
+  props: {
+    costing: {
+      type: Object,
+      required: true
+    }
+  },
+  data() {
+    return {
+      displayNote: false
+    };
+  },
+  methods: {
+    log() {
+      console.log(this.costing.currentCostingUpdate);
+    }
+  },
+  components: {
+    qsPboCostedGlyph: require("./QsPboCostedGlyph.vue").default,
+    qsCostingsNote: require("./QsCostingsNote.vue").default
+  },
+  computed: {
+    shouldAppearAsOtherCosting() {
+      return (
+        this.$root.showFullTable &&
+        this.costing.no_incremental_impact &&
+        !this.$root.search.query
+      );
+    },
+    currentCostingUpdate() {
+      return this.costing.currentCostingUpdate;
+    },
+    currentCostingUrl() {
+      return this.currentCostingUpdate.id
+        ? `https://www.pbo-dpb.gc.ca/web/default/files/Documents/LEG/${this.currentCostingUpdate.id}/${this.currentCostingUpdate.id}_${this.$root.language}.pdf`
+        : null;
+    },
+    comparedCostingUrl() {
+      if (
+        !this.currentCostingUpdate.id ||
+        !this.compareWithUpdate ||
+        !this.compareWithUpdate.id
+      ) {
+        return null;
+      }
+      return this.currentCostingUpdate.id === this.compareWithUpdate.id
+        ? null
+        : `https://www.pbo-dpb.gc.ca/web/default/files/Documents/LEG/${this.compareWithUpdate.id}/${this.compareWithUpdate.id}_${this.$root.language}.pdf`;
+    },
+    compareWithUpdate() {
+      return this.$root.compareWithUpdate
+        ? collect(this.costing.costing_updates).firstWhere(
+            "update_id",
+            this.$root.compareWithUpdate.id
+          )
+        : null;
+    },
+    note() {
+      return this.costing["note_" + this.$root.language];
+    }
+  }
+};
+</script>
