@@ -72,14 +72,15 @@
 </template>
   
     <script>
-import QsCostingsGroupRowVue from "./QsCostingsGroupRow.vue";
+import collect from "collect.js";
+import get from "get-value";
+
 export default {
   components: {
     qsCostingsGroup: require("./QsCostingsGroup.vue").default,
     qsCostingsTableHead: require("./QsCostingsTableHead.vue").default,
     qsCostingsTableFoot: require("./QsCostingsTableFoot.vue").default,
     qsCostingsMetaTable: require("./QsCostingsMetaTable.vue").default,
-    qsCostingsToggle: require("./QsCostingsToggle.vue").default,
     QsCostingsGroupRow: require("./QsCostingsGroupRow.vue").default
   },
   computed: {

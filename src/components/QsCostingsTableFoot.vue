@@ -25,6 +25,7 @@
   </tfoot>
 </template>
 <script>
+import collect from "collect.js";
 export default {
   methods: {
     sumsByUpdateId(updateObjectId) {
@@ -40,7 +41,7 @@ export default {
         })
         .flatten(1)
         .mapToDictionary(item => [item.yy, item.nums])
-        .map((items, year) => {
+        .map(items => {
           return collect(items)
             .filter()
             .map(val => {

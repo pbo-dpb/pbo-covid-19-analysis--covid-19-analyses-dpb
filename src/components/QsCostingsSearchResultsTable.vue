@@ -21,6 +21,7 @@
 </template>
   
     <script>
+import collect from "collect.js";
 export default {
   components: {
     qsCostingsTableHead: require("./QsCostingsTableHead.vue").default,

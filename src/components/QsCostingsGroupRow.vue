@@ -118,6 +118,7 @@ tr > td {
   </tr>
 </template>
 <script>
+import collect from "collect.js";
 export default {
   props: {
     costing: {
