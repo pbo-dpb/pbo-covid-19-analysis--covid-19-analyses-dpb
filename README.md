@@ -30,7 +30,7 @@ npm run serve
 
 ### Compiles and minifies for production // Compilation et miniaturisation pour la production
 ```
-npm run prod
+npm run build
 ```
 
 ### Lints and fixes files // Paufinage et corrections de fichiers
