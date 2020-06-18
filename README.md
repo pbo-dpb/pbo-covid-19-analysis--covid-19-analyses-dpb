@@ -28,6 +28,11 @@ npm install
 npm run serve
 ```
 
+### Compiles for development // Compilations pour le développement
+```
+npm run dev
+```
+
 ### Compiles and minifies for production // Compilation et miniaturisation pour la production
 ```
 npm run build
