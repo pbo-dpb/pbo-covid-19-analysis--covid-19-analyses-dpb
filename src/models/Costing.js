@@ -1,4 +1,4 @@
-import { collect } from "collect.js";
+import collect from "collect.js";
 import { DateTime, Duration } from "luxon";
 
 export default class Costing {
@@ -89,7 +89,7 @@ export default class Costing {
 
         return false;
         // TODO : Loop through numbers with similar pattern as hasUpdatedArtifact and check for diff.
-        return !this.isNew && !this.hasUpdatedArtifact && false;
+        //return !this.isNew && !this.hasUpdatedArtifact && false;
     }
 
     toJson() {

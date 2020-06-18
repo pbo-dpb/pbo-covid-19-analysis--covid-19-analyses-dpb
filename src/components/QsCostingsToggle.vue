@@ -132,7 +132,7 @@ export default {
       this.privateValue = !this.privateValue;
       this.toggleTriggered(null);
     },
-    toggleTriggered(e) {
+    toggleTriggered() {
       if (this.disabled) return;
       this.$emit("change", this.privateValue);
     }
