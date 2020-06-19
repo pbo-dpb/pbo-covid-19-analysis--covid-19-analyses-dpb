@@ -73,7 +73,6 @@
   
     <script>
 import collect from "collect.js";
-import get from "get-value";
 
 export default {
   components: {
@@ -88,19 +87,9 @@ export default {
       return this.$root.payload
         ? collect(this.$root.payload.costings)
             .reject(costing => costing.no_incremental_impact)
-            .reject(costing => {
+            .filter(costing => {
               // Reject pending
-              return (
-                collect(
-                  get(
-                    costing.updateWithId(this.$root.currentUpdate.id),
-                    "numbers"
-                  )
-                )
-                  .values()
-                  .unique()
-                  .first() === null
-              );
+              return costing.updateWithId(this.$root.currentUpdate.id);
             })
             .groupBy("category_" + this.$root.language).items
         : null;
@@ -111,15 +100,8 @@ export default {
       }).items;
     },
     pendingCostings() {
-      return collect(this.$root.payload.costings).filter(costing => {
-        return (
-          collect(
-            get(costing.updateWithId(this.$root.currentUpdate.id), "numbers")
-          )
-            .values()
-            .unique()
-            .first() === null
-        );
+      return collect(this.$root.payload.costings).reject(costing => {
+        return costing.updateWithId(this.$root.currentUpdate.id);
       }).items;
     }
   }

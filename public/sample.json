@@ -1,0 +1,235 @@
+{
+    "updates": [
+        {
+            "id": "20200617",
+            "title_en": "June 17, 2020",
+            "title_fr": "17 juin 2020",
+            "meta": {
+                "real_gdp_growth": {
+                    "2019": "1.7",
+                    "2020": "-6.8"
+                },
+                "employment_rate": {
+                    "2019": "62.0",
+                    "2020": "56.4"
+                },
+                "wti": {
+                    "2019": "57",
+                    "2020": "38"
+                },
+                "budgetary_balance": {
+                    "2019-2020": "-23.8",
+                    "2020-2021": "-256.0"
+                },
+                "federal_debt": {
+                    "2019-2020": "30.6",
+                    "2020-2021": "44.4"
+                }
+            }
+        },
+        {
+            "id": "20200615",
+            "title_en": "June 15, 2020",
+            "title_fr": "15 juin 2020",
+            "meta": {
+                "real_gdp_growth": {
+                    "2019": "1.7",
+                    "2020": "-6.8"
+                },
+                "employment_rate": {
+                    "2019": "62.0",
+                    "2020": "56.4"
+                },
+                "wti": {
+                    "2019": "57",
+                    "2020": "38"
+                },
+                "budgetary_balance": {
+                    "2019-2020": "-23.8",
+                    "2020-2021": "-256.0"
+                },
+                "federal_debt": {
+                    "2019-2020": "30.6",
+                    "2020-2021": "44.4"
+                }
+            }
+        }
+    ],
+    "costings": [
+        {
+            "title_en": "Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.",
+            "title_fr": "Vivîmus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.",
+            "category_en": null,
+            "category_fr": null,
+            "note_en": null,
+            "note_fr": null,
+            "no_incremental_impact": false,
+            "costing_updates": [
+                {
+                    "id": null,
+                    "update_id": "20200618",
+                    "numbers": {
+                        "2019-2020": 567,
+                        "2020-2021": 890
+                    }
+                },
+                {
+                    "id": null,
+                    "update_id": "20200617",
+                    "numbers": {
+                        "2019-2020": 567,
+                        "2020-2021": 890
+                    }
+                }
+            ]
+        },
+        {
+            "title_en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "title_fr": "Lorém ipsum dôlor sit amet, consectetur adipiscing elit",
+            "category_en": "Example category",
+            "category_fr": "Catégorie exemple",
+            "note_en": null,
+            "note_fr": null,
+            "no_incremental_impact": false,
+            "costing_updates": [
+                {
+                    "id": "LEG-2021-123-X",
+                    "update_id": "20200618",
+                    "numbers": {
+                        "2019-2020": 0,
+                        "2020-2021": 123
+                    }
+                },
+                {
+                    "id": "LEG-2021-123-X",
+                    "update_id": "20200617",
+                    "numbers": {
+                        "2019-2020": 0,
+                        "2020-2021": 123
+                    }
+                },
+                {
+                    "id": "LEG-2021-124-X",
+                    "update_id": "20200616",
+                    "numbers": {
+                        "2019-2020": 0,
+                        "2020-2021": 121
+                    }
+                },
+                {
+                    "id": "LEG-2021-124-X",
+                    "update_id": "20200615",
+                    "numbers": {
+                        "2019-2020": 0,
+                        "2020-2021": 121
+                    }
+                }
+            ]
+        },
+        {
+            "title_en": "Maecenas sed diam eget risus varius blandit sit amet non magna.",
+            "title_fr": "Maecénas çed diam eget risus varius blandit sit amet non magna.",
+            "category_en": null,
+            "category_fr": null,
+            "note_en": "Nullam id dolor id [nibh ultricies](https://www.example.com) vehicula ut id elit. Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.\n\nDuis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.",
+            "note_fr": "Cras mattis **consectetur purus** sit amet fermentum.\n\n-Maecenas sed diam eget risus varius blandit sit amet non magna.\n-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nCras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod.",
+            "no_incremental_impact": false,
+            "costing_updates": [
+                {
+                    "id": "LEG-2021-456-X",
+                    "update_id": "20200618",
+                    "numbers": {
+                        "2019-2020": 0,
+                        "2020-2021": 432.21
+                    }
+                },
+                {
+                    "id": "LEG-2021-456-X",
+                    "update_id": "20200617",
+                    "numbers": {
+                        "2019-2020": 0,
+                        "2020-2021": 432.21
+                    }
+                },
+                {
+                    "id": "LEG-2021-456-X",
+                    "update_id": "20200616",
+                    "numbers": {
+                        "2019-2020": 0,
+                        "2020-2021": 432.21
+                    }
+                },
+                {
+                    "id": "LEG-2021-456-X",
+                    "update_id": "20200615",
+                    "numbers": {
+                        "2019-2020": 0,
+                        "2020-2021": 432.21
+                    }
+                }
+            ]
+        },
+        {
+            "title_en": "Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.",
+            "title_fr": "Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.",
+            "category_en": null,
+            "category_fr": null,
+            "note_en": null,
+            "note_fr": null,
+            "no_incremental_impact": false,
+            "costing_updates": [
+                {
+                    "id": "LEG-2021-098-X",
+                    "update_id": "20200618",
+                    "numbers": {
+                        "2019-2020": 678,
+                        "2020-2021": 456
+                    }
+                }
+            ]
+        },
+        {
+            "title_en": "Etiam porta sem malesuada magna mollis euismod.",
+            "title_fr": "Étiam porta sem malesuada magna mollis euismod.",
+            "category_en": null,
+            "category_fr": null,
+            "note_en": null,
+            "note_fr": null,
+            "no_incremental_impact": true,
+            "costing_updates": [
+                {
+                    "id": "LEG-2021-543-X",
+                    "update_id": "20200618",
+                    "numbers": {
+                        "2019-2020": 0,
+                        "2020-2021": 9105.87
+                    }
+                },
+                {
+                    "id": "LEG-2021-543-X",
+                    "update_id": "20200617",
+                    "numbers": {
+                        "2019-2020": 0,
+                        "2020-2021": 9105.87
+                    }
+                },
+                {
+                    "id": "LEG-2021-543-X",
+                    "update_id": "20200616",
+                    "numbers": {
+                        "2019-2020": 0,
+                        "2020-2021": 9105.9
+                    }
+                },
+                {
+                    "id": "LEG-2021-543-X",
+                    "update_id": "20200615",
+                    "numbers": {
+                        "2019-2020": 0,
+                        "2020-2021": 9105.9
+                    }
+                }
+            ]
+        }
+    ]
+}
