@@ -19,10 +19,6 @@ tr > td {
   color: #888;
 }
 
-.covid-badge {
-  margin-left: 0.5em;
-}
-
 .note-button {
   margin-left: 0.5em;
   color: #315470;
@@ -75,15 +71,9 @@ tr > td {
           <i class="far fa-sticky-note" v-if="!displayNote"></i>
           <i class="fas fa-sticky-note" v-if="displayNote"></i>
         </div>
-        <span v-if="costing.isNew" class="covid-badge">{{ $root.strings.new }}</span>
-        <span
-          v-if="costing.hasUpdatedArtifact"
-          class="covid-badge"
-        >{{ $root.strings.updated_artifact }}</span>
-        <span
-          v-if="costing.hasUpdatedNumbers"
-          class="covid-badge"
-        >{{ $root.strings.updated_numbers }}</span>
+        <costing-badge v-if="costing.isNew">{{ $root.strings.new }}</costing-badge>
+        <costing-badge v-if="costing.hasUpdatedArtifact">{{ $root.strings.updated_artifact }}</costing-badge>
+        <costing-badge v-if="costing.hasUpdatedNumbers">{{ $root.strings.updated_numbers }}</costing-badge>
       </div>
 
       <transition name="fade">
@@ -138,7 +128,8 @@ export default {
   },
   components: {
     qsPboCostedGlyph: require("./QsPboCostedGlyph.vue").default,
-    qsCostingsNote: require("./QsCostingsNote.vue").default
+    qsCostingsNote: require("./QsCostingsNote.vue").default,
+    costingBadge: require("./CostingBadge.vue").default
   },
   computed: {
     shouldAppearAsOtherCosting() {
