@@ -69,18 +69,6 @@ tr > td {
             </small>
           </div>
         </div>
-        <div
-          v-if="note"
-          class="note-button"
-          role="button"
-          :active="displayNote"
-          :aria-pressed="displayNote"
-          :aria-label="$root.strings.display_note"
-          @click="displayNote=!displayNote"
-        >
-          <i class="far fa-sticky-note" v-if="!displayNote"></i>
-          <i class="fas fa-sticky-note" v-if="displayNote"></i>
-        </div>
 
         <div
           v-if="warning"
@@ -95,16 +83,29 @@ tr > td {
           <i class="fas fa-caret-square-up" v-if="displayWarning"></i>
         </div>
 
+        <div
+          v-if="note"
+          class="note-button"
+          role="button"
+          :active="displayNote"
+          :aria-pressed="displayNote"
+          :aria-label="$root.strings.display_note"
+          @click="displayNote=!displayNote"
+        >
+          <i class="far fa-sticky-note" v-if="!displayNote"></i>
+          <i class="fas fa-sticky-note" v-if="displayNote"></i>
+        </div>
+
         <costing-badge v-if="costing.isNew">{{ $root.strings.new }}</costing-badge>
         <costing-badge v-if="costing.hasUpdatedArtifact">{{ $root.strings.updated_artifact }}</costing-badge>
         <costing-badge v-if="costing.hasUpdatedNumbers">{{ $root.strings.updated_numbers }}</costing-badge>
       </div>
 
       <transition name="fade">
-        <qs-costings-note v-if="displayNote" :note="note"></qs-costings-note>
+        <qs-costings-note v-if="displayWarning" :note="warning"></qs-costings-note>
       </transition>
       <transition name="fade">
-        <qs-costings-note v-if="displayWarning" :note="warning"></qs-costings-note>
+        <qs-costings-note v-if="displayNote" :note="note"></qs-costings-note>
       </transition>
     </td>
 
