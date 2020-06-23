@@ -89,7 +89,9 @@ export default {
             .reject(costing => costing.no_incremental_impact)
             .filter(costing => {
               // Reject pending
-              return costing.updateWithId(this.$root.currentUpdate.id);
+              return costing.wasPartOfScenarioWithId(
+                this.$root.currentUpdate.id
+              );
             })
             .groupBy("category_" + this.$root.language).items
         : null;
@@ -101,7 +103,7 @@ export default {
     },
     pendingCostings() {
       return collect(this.$root.payload.costings).reject(costing => {
-        return costing.updateWithId(this.$root.currentUpdate.id);
+        return costing.wasPartOfScenarioWithId(this.$root.currentUpdate.id);
       }).items;
     }
   }

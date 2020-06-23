@@ -47,6 +47,14 @@ export default class Costing {
         return collect(this.costing_updates).firstWhere("update_id", updateId);
     }
 
+    wasPartOfScenarioWithId(updateId) {
+        const updateForId = this.updateWithId(updateId);
+
+        return collect(updateForId.numbers).reject((num) => {
+            return num === null;
+        }).count();
+    }
+
     get totalCost() {
         return collect(this.currentCostingUpdate.numbers).sum();
     }
