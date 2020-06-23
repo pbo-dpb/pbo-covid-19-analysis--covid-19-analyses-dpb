@@ -40,6 +40,8 @@ export default class Costing {
         this.no_incremental_impact = apiObject.no_incremental_impact;
         this.note_en = apiObject.note_en;
         this.note_fr = apiObject.note_fr;
+        this.warning_en = "Hello, world!"; //apiObject.warning_en;
+        this.warning_fr = "Hey, you!"; //apiObject.warning_fr;
 
     }
 

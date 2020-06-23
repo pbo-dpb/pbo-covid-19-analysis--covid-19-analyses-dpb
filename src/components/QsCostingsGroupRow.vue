@@ -19,6 +19,16 @@ tr > td {
   color: #888;
 }
 
+.warning-button {
+  margin-left: 0.5em;
+  color: #754043;
+  cursor: pointer;
+}
+.warning-button:hover,
+.warning-button:active {
+  color: #915053;
+}
+
 .note-button {
   margin-left: 0.5em;
   color: #315470;
@@ -71,6 +81,20 @@ tr > td {
           <i class="far fa-sticky-note" v-if="!displayNote"></i>
           <i class="fas fa-sticky-note" v-if="displayNote"></i>
         </div>
+
+        <div
+          v-if="warning"
+          class="warning-button"
+          role="button"
+          :active="displayWarning"
+          :aria-pressed="displayWarning"
+          :aria-label="$root.strings.display_warning"
+          @click="displayWarning=!displayWarning"
+        >
+          <i class="far fa-caret-square-down" v-if="!displayWarning"></i>
+          <i class="fas fa-caret-square-up" v-if="displayWarning"></i>
+        </div>
+
         <costing-badge v-if="costing.isNew">{{ $root.strings.new }}</costing-badge>
         <costing-badge v-if="costing.hasUpdatedArtifact">{{ $root.strings.updated_artifact }}</costing-badge>
         <costing-badge v-if="costing.hasUpdatedNumbers">{{ $root.strings.updated_numbers }}</costing-badge>
@@ -78,6 +102,9 @@ tr > td {
 
       <transition name="fade">
         <qs-costings-note v-if="displayNote" :note="note"></qs-costings-note>
+      </transition>
+      <transition name="fade">
+        <qs-costings-note v-if="displayWarning" :note="warning"></qs-costings-note>
       </transition>
     </td>
 
@@ -118,7 +145,8 @@ export default {
   },
   data() {
     return {
-      displayNote: false
+      displayNote: false,
+      displayWarning: false
     };
   },
   methods: {
@@ -169,6 +197,9 @@ export default {
     },
     note() {
       return this.costing["note_" + this.$root.language];
+    },
+    warning() {
+      return this.costing["warning_" + this.$root.language];
     }
   }
 };
