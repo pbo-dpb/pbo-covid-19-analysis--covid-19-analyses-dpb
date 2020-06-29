@@ -96,9 +96,11 @@ tr > td {
           <i class="fas fa-sticky-note" v-if="displayNote"></i>
         </div>
 
-        <costing-badge v-if="costing.isNew">{{ $root.strings.new }}</costing-badge>
-        <costing-badge v-if="costing.hasUpdatedArtifact">{{ $root.strings.updated_artifact }}</costing-badge>
-        <costing-badge v-if="costing.hasUpdatedNumbers">{{ $root.strings.updated_numbers }}</costing-badge>
+        <template v-if="shouldShowStatusBadges">
+          <costing-badge v-if="costing.isNew">{{ $root.strings.new }}</costing-badge>
+          <costing-badge v-if="costing.hasUpdatedArtifact">{{ $root.strings.updated_artifact }}</costing-badge>
+          <costing-badge v-if="costing.hasUpdatedNumbers">{{ $root.strings.updated_numbers }}</costing-badge>
+        </template>
       </div>
 
       <transition name="fade">
@@ -142,6 +144,10 @@ export default {
     costing: {
       type: Object,
       required: true
+    },
+    displayAsOfLatestScenario: {
+      type: Boolean,
+      default: false
     }
   },
   data() {
@@ -161,6 +167,13 @@ export default {
     costingBadge: require("./CostingBadge.vue").default
   },
   computed: {
+    shouldShowStatusBadges() {
+      // Only show status badges for pending, simple and other costings AND full table but only when current scenario is the latest update.
+      return (
+        !this.displayAsOfLatestScenario ||
+        this.$root.currentUpdate.id === this.$root.currentGhostUpdateId
+      );
+    },
     shouldAppearAsOtherCosting() {
       return (
         this.$root.showFullTable &&
@@ -169,6 +182,9 @@ export default {
       );
     },
     currentCostingUpdate() {
+      if (this.displayAsOfLatestScenario) {
+        return this.costing.updateWithId(this.$root.currentUpdate.id);
+      }
       return this.costing.currentCostingUpdate;
     },
     currentCostingUrl() {

@@ -54,7 +54,7 @@ export default class Costing {
 
         return collect(updateForId.numbers).reject((num) => {
             return num === null;
-        }).count();
+        }).count() ? updateForId : false;
     }
 
     get totalCost() {

@@ -103,7 +103,13 @@ export default {
     },
     pendingCostings() {
       return collect(this.$root.payload.costings).reject(costing => {
-        return costing.wasPartOfScenarioWithId(this.$root.currentUpdate.id);
+        let costingDuringLastUpdate = costing.wasPartOfScenarioWithId(
+          this.$root.currentUpdate.id
+        );
+        if (!costingDuringLastUpdate) {
+          return false;
+        }
+        return costingDuringLastUpdate.id === costing.currentCostingUpdate.id;
       }).items;
     }
   }

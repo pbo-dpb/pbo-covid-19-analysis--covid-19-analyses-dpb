@@ -7,6 +7,7 @@
       is="qs-costings-group-row"
       v-for="costing in orderedCostings"
       :costing="costing"
+      :display-as-of-latest-scenario="true"
       :key="costing.title_en"
     ></tr>
   </tbody>
