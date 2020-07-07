@@ -2,11 +2,9 @@ import Vue from 'vue'
 Vue.config.productionTip = false
 
 import axios from "axios"
-import Fuse from "fuse.js"
 import collect from "collect.js"
-global.collect = collect;
-import get from "get-value"
-global.get = get;
+
+
 
 
 import Costing from "./models/Costing.js"
