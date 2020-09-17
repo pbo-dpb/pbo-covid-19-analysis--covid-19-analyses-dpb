@@ -22,7 +22,7 @@ tr > td {
 </style>
 
 <template>
-  <table>
+  <table class="w-full mb-8">
     <thead>
       <tr>
         <th>

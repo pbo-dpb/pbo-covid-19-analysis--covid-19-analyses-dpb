@@ -3,7 +3,8 @@
     <tr>
       <th
         rowspan="2"
-        style="font-weight: normal;border-bottom: 1px solid gray;text-align:left"
+        style="border-bottom: 1px solid gray;"
+        class="text-sm text-left font-thin"
       >{{ $root.strings.fullcostings.in_millions }}</th>
 
       <th colspan="2" style="border-bottom: 1px solid gray;width:20%;line-height:0.9em;">

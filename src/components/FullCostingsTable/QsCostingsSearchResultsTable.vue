@@ -7,7 +7,7 @@
 }
 </style>
 <template>
-  <table>
+  <table class="w-full mb-8">
     <thead is="qs-costings-table-head"></thead>
     <tbody>
       <tr
@@ -25,14 +25,14 @@ import collect from "collect.js";
 export default {
   components: {
     qsCostingsTableHead: require("./QsCostingsTableHead.vue").default,
-    qsCostingsGroupRow: require("./QsCostingsGroupRow.vue").default
+    qsCostingsGroupRow: require("./QsCostingsGroupRow.vue").default,
   },
   computed: {
     costings() {
       return collect(
         this.$root.search.engine.search(this.$root.search.query)
       ).pluck("item").items;
-    }
-  }
+    },
+  },
 };
 </script>

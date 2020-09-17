@@ -1,65 +1,18 @@
-<style scoped>
-.search-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
 
-@media only screen and (min-width: 768px) {
-  .search-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: #fff;
-    padding: 0.5em 1em 0.5em 0.5em;
-    border-radius: 34px;
-    border: 1px solid lightgray;
-  }
-  input {
-    border: none;
-    height: 34px;
-  }
-}
-
-button {
-  background-color: lightgray;
-  border-radius: 8.5px;
-}
-
-@media only screen and (max-width: 768px) {
-  .search-wrapper {
-    margin-top: 1rem;
-    width: 100%;
-    border: none;
-  }
-  input {
-    height: 32px;
-    font-size: 0.75rem;
-    border: 1px solid lightgray;
-    border-radius: 0;
-    padding: 7px;
-  }
-}
-</style>
 <template>
   <div>
-    <div :class="{'search-wrapper': shouldShowQuery}">
-      <button v-if="!shouldShowQuery" @click="displaySearchField">
-        <i class="fas fa-search" :title="$root.strings.fullcostings.search_label"></i>
-      </button>
-      <input
-        v-else
-        type="search"
-        v-model="$root.search.query"
-        :placeholder="$root.strings.fullcostings.search_label"
-      />
-    </div>
+    <input
+      type="search"
+      v-model="$root.search.query"
+      :placeholder="$root.strings.fullcostings.search_label"
+      class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500 mb-8"
+    />
   </div>
 </template>
 <script>
 export default {
   data() {
-    return { shouldShowQuery: window.innerWidth < 768 };
+    return { shouldShowQuery: true };
   },
   methods: {
     displaySearchField() {

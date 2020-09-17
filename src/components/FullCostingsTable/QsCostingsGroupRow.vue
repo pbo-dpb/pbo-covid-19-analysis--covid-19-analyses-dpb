@@ -60,15 +60,16 @@ tr > td {
             :is="currentCostingUrl ? 'a' : 'span'"
             :href="currentCostingUrl"
             target="_blank"
+            :class="{'underline' : currentCostingUrl, 'text-blue-700':currentCostingUrl, 'hover:text-blue-900':currentCostingUrl, }"
           >{{ costing['title_' + $root.language] }}</component>
 
           <div v-if="comparedCostingUrl">
             <small class="archived">
-              (
               <a
                 :href="comparedCostingUrl"
                 target="_blank"
-              >{{ $root.strings.fullcostings.read_previous_pdf }}</a>)
+                class="font-thin"
+              >{{ $root.strings.fullcostings.read_previous_pdf }}</a>
             </small>
           </div>
         </div>

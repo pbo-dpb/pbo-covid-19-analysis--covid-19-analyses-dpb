@@ -13,12 +13,11 @@
         <div class="w-auto flex flex-row justify-end">
           <qs-costings-search-widget></qs-costings-search-widget>
         </div>
-        <qs-costings-full-table-options></qs-costings-full-table-options>
-        <qs-costings-search-results-table v-if="$root.search.query"></qs-costings-search-results-table>
-
         <template v-if="!$root.search.query">
+          <qs-costings-full-table-options></qs-costings-full-table-options>
           <qs-full-costings-table></qs-full-costings-table>
         </template>
+        <qs-costings-search-results-table v-else></qs-costings-search-results-table>
       </template>
     </div>
   </div>

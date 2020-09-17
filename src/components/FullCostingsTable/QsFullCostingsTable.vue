@@ -11,7 +11,7 @@
     <div class="loader" v-if="!groups"></div>
 
     <template v-if="groups">
-      <table>
+      <table class="w-full mb-8">
         <thead is="qs-costings-table-head"></thead>
         <tbody
           is="qs-costings-group"
@@ -25,7 +25,7 @@
 
       <qs-costings-meta-table></qs-costings-meta-table>
 
-      <table>
+      <table class="w-full mb-8">
         <tbody>
           <tr>
             <th style="text-align:left;">{{ $root.strings.fullcostings.no_incremental_impact }}</th>
@@ -39,7 +39,7 @@
         ></tr>
       </table>
 
-      <figcaption style="text-align:left;font-size: 0.8em;caption-side: bottom;">
+      <figcaption style="text-align:left;font-size: 0.8em;caption-side: bottom;" class="mb-8">
         <markdown-content :content="$root.strings.fullcostings.figcaption_line1"></markdown-content>
         <markdown-content :content="$root.strings.fullcostings.figcaption_line2"></markdown-content>
         <br />
@@ -49,7 +49,7 @@
       <template v-if="pendingCostings && pendingCostings.length">
         <hr />
 
-        <table>
+        <table class="w-full mb-8">
           <tbody>
             <tr>
               <th style="text-align:left;">
