@@ -11,7 +11,6 @@ import App from './App.vue'
 import './assets/tailwind.css'
 import router from './router'
 
-const language = window.document.documentElement.lang ? window.document.documentElement.lang : "en";
 const strings = require("./strings.js").default;
 
 Vue.component('costings-number', require('./components/QsCostingsNumber.vue').default);
@@ -22,9 +21,7 @@ new Vue({
   render: h => h(App),
 
   data: {
-    strings: strings[language],
     payload: null,
-    language: language,
     compareWithUpdate: null,
     sort: "alphabetically",
     search: {
@@ -46,6 +43,14 @@ new Vue({
     currentGhostUpdateId() {
       return this.payload ? collect(this.payload.costings).pluck("costing_updates").flatten(1).pluck("update_id").sort().reverse().first() : null;
     },
+
+    language() {
+      return this.$route.params.language ? this.$route.params.language : "en";
+    },
+
+    strings() {
+      return strings[this.language];
+    }
 
   },
 

@@ -2,19 +2,22 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import AnalysisHome from '../components/AnalysisHome/AnalysisHome.vue'
 
+
 Vue.use(VueRouter)
 
 const routes = [
+  { path: '/', redirect: '/en' },
   {
-    path: '/',
+    path: '/:language',
     name: 'AnalysisHome',
     component: AnalysisHome
   },
   {
-    path: '/fullcostingtable---tempname',
+    path: '/:language/fullcostingtable---tempname',
     name: 'FullCostingTable',
     component: () => import(/* webpackChunkName: "about" */ '../components/FullCostingsTable/FullCostingsTable.vue')
   }
+
 ]
 
 const router = new VueRouter({
