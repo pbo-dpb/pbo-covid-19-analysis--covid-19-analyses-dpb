@@ -9,10 +9,14 @@
       >
         <li
           @click="navigate"
-          class="px-4 xl:px-2 py-2 xl:mr-0 xl:-ml-2 xl:-mr-2 cursor-pointer text-blue-800 font-medium hover:text-blue-800 hover:underline mb-2 bg-gray-200"
-          :class="{'text-base':($route.params.language === 'en'), 'text-sm': ($route.params.language === 'fr')}"
+          class="px-4 xl:px-2 py-2 xl:mr-0 xl:-ml-2 xl:-mr-2 cursor-pointer text-blue-800 font-medium hover:text-blue-800 hover:underline mb-2 bg-gray-100"
+          :class="{'bg-gray-700': isActiveLink(link),  'text-base':($route.params.language === 'en'), 'text-sm': ($route.params.language === 'fr')}"
         >
-          <a :href="href" @click="navigate">{{ link.title }}</a>
+          <a
+            :class="{'text-white': isActiveLink(link),}"
+            :href="href"
+            @click="navigate"
+          >{{ link.title }}</a>
         </li>
       </router-link>
     </ul>
@@ -27,7 +31,7 @@ export default {
         {
           title: this.$root.strings.home.title,
           destination: {
-            name: "home",
+            name: "AnalysisHome",
             params: {
               language: this.$route.params.language,
             },

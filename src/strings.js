@@ -3,7 +3,7 @@ export default {
         "logo_alt": "PBO-DPB",
         "title": "PBO's COVID-19 Analysis",
         "fullcostings": {
-            "title": "Full Costing Table (Legacy)",
+            "title": "Full Costing Table (Archived)",
             "in_millions": "$ millions",
             "compare_label": "Select previous scenario for comparison",
             "total": "Total",
