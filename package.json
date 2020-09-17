@@ -1,6 +1,6 @@
 {
-  "name": "covid19.albert-io.com",
-  "version": "0.1.0",
+  "name": "covid19.pbo-dpb.ca",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
