@@ -4,13 +4,11 @@ Vue.config.productionTip = false
 import axios from "axios"
 import collect from "collect.js"
 
-
-
-
 import Costing from "./models/Costing.js"
 import Update from "./models/Update.js"
 
 import App from './App.vue'
+import './assets/tailwind.css'
 
 const covidLanguage = window.document.documentElement.lang ? window.document.documentElement.lang : "en";
 const covidRawStrings = {
