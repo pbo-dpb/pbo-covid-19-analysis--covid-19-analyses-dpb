@@ -54,7 +54,7 @@ tr > td {
   <tr class="covidcostings-row" :class="{'is-not-pbo-costing': !costing.isPboCosting}" @click="log">
     <td>
       <div class="measure-name">
-        <qs-pbo-costed-glyph v-if="$root.showFullTable && costing.isPboCosting" />
+        <qs-pbo-costed-glyph v-if="costing.isPboCosting" />
         <div>
           <component
             :is="currentCostingUrl ? 'a' : 'span'"
@@ -143,28 +143,28 @@ export default {
   props: {
     costing: {
       type: Object,
-      required: true
+      required: true,
     },
     displayAsOfLatestScenario: {
       type: Boolean,
-      default: false
-    }
+      default: false,
+    },
   },
   data() {
     return {
       displayNote: false,
-      displayWarning: false
+      displayWarning: false,
     };
   },
   methods: {
     log() {
       console.log(this.costing.currentCostingUpdate);
-    }
+    },
   },
   components: {
     qsPboCostedGlyph: require("./QsPboCostedGlyph.vue").default,
     qsCostingsNote: require("./QsCostingsNote.vue").default,
-    costingBadge: require("./CostingBadge.vue").default
+    costingBadge: require("./CostingBadge.vue").default,
   },
   computed: {
     shouldShowStatusBadges() {
@@ -175,11 +175,7 @@ export default {
       );
     },
     shouldAppearAsOtherCosting() {
-      return (
-        this.$root.showFullTable &&
-        this.costing.no_incremental_impact &&
-        !this.$root.search.query
-      );
+      return this.costing.no_incremental_impact && !this.$root.search.query;
     },
     currentCostingUpdate() {
       if (this.displayAsOfLatestScenario) {
@@ -217,7 +213,7 @@ export default {
     },
     warning() {
       return this.costing["warning_" + this.$root.language];
-    }
-  }
+    },
+  },
 };
 </script>

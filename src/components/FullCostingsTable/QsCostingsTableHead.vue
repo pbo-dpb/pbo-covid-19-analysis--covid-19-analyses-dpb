@@ -8,7 +8,7 @@
 
       <th colspan="2" style="border-bottom: 1px solid gray;width:20%;line-height:0.9em;">
         {{ $root.strings.current_scenario }}
-        <span v-if="$root.showFullTable">
+        <span>
           <br />
           <small>{{ currentUpdateTitle }}</small>
         </span>
@@ -44,7 +44,7 @@
 export default {
   data() {
     return {
-      numbersHeaders: ["2019-2020", "2020-2021"]
+      numbersHeaders: ["2019-2020", "2020-2021"],
     };
   },
   computed: {
@@ -55,7 +55,7 @@ export default {
       return this.$root.compareWithUpdate
         ? this.$root.compareWithUpdate["title_" + this.$root.language]
         : null;
-    }
-  }
+    },
+  },
 };
 </script>

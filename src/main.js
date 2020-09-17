@@ -27,7 +27,6 @@ new Vue({
     language: language,
     compareWithUpdate: null,
     sort: "alphabetically",
-    showFullTable: window.localStorage.getItem("pbo-covid19-costings-full-toggle") ? true : false,
     search: {
       query: null,
       engine: null

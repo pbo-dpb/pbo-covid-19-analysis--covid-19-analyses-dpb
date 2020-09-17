@@ -20,14 +20,14 @@
       <template v-if="$root.payload && $root.payload.updates">
         <div class="tools">
           <qs-costings-simple-full-toggle></qs-costings-simple-full-toggle>
-          <qs-costings-search-widget v-if="$root.showFullTable"></qs-costings-search-widget>
+          <qs-costings-search-widget></qs-costings-search-widget>
         </div>
-        <qs-costings-full-table-options v-if="$root.showFullTable"></qs-costings-full-table-options>
+        <qs-costings-full-table-options></qs-costings-full-table-options>
         <qs-costings-search-results-table v-if="$root.search.query"></qs-costings-search-results-table>
 
         <template v-if="!$root.search.query">
-          <qs-simple-costings-table v-if="!$root.showFullTable"></qs-simple-costings-table>
-          <qs-full-costings-table v-if="$root.showFullTable"></qs-full-costings-table>
+          <qs-simple-costings-table></qs-simple-costings-table>
+          <qs-full-costings-table></qs-full-costings-table>
         </template>
       </template>
     </div>
