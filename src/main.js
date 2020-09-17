@@ -9,6 +9,7 @@ import Update from "./models/Update.js"
 
 import App from './App.vue'
 import './assets/tailwind.css'
+import router from './router'
 
 const language = window.document.documentElement.lang ? window.document.documentElement.lang : "en";
 const strings = require("./strings.js").default;
@@ -19,6 +20,7 @@ Vue.component('markdown-content', require('./components/MarkdownContent.vue').de
 
 new Vue({
   render: h => h(App),
+
   data: {
     strings: strings[language],
     payload: null,
@@ -47,6 +49,7 @@ new Vue({
     },
 
   },
+
   methods: {
     initializeSearch() {
       this.search.query = "";
@@ -57,6 +60,9 @@ new Vue({
       });
     }
   },
+
+  router,
+
   mounted() {
     const payloadUrl = process.env.VUE_APP_FEED_URL;
 
