@@ -7,6 +7,7 @@
     "build": "vue-cli-service build",
     "prod": "vue-cli-service build",
     "dev": "vue-cli-service build --mode development",
+    "watch": "vue-cli-service build --mode development --watch",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
