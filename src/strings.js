@@ -4,6 +4,10 @@ export default {
         "title": "PBO's COVID-19 Analysis",
         "fullcostings": {
             "title": "Full Costing Table (Archived)",
+            "archived": {
+                "title": "This table has been archived",
+                "description": "This table hasn't been updated since June 18th, 2020 and will not be updated anymore."
+            },
             "in_millions": "$ millions",
             "compare_label": "Select previous scenario for comparison",
             "total": "Total",
@@ -45,6 +49,10 @@ export default {
         "title": "COVID-19 : Analyses du DPB",
         "fullcostings": {
             "title": "Tableau complet d’estimations de coûts (Archivé)",
+            "archived": {
+                "title": "Ce tableau a été archivé",
+                "description": "Ce tableau n'a pas été mis à jour depuis le 18 juin 2020 et ne le sera plus dans le futur."
+            },
             "in_millions": "Millions de dollars",
             "compare_label": "Sélectionner un scénario précédent à des fins de comparaison",
             "total": "Total",

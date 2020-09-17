@@ -1,31 +1,22 @@
-<style scoped>
-.tools {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-@media only screen and (max-width: 768px) {
-  .tools {
-    flex-direction: column;
-  }
-}
-</style>
+
 <template>
   <div>
+    <notification-block
+      :title="$root.strings.fullcostings.archived.title"
+      type="warning"
+    >{{ $root.strings.fullcostings.archived.description }}</notification-block>
+
     <div class="covidcostings">
       <qs-costings-loader v-if="$root.payload && !$root.payload.updates"></qs-costings-loader>
 
       <template v-if="$root.payload && $root.payload.updates">
-        <div class="tools">
+        <div class="w-auto flex flex-row justify-end">
           <qs-costings-search-widget></qs-costings-search-widget>
         </div>
         <qs-costings-full-table-options></qs-costings-full-table-options>
         <qs-costings-search-results-table v-if="$root.search.query"></qs-costings-search-results-table>
 
         <template v-if="!$root.search.query">
-          <qs-simple-costings-table></qs-simple-costings-table>
           <qs-full-costings-table></qs-full-costings-table>
         </template>
       </template>
@@ -42,7 +33,7 @@ export default {
       .default,
     qsFullCostingsTable: require("./QsFullCostingsTable.vue").default,
 
-    qsSimpleCostingsTable: require("./QsSimpleCostingsTable.vue").default,
+    /*qsSimpleCostingsTable: require("./QsSimpleCostingsTable.vue").default,*/
     qsCostingsSearchResultsTable: require("./QsCostingsSearchResultsTable.vue")
       .default,
     qsCostingsSearchWidget: require("./QsCostingsSearchWidget.vue").default,
