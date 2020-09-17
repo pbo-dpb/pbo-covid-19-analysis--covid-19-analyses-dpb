@@ -4,10 +4,10 @@
       <th
         rowspan="2"
         style="font-weight: normal;border-bottom: 1px solid gray;text-align:left"
-      >{{ $root.strings.in_millions }}</th>
+      >{{ $root.strings.fullcostings.in_millions }}</th>
 
       <th colspan="2" style="border-bottom: 1px solid gray;width:20%;line-height:0.9em;">
-        {{ $root.strings.current_scenario }}
+        {{ $root.strings.fullcostings.current_scenario }}
         <span>
           <br />
           <small>{{ currentUpdateTitle }}</small>
@@ -16,7 +16,7 @@
 
       <template v-if="previousUpdateTitle">
         <th colspan="2" style="border-bottom: 1px solid gray;width:20%;line-height:0.9em;">
-          {{ $root.strings.previous_scenario }}
+          {{ $root.strings.fullcostings.previous_scenario }}
           <br />
           <small>{{ previousUpdateTitle }}</small>
         </th>

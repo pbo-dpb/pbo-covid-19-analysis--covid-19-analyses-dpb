@@ -1,6 +1,6 @@
 <template>
   <div>
-    <label :for="'compare-select-' + _uid">{{ $root.strings.compare_label }}</label>
+    <label :for="'compare-select-' + _uid">{{ $root.strings.fullcostings.compare_label }}</label>
     <select
       :id="'compare-select-' + _uid"
       v-model="$root.compareWithUpdate"
@@ -21,9 +21,9 @@ export default {
   computed: {
     options() {
       return collect(this.$root.payload.updates).reject(
-        value => value.id === this.$root.currentUpdate.id
+        (value) => value.id === this.$root.currentUpdate.id
       ).items;
-    }
-  }
+    },
+  },
 };
 </script>

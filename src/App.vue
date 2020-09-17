@@ -1,15 +1,27 @@
 <template>
   <div id="app">
     <top-header></top-header>
-    <router-view />
+
+    <main class="px-2 py-4">
+      <div class="container mx-auto">
+        <section class="lg:grid lg:grid-cols-4 lg:gap-4">
+          <nav class="lg:col-span-1">
+            <menu-view></menu-view>
+          </nav>
+          <div class="lg:col-span-3">
+            <router-view />
+          </div>
+        </section>
+      </div>
+    </main>
   </div>
 </template>
 
 <script>
-const topHeader = require("./components/TopHeader.vue").default;
 export default {
   components: {
-    topHeader,
+    topHeader: require("./components/TopHeader.vue").default,
+    menuView: require("./components/MenuView.vue").default,
   },
 };
 </script>

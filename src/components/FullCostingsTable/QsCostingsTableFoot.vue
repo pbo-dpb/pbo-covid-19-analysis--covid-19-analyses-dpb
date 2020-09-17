@@ -1,7 +1,7 @@
 <template>
   <tfoot>
     <tr>
-      <th style="text-align:right">{{ $root.strings.total }}</th>
+      <th style="text-align:right">{{ $root.strings.fullcostings.total }}</th>
 
       <th
         style="border-top: 1px solid gray;text-align:right;padding-left: 0.5em;"
@@ -30,26 +30,26 @@ export default {
   methods: {
     sumsByUpdateId(updateObjectId) {
       return collect(this.$root.payload.costings)
-        .reject(costing => costing.no_incremental_impact)
+        .reject((costing) => costing.no_incremental_impact)
         .pluck("costing_updates")
         .flatten(1)
-        .filter(value => value.update_id === updateObjectId)
-        .map(costingNums => {
+        .filter((value) => value.update_id === updateObjectId)
+        .map((costingNums) => {
           return collect(costingNums.numbers).map((nums, yy) => {
             return { nums: nums, yy: yy };
           }).items;
         })
         .flatten(1)
-        .mapToDictionary(item => [item.yy, item.nums])
-        .map(items => {
+        .mapToDictionary((item) => [item.yy, item.nums])
+        .map((items) => {
           return collect(items)
             .filter()
-            .map(val => {
+            .map((val) => {
               return parseFloat(val);
             })
             .sum();
         }).items;
-    }
+    },
   },
 
   computed: {
@@ -60,7 +60,7 @@ export default {
       return this.$root.compareWithUpdate
         ? this.sumsByUpdateId(this.$root.compareWithUpdate.id)
         : null;
-    }
-  }
+    },
+  },
 };
 </script>

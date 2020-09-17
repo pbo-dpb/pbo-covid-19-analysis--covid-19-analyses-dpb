@@ -26,9 +26,9 @@ tr > td {
     <thead>
       <tr>
         <th>
-          {{ $root.strings.meta_header }}
+          {{ $root.strings.fullcostings.meta_header }}
           <br />
-          <small style="font-weight:200;">{{ $root.strings.meta_header_note }}</small>
+          <small style="font-weight:200;">{{ $root.strings.fullcostings.meta_header_note }}</small>
         </th>
         <th></th>
         <th></th>
@@ -42,7 +42,7 @@ tr > td {
     <tbody>
       <tr class="covidcostings-row">
         <td style="text-align:left">
-          <b>{{ $root.strings.real_gdp_growth }}</b>
+          <b>{{ $root.strings.fullcostings.real_gdp_growth }}</b>
         </td>
 
         <td
@@ -63,7 +63,7 @@ tr > td {
 
       <tr class="covidcostings-row">
         <td style="text-align:left">
-          <b>{{ $root.strings.employment_rate }}</b>
+          <b>{{ $root.strings.fullcostings.employment_rate }}</b>
         </td>
 
         <td
@@ -84,7 +84,7 @@ tr > td {
 
       <tr class="covidcostings-row">
         <td style="text-align:left">
-          <b>{{ $root.strings.wti }}</b>
+          <b>{{ $root.strings.fullcostings.wti }}</b>
         </td>
 
         <td
@@ -105,7 +105,7 @@ tr > td {
 
       <tr class="covidcostings-row">
         <td style="text-align:left">
-          <b>{{ $root.strings.budgetary_balance }}</b>
+          <b>{{ $root.strings.fullcostings.budgetary_balance }}</b>
         </td>
 
         <td
@@ -126,7 +126,7 @@ tr > td {
 
       <tr class="covidcostings-row">
         <td style="text-align:left">
-          <b>{{ $root.strings.federal_debt }}</b>
+          <b>{{ $root.strings.fullcostings.federal_debt }}</b>
         </td>
 
         <td
@@ -151,6 +151,6 @@ tr > td {
 export default {
   template: `
  
-    `
+    `,
 };
 </script>

@@ -28,7 +28,7 @@
       <table>
         <tbody>
           <tr>
-            <th style="text-align:left;">{{ $root.strings.no_incremental_impact }}</th>
+            <th style="text-align:left;">{{ $root.strings.fullcostings.no_incremental_impact }}</th>
           </tr>
         </tbody>
         <tr
@@ -40,10 +40,10 @@
       </table>
 
       <figcaption style="text-align:left;font-size: 0.8em;caption-side: bottom;">
-        <markdown-content :content="$root.strings.figcaption_line1"></markdown-content>
-        <markdown-content :content="$root.strings.figcaption_line2"></markdown-content>
+        <markdown-content :content="$root.strings.fullcostings.figcaption_line1"></markdown-content>
+        <markdown-content :content="$root.strings.fullcostings.figcaption_line2"></markdown-content>
         <br />
-        <markdown-content :content="$root.strings.figcaption_line3"></markdown-content>
+        <markdown-content :content="$root.strings.fullcostings.figcaption_line3"></markdown-content>
       </figcaption>
 
       <template v-if="pendingCostings && pendingCostings.length">
@@ -53,9 +53,11 @@
           <tbody>
             <tr>
               <th style="text-align:left;">
-                {{ $root.strings.pending_costings_title }}
+                {{ $root.strings.fullcostings.pending_costings_title }}
                 <br />
-                <small style="font-weight:200;">{{ $root.strings.pending_costings_subtitle }}</small>
+                <small
+                  style="font-weight:200;"
+                >{{ $root.strings.fullcostings.pending_costings_subtitle }}</small>
               </th>
             </tr>
           </tbody>
@@ -80,14 +82,14 @@ export default {
     qsCostingsTableHead: require("./QsCostingsTableHead.vue").default,
     qsCostingsTableFoot: require("./QsCostingsTableFoot.vue").default,
     qsCostingsMetaTable: require("./QsCostingsMetaTable.vue").default,
-    QsCostingsGroupRow: require("./QsCostingsGroupRow.vue").default
+    QsCostingsGroupRow: require("./QsCostingsGroupRow.vue").default,
   },
   computed: {
     groups() {
       return this.$root.payload
         ? collect(this.$root.payload.costings)
-            .reject(costing => costing.no_incremental_impact)
-            .filter(costing => {
+            .reject((costing) => costing.no_incremental_impact)
+            .filter((costing) => {
               // Reject pending
               return costing.wasPartOfScenarioWithId(
                 this.$root.currentUpdate.id
@@ -97,12 +99,12 @@ export default {
         : null;
     },
     noIncrementalImpactCostings() {
-      return collect(this.$root.payload.costings).filter(costing => {
+      return collect(this.$root.payload.costings).filter((costing) => {
         return costing.no_incremental_impact;
       }).items;
     },
     pendingCostings() {
-      return collect(this.$root.payload.costings).reject(costing => {
+      return collect(this.$root.payload.costings).reject((costing) => {
         let costingDuringLastUpdate = costing.wasPartOfScenarioWithId(
           this.$root.currentUpdate.id
         );
@@ -111,7 +113,7 @@ export default {
         }
         return costingDuringLastUpdate.id === costing.currentCostingUpdate.id;
       }).items;
-    }
-  }
+    },
+  },
 };
 </script>

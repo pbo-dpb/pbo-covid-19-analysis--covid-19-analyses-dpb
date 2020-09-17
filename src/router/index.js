@@ -13,7 +13,7 @@ const routes = [
     component: AnalysisHome
   },
   {
-    path: '/:language/fullcostingtable---tempname',
+    path: '/:language/fullcostingtable',
     name: 'FullCostingTable',
     component: () => import(/* webpackChunkName: "about" */ '../components/FullCostingsTable/FullCostingsTable.vue')
   }

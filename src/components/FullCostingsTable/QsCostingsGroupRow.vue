@@ -65,7 +65,10 @@ tr > td {
           <div v-if="comparedCostingUrl">
             <small class="archived">
               (
-              <a :href="comparedCostingUrl" target="_blank">{{ $root.strings.read_previous_pdf }}</a>)
+              <a
+                :href="comparedCostingUrl"
+                target="_blank"
+              >{{ $root.strings.fullcostings.read_previous_pdf }}</a>)
             </small>
           </div>
         </div>
@@ -76,7 +79,7 @@ tr > td {
           role="button"
           :active="displayWarning"
           :aria-pressed="displayWarning"
-          :aria-label="$root.strings.display_warning"
+          :aria-label="$root.strings.fullcostings.display_warning"
           @click="displayWarning=!displayWarning"
         >
           <i class="far fa-caret-square-down" v-if="!displayWarning"></i>
@@ -89,7 +92,7 @@ tr > td {
           role="button"
           :active="displayNote"
           :aria-pressed="displayNote"
-          :aria-label="$root.strings.display_note"
+          :aria-label="$root.strings.fullcostings.display_note"
           @click="displayNote=!displayNote"
         >
           <i class="far fa-sticky-note" v-if="!displayNote"></i>
@@ -97,9 +100,13 @@ tr > td {
         </div>
 
         <template v-if="shouldShowStatusBadges">
-          <costing-badge v-if="costing.isNew">{{ $root.strings.new }}</costing-badge>
-          <costing-badge v-if="costing.hasUpdatedArtifact">{{ $root.strings.updated_artifact }}</costing-badge>
-          <costing-badge v-if="costing.hasUpdatedNumbers">{{ $root.strings.updated_numbers }}</costing-badge>
+          <costing-badge v-if="costing.isNew">{{ $root.strings.fullcostings.new }}</costing-badge>
+          <costing-badge
+            v-if="costing.hasUpdatedArtifact"
+          >{{ $root.strings.fullcostings.updated_artifact }}</costing-badge>
+          <costing-badge
+            v-if="costing.hasUpdatedNumbers"
+          >{{ $root.strings.fullcostings.updated_numbers }}</costing-badge>
         </template>
       </div>
 

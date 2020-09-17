@@ -45,13 +45,13 @@ button {
   <div>
     <div :class="{'search-wrapper': shouldShowQuery}">
       <button v-if="!shouldShowQuery" @click="displaySearchField">
-        <i class="fas fa-search" :title="$root.strings.search_label"></i>
+        <i class="fas fa-search" :title="$root.strings.fullcostings.search_label"></i>
       </button>
       <input
         v-else
         type="search"
         v-model="$root.search.query"
-        :placeholder="$root.strings.search_label"
+        :placeholder="$root.strings.fullcostings.search_label"
       />
     </div>
   </div>
@@ -67,7 +67,7 @@ export default {
       this.$nextTick(() => {
         this.$el.querySelector("input").focus();
       });
-    }
-  }
+    },
+  },
 };
 </script>

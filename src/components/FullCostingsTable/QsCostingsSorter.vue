@@ -7,25 +7,25 @@
 </style>
 <template>
   <div class="sorter">
-    {{ $root.strings.sort_label }}
+    {{ $root.strings.fullcostings.sort_label }}
     <br />
     <label>
       <input type="radio" name="sortby" value="alphabetically" v-model="$root.sort" />
-      {{ $root.strings.sort_alpha }}
+      {{ $root.strings.fullcostings.sort_alpha }}
     </label>
     <label>
       <input type="radio" name="sortby" value="price" v-model="$root.sort" />
-      {{ $root.strings.sort_price }}
+      {{ $root.strings.fullcostings.sort_price }}
       <span
         v-if="$root.compareWithUpdate"
-      >({{ $root.strings.sort_price_descending }}; {{ $root.strings.current_scenario.toLowerCase() }})</span>
-      <span v-else>({{ $root.strings.sort_price_descending }})</span>
+      >({{ $root.strings.fullcostings.sort_price_descending }}; {{ $root.strings.fullcostings.current_scenario.toLowerCase() }})</span>
+      <span v-else>({{ $root.strings.fullcostings.sort_price_descending }})</span>
     </label>
   </div>
 </template>
 <script>
 export default {
   computed: {},
-  mounted() {}
+  mounted() {},
 };
 </script>
