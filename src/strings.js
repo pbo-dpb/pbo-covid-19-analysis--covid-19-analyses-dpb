@@ -1,5 +1,7 @@
 export default {
     en: {
+        "logo_alt": "PBO-DPB",
+        "title": "PBO's COVID-19 Analysis",
         "in_millions": "$ millions",
         "compare_label": "Select previous scenario for comparison",
         "total": "Total",
@@ -11,7 +13,6 @@ export default {
         "wti": "WTI (US$/barrel)",
         "budgetary_balance": "Budgetary Balance ($ billions)",
         "federal_debt": "Federal Debt (% of GDP)",
-        "full_simple_toggle_label": "Show Full Costing Table",
         "is_pbo_costing": "Costing by PBO",
         "no_incremental_impact": "PBO costings without incremental fiscal impact",
         "figcaption_line1": "Sources: Finance Canada and Parliamentary Budget Officer.",
@@ -35,6 +36,8 @@ export default {
 
     },
     fr: {
+        "logo_alt": "PBO-DPB",
+        "title": "COVID-19 : Analyses du DPB",
         "in_millions": "Millions de dollars",
         "compare_label": "Sélectionner un scénario précédent à des fins de comparaison",
         "total": "Total",
@@ -46,7 +49,6 @@ export default {
         "wti": "WTI ($ US/baril)",
         "budgetary_balance": "Solde budgétaire (milliards de dollars)",
         "federal_debt": "Dette fédérale (% du PIB)",
-        "full_simple_toggle_label": "Afficher le tableau complet d’estimations de coûts",
         "is_pbo_costing": "Évaluation par le DPB",
         "no_incremental_impact": "Évaluations de coût du DPB sans impact fiscal supplémentaire",
         "figcaption_line1": "Sources: Finance Canada et Directeur parlementaire du budget.",

@@ -19,7 +19,6 @@
 
       <template v-if="$root.payload && $root.payload.updates">
         <div class="tools">
-          <qs-costings-simple-full-toggle></qs-costings-simple-full-toggle>
           <qs-costings-search-widget></qs-costings-search-widget>
         </div>
         <qs-costings-full-table-options></qs-costings-full-table-options>
@@ -42,8 +41,7 @@ export default {
     qsCostingsFullTableOptions: require("./QsCostingsFullTableOptions.vue")
       .default,
     qsFullCostingsTable: require("./QsFullCostingsTable.vue").default,
-    qsCostingsSimpleFullToggle: require("./QsCostingsSimpleFullToggle.vue")
-      .default,
+
     qsSimpleCostingsTable: require("./QsSimpleCostingsTable.vue").default,
     qsCostingsSearchResultsTable: require("./QsCostingsSearchResultsTable.vue")
       .default,

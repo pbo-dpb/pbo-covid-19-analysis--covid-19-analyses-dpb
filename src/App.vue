@@ -1,11 +1,15 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/en">Home</router-link>|
-      <router-link to="/en/fullcostingtable---tempname">About</router-link>
-    </div>
+    <top-header></top-header>
     <router-view />
   </div>
 </template>
 
-
+<script>
+const topHeader = require("./components/TopHeader.vue").default;
+export default {
+  components: {
+    topHeader,
+  },
+};
+</script>
