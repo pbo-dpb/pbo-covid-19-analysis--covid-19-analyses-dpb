@@ -6,6 +6,10 @@
       type="warning"
     >{{ $root.strings.fullcostings.archived.description }}</notification-block>
 
+    <header class="mb-4">
+      <markdown-content :content="$root.strings.fullcostings.descriptor"></markdown-content>
+    </header>
+
     <div class="covidcostings">
       <qs-costings-loader v-if="$root.payload && !$root.payload.updates"></qs-costings-loader>
 

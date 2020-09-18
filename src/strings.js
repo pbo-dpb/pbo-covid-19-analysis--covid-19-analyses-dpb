@@ -3,10 +3,12 @@ export default {
         "logo_alt": "PBO-DPB",
         "title": "PBO's COVID-19 Analysis",
         "fullcostings": {
-            "title": "Full Costing Table (Archived)",
+            "title": "Full COVID-19 Costing Table",
+            "descriptor": "The table below summarizes the estimated cost of all COVID-19 response measures up to June 12, 2020. These measures are consistent with the PBO’s economic and fiscal scenario, published on June 18, 2020.",
             "archived": {
-                "title": "This table has been archived",
-                "description": "This table hasn't been updated since June 18th, 2020 and will not be updated anymore."
+                "title": "This page has been archived (2020-06-18)",
+                "label": "Archived (2020-06-18)",
+                "description": "This page has been archived and is provided for reference, research or recordkeeping purposes."
             },
             "in_millions": "$ millions",
             "compare_label": "Select previous scenario for comparison",
@@ -42,14 +44,19 @@ export default {
         },
         "home": {
             "title": "Home",
+            "descriptor": `The PBO’s COVID-19 analysis products are designed to assist Canadians and parliamentarians gauge the potential implications of the pandemic on the Canadian economy and the Government’s finances.
+
+The tool provides access to all the PBO’s COVID-19 Analysis, including:
+            
+-	The PBO’s COVID-19 Cost Estimates; 
+-	The PBO’s COVID-19 Pandemic and Oil Price Shocks Scenario Analysis Reports; and
+-	COVID-19 Costings Requested by Parliamentarians.”`,
         },
         "costingerp": {
             "title": "Costing of Canada’s COVID-19 Economic Response Plan",
-            "descriptor": `The Government’s COVID-19 Economic Response Plan was launched on March 13, 2020. It includes a range of new programs and is underpinned by new legislative authorities (Bills C-13, C-14 and C-15), which enact new benefits and programs and grant the Government extraordinary powers.
+            "descriptor": `The Government’s COVID-19 Economic Response Plan was launched on March 13, 2020.  It includes a range of new programs and is underpinned by new legislative authorities (Bills C-13, C-14, C-15 and C-20), which enact new benefits and programs and grant the Government extraordinary powers.
 
 Consistent with the Parliamentary Budget Officer (PBO)’s mandate to provide independent, non-partisan analysis to Parliament on matters of particular significance relating to the nation’s finances or economy, the PBO will prepare cost estimates of the components of the Government’s COVID-19 Economic Response Plan.
-
-The table below summarizes the estimated cost of all COVID-19 response measures up to June 12, 2020. These measures are consistent with PBO’s latest economic and fiscal scenario, published on June 18, 2020.
 
 Please view the latest listing of the PBO’s COVID-19 Cost Estimates by clicking on the links below.`,
 
@@ -60,9 +67,7 @@ Please view the latest listing of the PBO’s COVID-19 Cost Estimates by clickin
 
 This analysis provides a plausible illustrative scenario for the Canadian economy and the Government’s finances—it is not a forecast.
 
-The PBO’s non-partisan scenario analysis will be updated regularly as more data and information become available.
-
-Please view the PBO’s latest scenario analysis reports by clicking on the links below.`,
+Please view the PBO’s COVID-19 scenario analysis reports by clicking on the links below.`,
 
 
         },
@@ -79,9 +84,11 @@ Please view the latest cost estimates prepared by the PBO in response to request
         "logo_alt": "PBO-DPB",
         "title": "COVID-19 : Analyses du DPB",
         "fullcostings": {
-            "title": "Tableau complet d’estimations de coûts (Archivé)",
+            "title": "Tableau complet d’estimations de coûts",
+            "descriptor": "The table below summarizes the estimated cost of all COVID-19 response measures up to June 12, 2020. These measures are consistent with the PBO’s economic and fiscal scenario, published on June 18, 2020.",
             "archived": {
                 "title": "Ce tableau a été archivé",
+                "label": "Archivé [2020-06-18]",
                 "description": "Ce tableau n'a pas été mis à jour depuis le 18 juin 2020 et ne le sera plus dans le futur."
             },
             "in_millions": "Millions de dollars",
@@ -121,6 +128,14 @@ Please view the latest cost estimates prepared by the PBO in response to request
 
         "home": {
             "title": "Accueil",
+            "descriptor": `The PBO’s COVID-19 analysis products are designed to assist Canadians and parliamentarians gauge the potential implications of the pandemic on the Canadian economy and the Government’s finances.
+
+The tool provides access to all the PBO’s COVID-19 Analysis, including:
+            
+-	The PBO’s COVID-19 Cost Estimates; 
+-	The PBO’s COVID-19 Pandemic and Oil Price Shocks Scenario Analysis Reports; and
+-	COVID-19 Costings Requested by Parliamentarians.”`,
+
         },
 
         "costingerp": {

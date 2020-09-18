@@ -1,5 +1,5 @@
 <template>
-  <li class="bg-white odd:bg-gray-200 py-2">
+  <li class="bg-white py-2">
     <a class="flex flex-row items-center" :href="item.url">
       <div v-if="item.image" class="w-12 mr-2">
         <img class="shadow" :src="item.image" />

@@ -7,6 +7,6 @@ module.exports = {
   theme: {
     extend: {},
   },
-  variants: {},
+  variants: { backgroundColor: ['responsive', 'even', 'hover', 'focus'], },
   plugins: [require('@tailwindcss/typography')],
 }
