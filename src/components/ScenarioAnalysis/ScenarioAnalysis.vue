@@ -1,5 +1,5 @@
 <template>
   <div>
-    <markdown-content>{{ $root.strings.parliamentariansrequests.descriptor }}</markdown-content>
+    <markdown-content :content="$root.strings.scenarioanalysis.descriptor"></markdown-content>
   </div>
 </template>
