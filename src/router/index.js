@@ -18,6 +18,16 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../components/CostingEconomicResponsePlan/CostingEconomicResponsePlan.vue')
   },
   {
+    path: '/:language/scenario-analysis--analyse-de-scenario',
+    name: 'ScenarioAnalysis',
+    component: () => import(/* webpackChunkName: "about" */ '../components/ScenarioAnalysis/ScenarioAnalysis.vue')
+  },
+  {
+    path: '/:language/costings-requested-by-parliamentarians--etablissement-des-couts-demandes-des-parlementaires',
+    name: 'ParliamentariansRequests',
+    component: () => import(/* webpackChunkName: "about" */ '../components/ParliamentariansRequests/ParliamentariansRequests.vue')
+  },
+  {
     path: '/:language/fullcostingtable',
     name: 'FullCostingTable',
     component: () => import(/* webpackChunkName: "about" */ '../components/FullCostingsTable/FullCostingsTable.vue')

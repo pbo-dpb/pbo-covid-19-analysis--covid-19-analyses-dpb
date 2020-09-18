@@ -47,6 +47,24 @@ export default {
           },
         },
         {
+          title: this.$root.strings.scenarioanalysis.title,
+          destination: {
+            name: "ScenarioAnalysis",
+            params: {
+              language: this.$route.params.language,
+            },
+          },
+        },
+        {
+          title: this.$root.strings.parliamentariansrequests.title,
+          destination: {
+            name: "ParliamentariansRequests",
+            params: {
+              language: this.$route.params.language,
+            },
+          },
+        },
+        {
           title: this.$root.strings.fullcostings.title,
           destination: {
             name: "FullCostingTable",
