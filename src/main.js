@@ -16,6 +16,7 @@ const strings = require("./strings.js").default;
 Vue.component('costings-number', require('./components/QsCostingsNumber.vue').default);
 Vue.component('markdown-content', require('./components/MarkdownContent.vue').default);
 Vue.component('notification-block', require('./components/NotificationBlock.vue').default);
+Vue.component('list-view', require('./components/ListView.vue').default);
 
 new Vue({
   render: h => h(App),
