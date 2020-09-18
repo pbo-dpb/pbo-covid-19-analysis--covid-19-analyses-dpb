@@ -13,6 +13,11 @@ const routes = [
     component: AnalysisHome
   },
   {
+    path: '/:language/costing-economic-response-plan --etablissement-des-couts-plan-intervention-economique',
+    name: 'CostingERP',
+    component: () => import(/* webpackChunkName: "about" */ '../components/CostingEconomicResponsePlan/CostingEconomicResponsePlan.vue')
+  },
+  {
     path: '/:language/fullcostingtable',
     name: 'FullCostingTable',
     component: () => import(/* webpackChunkName: "about" */ '../components/FullCostingsTable/FullCostingsTable.vue')

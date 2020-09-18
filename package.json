@@ -11,12 +11,13 @@
     "watch": "vue-cli-service build --mode development --watch"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.2.0",
     "axios": "^0.19.2",
     "collect.js": "^4.27.3",
     "core-js": "^3.6.5",
     "get-value": "^3.0.1",
     "luxon": "^1.24.1",
-    "snarkdown": "^1.2.2",
+    "remarkable": "^2.0.1",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0"
   },

@@ -38,6 +38,15 @@ export default {
           },
         },
         {
+          title: this.$root.strings.costingerp.title,
+          destination: {
+            name: "CostingERP",
+            params: {
+              language: this.$route.params.language,
+            },
+          },
+        },
+        {
           title: this.$root.strings.fullcostings.title,
           destination: {
             name: "FullCostingTable",

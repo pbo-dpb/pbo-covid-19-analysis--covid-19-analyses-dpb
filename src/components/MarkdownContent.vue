@@ -1,31 +1,31 @@
-<style scoped>
-</style>
 <template>
-  <div v-html="markdownContent"></div>
+  <div class="prose max-w-none" v-html="markdownContent"></div>
 </template>
 
 <script>
-import snarkdown from "snarkdown";
+import { Remarkable } from "remarkable";
+
 import collect from "collect.js";
 
 export default {
   props: {
     content: {
-      type: String
-    }
+      type: String,
+    },
   },
   computed: {
     markdownContent() {
+      let md = new Remarkable();
       if (this.content) {
-        return snarkdown(this.content);
+        return md.render(this.content);
       }
       let slotsContent = collect(this.$slots.default).reduce((carry, node) => {
         return (carry ? carry + "\n" : "") + node.text;
       });
 
-      return snarkdown(slotsContent);
-    }
-  }
+      return md.render(slotsContent);
+    },
+  },
 };
 </script>
 
