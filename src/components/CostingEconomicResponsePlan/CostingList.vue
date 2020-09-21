@@ -22,8 +22,8 @@
 
     <!-- TODO Remove mockup -->
     <li class="grid grid-2 md:grid-cols-8 gap-2 py-2 md:py-1 even:bg-gray-100 items-center">
-      <div class="col-span-2 md:col-span-6 text-center md:text-left">
-        <component :is="'span'" class="font-medium">Other costings</component>
+      <div class="col-span-2 md:col-span-6 text-center md:text-left leading-tight">
+        <component :is="'span'" class="font-medium">Other COVID-19 costings</component>
         <div class="font-thin">Lorem ipsum... optional supplementary description of this item.</div>
       </div>
       <div

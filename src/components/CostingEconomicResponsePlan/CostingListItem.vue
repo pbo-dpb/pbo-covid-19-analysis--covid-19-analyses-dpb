@@ -7,6 +7,7 @@
         class="font-medium"
         :class="{'text-blue-800': url, 'underline': url}"
       >{{ costing['title_' + $root.language] }}</component>
+      <div v-if="subtitle" class="font-thin">{{ subtitle }}</div>
     </div>
     <div v-for="year in years" :key="year + costing.title_en" class="col-span-1 text-center">
       <div class="md:sr-only font-thin text-sm text-gray-700">{{ year }}</div>
@@ -35,6 +36,13 @@ export default {
       return this.update.id
         ? `https://www.pbo-dpb.gc.ca/web/default/files/Documents/LEG/${this.update.id}/${this.update.id}_${this.$root.language}.pdf`
         : null;
+    },
+
+    subtitle() {
+      if (this.update.id === "LEG-2021-015-S") {
+        return "This costing has no incremental fiscal impact.";
+      }
+      return null;
     },
   },
 };
