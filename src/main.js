@@ -4,8 +4,8 @@ Vue.config.productionTip = false
 import axios from "axios"
 import collect from "collect.js"
 
-import Costing from "./models/Costing.js"
-import Update from "./models/Update.js"
+import Costing from "./legacyModels/Costing.js"
+import Update from "./legacyModels/Update.js"
 
 import App from './App.vue'
 import './assets/tailwind.css'
