@@ -1,10 +1,19 @@
 {
-    "date": "2020-09-29",
+    "id": "RP-2021-027-S",
+    "publication_date": "2020-09-29",
     "title": {
-        "en": "EFO",
-        "fr": "EFO"
+        "en": "Economic and Fiscal Outlook – September 2020",
+        "fr": "Perspectives économiques et financières – Septembre 2020"
     },
-    "meta": {
+    "url": {
+        "en": "https://www.pbo-dpb.gc.ca/en/blog/news/RP-2021-027-S--economic-fiscal-outlook-september-2020--perspectives-economiques-financieres-septembre-2020",
+        "fr": "https://www.pbo-dpb.gc.ca/fr/blog/news/RP-2021-027-S--economic-fiscal-outlook-september-2020--perspectives-economiques-financieres-septembre-2020"
+    },
+    "poster": {
+        "en": "https://pbo-dpb.s3.ca-central-1.amazonaws.com/images/7cf000de2c3d22e6e7337e14c748f647fef4a1c7",
+        "fr": "https://pbo-dpb.s3.ca-central-1.amazonaws.com/images/04e180f534ebbd5434b4e42b9a2abb17f894d5e6"
+    },
+    "indicators": {
         "real_gdp_growth": {
             "2019": "1.7",
             "2020": "-6.8"
