@@ -1,0 +1,23 @@
+{
+  "title": {
+    "en": "COVID Response Fund: Work Sharing Program",
+    "fr": "Fonds de réponse à la COVID-19 : Programme de travail partagé"
+  },
+  "notes": [],
+  "subtitle": {
+    "en": "",
+    "fr": ""
+  },
+  "costings": [
+    {
+      "id": "LEG-2021-011-S",
+      "hasArtifacts": true,
+      "publication_date": "2020-06-16",
+      "cost": {
+        "20192020": 0,
+        "20202021": 336.43
+      }
+    }
+  ],
+  "hasFiscalImpact": true
+}

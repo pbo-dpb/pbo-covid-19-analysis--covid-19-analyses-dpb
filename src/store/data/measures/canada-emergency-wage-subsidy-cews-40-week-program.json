@@ -1,0 +1,23 @@
+{
+  "title": {
+    "en": "Canada Emergency Wage Subsidy (CEWS) – 40-week program",
+    "fr": "Subvention salariale d’urgence du Canada (SSUC) – Programme de 40 semaines"
+  },
+  "notes": [],
+  "subtitle": {
+    "en": "",
+    "fr": ""
+  },
+  "costings": [
+    {
+      "id": "LEG-2021-035-S",
+      "hasArtifacts": true,
+      "publication_date": "2020-06-16",
+      "cost": {
+        "20192020": 0,
+        "20202021": 59223
+      }
+    }
+  ],
+  "hasFiscalImpact": true
+}

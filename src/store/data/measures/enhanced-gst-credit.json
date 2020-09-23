@@ -1,0 +1,23 @@
+{
+  "title": {
+    "en": "Enhanced GST Credit",
+    "fr": "Bonification du crédit pour la TPS"
+  },
+  "notes": [],
+  "subtitle": {
+    "en": "",
+    "fr": ""
+  },
+  "costings": [
+    {
+      "id": "LEG-2021-001-S",
+      "hasArtifacts": true,
+      "publication_date": "2020-06-16",
+      "cost": {
+        "20192020": 0,
+        "20202021": 5665
+      }
+    }
+  ],
+  "hasFiscalImpact": true
+}

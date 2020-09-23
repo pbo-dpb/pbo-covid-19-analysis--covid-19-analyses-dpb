@@ -1,0 +1,23 @@
+{
+  "title": {
+    "en": "Additional Lending Capacity for Farm Credit Canada (FCC)",
+    "fr": "Accroissement de la capacité de prêt de Financement agricole Canada (FAC)"
+  },
+  "notes": [],
+  "subtitle": {
+    "en": "",
+    "fr": ""
+  },
+  "costings": [
+    {
+      "id": "LEG-2021-010-S",
+      "hasArtifacts": true,
+      "publication_date": "2020-06-16",
+      "cost": {
+        "20192020": 0,
+        "20202021": -96.52
+      }
+    }
+  ],
+  "hasFiscalImpact": true
+}

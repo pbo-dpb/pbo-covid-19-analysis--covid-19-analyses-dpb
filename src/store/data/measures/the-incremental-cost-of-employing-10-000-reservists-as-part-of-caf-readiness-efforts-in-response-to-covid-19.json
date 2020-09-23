@@ -1,0 +1,23 @@
+{
+  "title": {
+    "en": "The Incremental Cost of Employing 10,000 Reservists as Part of CAF Readiness Efforts in Response to COVID-19",
+    "fr": "Coût supplémentaire lié à l’emploi de 10 000 réservistes dans le cadre des activités de préparation des Forces armées canadiennes face à la COVID-19"
+  },
+  "notes": [],
+  "subtitle": {
+    "en": "",
+    "fr": ""
+  },
+  "costings": [
+    {
+      "id": "LEG-2021-015-S",
+      "hasArtifacts": true,
+      "publication_date": "2020-06-16",
+      "cost": {
+        "20192020": 0,
+        "20202021": 456
+      }
+    }
+  ],
+  "hasFiscalImpact": true
+}

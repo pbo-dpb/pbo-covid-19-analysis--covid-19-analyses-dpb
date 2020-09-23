@@ -1,0 +1,23 @@
+{
+  "title": {
+    "en": "Co-Lending Program for Small and Medium Sized Enterprises",
+    "fr": "Programme de prêts conjoints pour les petites et moyennes entreprises"
+  },
+  "notes": [],
+  "subtitle": {
+    "en": "",
+    "fr": ""
+  },
+  "costings": [
+    {
+      "id": "LEG-2021-009-S",
+      "hasArtifacts": true,
+      "publication_date": "2020-06-16",
+      "cost": {
+        "20192020": 0,
+        "20202021": -388.96
+      }
+    }
+  ],
+  "hasFiscalImpact": true
+}

@@ -1,0 +1,23 @@
+{
+  "title": {
+    "en": "Funding for Indigenous Businesses and Aboriginal Financial Institutions",
+    "fr": "Financement des entreprises autochtones et aux institutions financières autochtones"
+  },
+  "notes": [],
+  "subtitle": {
+    "en": "",
+    "fr": ""
+  },
+  "costings": [
+    {
+      "id": "LEG-2021-028-S",
+      "hasArtifacts": true,
+      "publication_date": "2020-06-16",
+      "cost": {
+        "20192020": 0,
+        "20202021": 75
+      }
+    }
+  ],
+  "hasFiscalImpact": true
+}

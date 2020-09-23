@@ -1,0 +1,23 @@
+{
+  "title": {
+    "en": "Funding for the Air Transportation Sector",
+    "fr": "Financement du secteur du transport aérien"
+  },
+  "notes": [],
+  "subtitle": {
+    "en": "",
+    "fr": ""
+  },
+  "costings": [
+    {
+      "id": "LEG-2021-007-S",
+      "hasArtifacts": true,
+      "publication_date": "2020-06-16",
+      "cost": {
+        "20192020": 15.16,
+        "20202021": 136.42
+      }
+    }
+  ],
+  "hasFiscalImpact": true
+}

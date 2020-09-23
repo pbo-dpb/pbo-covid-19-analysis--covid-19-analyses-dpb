@@ -1,0 +1,23 @@
+{
+  "title": {
+    "en": "Canada Student Loan Payments",
+    "fr": "Remboursement des prêts d’études canadiens"
+  },
+  "notes": [],
+  "subtitle": {
+    "en": "",
+    "fr": ""
+  },
+  "costings": [
+    {
+      "id": "LEG-2021-005-S",
+      "hasArtifacts": true,
+      "publication_date": "2020-06-16",
+      "cost": {
+        "20192020": 0,
+        "20202021": 157
+      }
+    }
+  ],
+  "hasFiscalImpact": true
+}

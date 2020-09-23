@@ -1,0 +1,23 @@
+{
+  "title": {
+    "en": "Canada Emergency Business Account (CEBA)",
+    "fr": "Compte d’urgence pour les entreprises canadiennes (CUEA)"
+  },
+  "notes": [],
+  "subtitle": {
+    "en": "",
+    "fr": ""
+  },
+  "costings": [
+    {
+      "id": "LEG-2021-033-S",
+      "hasArtifacts": true,
+      "publication_date": "2020-06-16",
+      "cost": {
+        "20192020": 0,
+        "20202021": 9335
+      }
+    }
+  ],
+  "hasFiscalImpact": true
+}

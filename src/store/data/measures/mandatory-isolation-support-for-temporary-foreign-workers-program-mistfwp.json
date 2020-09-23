@@ -1,0 +1,23 @@
+{
+  "title": {
+    "en": "Mandatory Isolation Support for Temporary Foreign Workers Program (MISTFWP)",
+    "fr": "Programme d’aide pour l’isolement obligatoire des travailleurs étrangers temporaires (PAIOTET)"
+  },
+  "notes": [],
+  "subtitle": {
+    "en": "",
+    "fr": ""
+  },
+  "costings": [
+    {
+      "id": "LEG-2021-025-S",
+      "hasArtifacts": true,
+      "publication_date": "2020-06-16",
+      "cost": {
+        "20192020": 0,
+        "20202021": 59.5
+      }
+    }
+  ],
+  "hasFiscalImpact": true
+}

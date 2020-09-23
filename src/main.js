@@ -1,4 +1,6 @@
 import Vue from 'vue'
+import Vuex from 'vuex'
+Vue.use(Vuex)
 Vue.config.productionTip = false
 
 import axios from "axios"
@@ -10,6 +12,7 @@ import Update from "./legacyModels/Update.js"
 import App from './App.vue'
 import './assets/tailwind.css'
 import router from './router'
+import store from './store'
 
 const strings = require("./strings.js").default;
 
@@ -67,8 +70,10 @@ new Vue({
   },
 
   router,
+  store,
 
   mounted() {
+    debugger;
     const payloadUrl = process.env.VUE_APP_FEED_URL;
 
     const cacheBuster = Math.ceil((new Date()).getTime() / 10000) * 10000;

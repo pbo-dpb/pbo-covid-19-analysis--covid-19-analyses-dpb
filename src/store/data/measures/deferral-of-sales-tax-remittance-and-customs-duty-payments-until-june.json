@@ -1,0 +1,23 @@
+{
+  "title": {
+    "en": "Deferral of Sales Tax Remittance and Customs Duty Payments until June",
+    "fr": "Report des versements de la taxe de vente et des droits de douane jusqu’en juin"
+  },
+  "notes": [],
+  "subtitle": {
+    "en": "",
+    "fr": ""
+  },
+  "costings": [
+    {
+      "id": "LEG-2021-016-S",
+      "hasArtifacts": true,
+      "publication_date": "2020-06-16",
+      "cost": {
+        "20192020": 0,
+        "20202021": 74.63
+      }
+    }
+  ],
+  "hasFiscalImpact": true
+}

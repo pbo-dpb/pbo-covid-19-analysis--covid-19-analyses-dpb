@@ -1,0 +1,23 @@
+{
+  "title": {
+    "en": "Suspension of Audit Activities",
+    "fr": "Suspension des activités de vérification"
+  },
+  "notes": [],
+  "subtitle": {
+    "en": "",
+    "fr": ""
+  },
+  "costings": [
+    {
+      "id": "LEG-2021-024-S",
+      "hasArtifacts": true,
+      "publication_date": "2020-06-16",
+      "cost": {
+        "20192020": 0,
+        "20202021": 656.51
+      }
+    }
+  ],
+  "hasFiscalImpact": true
+}

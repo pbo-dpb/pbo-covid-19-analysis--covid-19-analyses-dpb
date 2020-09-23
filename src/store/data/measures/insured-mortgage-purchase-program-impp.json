@@ -1,0 +1,29 @@
+{
+  "title": {
+    "en": "Insured Mortgage Purchase Program (IMPP)",
+    "fr": "Programme d’achat de prêts hypothécaires assurés (PAPHA)"
+  },
+  "notes": [
+    {
+      "en": "Revised estimate based on lower assumed uptake. Assumed lower IMPP uptake results in both lower gross public debt charges and offsetting reductions to other revenues (see [details]( https://www.cmhc-schl.gc.ca/en/finance-and-investing/insured-mortgage-purchase-program) of past IMPP Purchase Operations).",
+      "fr": "L’estimation a été révisée en fonction d'un taux d'utilisation supposé plus faible. La baisse supposée de l'utilisation du PAPHA se traduit par une diminution des charges de la dette publique brute et des réductions compensatoires des autres recettes (voir [les détails]( https://www.cmhc-schl.gc.ca/fr/finance-and-investing/insured-mortgage-purchase-program) des opérations d'achat passées du PAPHA).",
+      "type": "info"
+    }
+  ],
+  "subtitle": {
+    "en": "",
+    "fr": ""
+  },
+  "costings": [
+    {
+      "id": "LEG-2021-002-S",
+      "hasArtifacts": true,
+      "publication_date": "2020-06-16",
+      "cost": {
+        "20192020": -13,
+        "20202021": -2
+      }
+    }
+  ],
+  "hasFiscalImpact": true
+}

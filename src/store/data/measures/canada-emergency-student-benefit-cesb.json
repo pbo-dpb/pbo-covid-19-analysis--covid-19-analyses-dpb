@@ -1,0 +1,23 @@
+{
+  "title": {
+    "en": "Canada Emergency Student Benefit (CESB)",
+    "fr": "Prestation canadienne d’urgence pour les étudiants (PCUE)"
+  },
+  "notes": [],
+  "subtitle": {
+    "en": "",
+    "fr": ""
+  },
+  "costings": [
+    {
+      "id": "LEG-2021-027-S",
+      "hasArtifacts": true,
+      "publication_date": "2020-06-16",
+      "cost": {
+        "20192020": 0,
+        "20202021": 5886
+      }
+    }
+  ],
+  "hasFiscalImpact": true
+}

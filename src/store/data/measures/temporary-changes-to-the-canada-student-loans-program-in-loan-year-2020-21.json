@@ -1,0 +1,23 @@
+{
+  "title": {
+    "en": "Temporary Changes to the Canada Student Loans Program in Loan Year 2020-21",
+    "fr": "Modifications temporaires du Programme canadien de prêts aux étudiants pendant l’année de prêt 2020-2021"
+  },
+  "notes": [],
+  "subtitle": {
+    "en": "",
+    "fr": ""
+  },
+  "costings": [
+    {
+      "id": "LEG-2021-023-S",
+      "hasArtifacts": true,
+      "publication_date": "2020-06-16",
+      "cost": {
+        "20192020": 0,
+        "20202021": 1370
+      }
+    }
+  ],
+  "hasFiscalImpact": true
+}

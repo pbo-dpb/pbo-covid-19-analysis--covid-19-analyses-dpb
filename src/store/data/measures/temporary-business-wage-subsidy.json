@@ -1,0 +1,23 @@
+{
+  "title": {
+    "en": "Temporary Business Wage Subsidy",
+    "fr": "Subvention salariale temporaire pour les entreprises"
+  },
+  "notes": [],
+  "subtitle": {
+    "en": "",
+    "fr": ""
+  },
+  "costings": [
+    {
+      "id": "LEG-2021-017-S",
+      "hasArtifacts": true,
+      "publication_date": "2020-06-16",
+      "cost": {
+        "20192020": 0,
+        "20202021": 1344
+      }
+    }
+  ],
+  "hasFiscalImpact": true
+}
