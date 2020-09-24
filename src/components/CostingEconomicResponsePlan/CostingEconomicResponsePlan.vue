@@ -1,10 +1,12 @@
 <template>
   <div>
-    <markdown-content :content="$root.strings.costingerp.descriptor"></markdown-content>
+    <markdown-content
+      :content="$root.strings.costingerp.descriptor"
+    ></markdown-content>
     <list-view :items="efos"></list-view>
 
     <br />
-    <costing-list></costing-list>
+    <measures-list></measures-list>
     <costing-total></costing-total>
     <costing-indicators></costing-indicators>
   </div>
@@ -12,7 +14,7 @@
 <script>
 export default {
   components: {
-    costingList: require("./CostingList").default,
+    measuresList: require("./MeasuresList").default,
     costingTotal: require("./CostingTotal").default,
     costingIndicators: require("./CostingIndicators").default,
   },

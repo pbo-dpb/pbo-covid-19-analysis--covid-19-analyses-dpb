@@ -20,11 +20,11 @@
     </li>
     <!-- End of todo -->
 
-    <costing-list-item
-      v-for="costing in costings"
-      :key="costing.title_en"
-      :costing="costing"
-    ></costing-list-item>
+    <measures-list-item
+      v-for="measure in measures"
+      :key="measure.title_en"
+      :measure="measure"
+    ></measures-list-item>
 
     <!-- TODO Remove mockup -->
     <li
@@ -56,17 +56,18 @@
 import collect from "collect.js";
 export default {
   components: {
-    costingListItem: require("./CostingListItem").default,
+    measuresListItem: require("./MeasuresListItem/MeasuresListItem").default,
   },
   computed: {
-    costings() {
-      return this.$root.payload
+    measures() {
+      return collect(this.$store.state.measures).items;
+      /**return this.$root.payload
         ? collect(this.$root.payload.costings)
             .filter((costing) => {
               return costing.currentCostingUpdate.id;
             })
             .sortBy("title_" + this.$root.language).items
-        : null;
+        : null;*/
     },
   },
 };

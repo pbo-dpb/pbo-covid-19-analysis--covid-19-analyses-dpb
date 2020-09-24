@@ -74,7 +74,6 @@ new Vue({
 
   mounted() {
 
-    debugger
 
     const payloadUrl = process.env.VUE_APP_FEED_URL;
 
