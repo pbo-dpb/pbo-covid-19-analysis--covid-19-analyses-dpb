@@ -73,7 +73,9 @@ new Vue({
   store,
 
   mounted() {
-    debugger;
+
+    debugger
+
     const payloadUrl = process.env.VUE_APP_FEED_URL;
 
     const cacheBuster = Math.ceil((new Date()).getTime() / 10000) * 10000;
