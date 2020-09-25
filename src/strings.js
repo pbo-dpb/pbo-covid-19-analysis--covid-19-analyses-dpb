@@ -3,7 +3,7 @@ export default {
         "logo_alt": "PBO-DPB",
         "title": "PBO's COVID-19 Analysis",
         "fullcostings": {
-            "title": "Full COVID-19 Costing Table",
+            "title": "Scenario Analysis",
             "descriptor": "The table below summarizes the estimated cost of all COVID-19 response measures up to June 12, 2020. These measures are consistent with the PBO’s economic and fiscal scenario, published on June 18, 2020.",
             "archived": {
                 "title": "This page has been archived (2020-06-18)",
@@ -54,7 +54,7 @@ The tool provides access to all the PBO’s COVID-19 Analysis, including:
 -	COVID-19 Costings Requested by Parliamentarians.”`,
         },
         "costingerp": {
-            "title": "Costing of Canada’s COVID-19 Economic Response Plan",
+            "title": "Cost Estimates",
             "descriptor": `The Government’s COVID-19 Economic Response Plan was launched on March 13, 2020.  It includes a range of new programs and is underpinned by new legislative authorities (Bills C-13, C-14, C-15 and C-20), which enact new benefits and programs and grant the Government extraordinary powers.
 
 Consistent with the Parliamentary Budget Officer (PBO)’s mandate to provide independent, non-partisan analysis to Parliament on matters of particular significance relating to the nation’s finances or economy, the PBO will prepare cost estimates of the components of the Government’s COVID-19 Economic Response Plan.
@@ -95,7 +95,7 @@ Please view the latest cost estimates prepared by the PBO in response to request
         "logo_alt": "PBO-DPB",
         "title": "COVID-19 : Analyses du DPB",
         "fullcostings": {
-            "title": "Tableau complet d’estimations de coûts",
+            "title": "Analyse de scénario",
             "descriptor": "The table below summarizes the estimated cost of all COVID-19 response measures up to June 12, 2020. These measures are consistent with the PBO’s economic and fiscal scenario, published on June 18, 2020.",
             "archived": {
                 "title": "Ce tableau a été archivé",

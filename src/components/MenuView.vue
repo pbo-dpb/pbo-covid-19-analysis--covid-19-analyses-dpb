@@ -10,19 +10,33 @@
         <li
           @click="navigate"
           class="px-4 xl:px-2 py-2 xl:mr-0 xl:-ml-2 xl:-mr-2 cursor-pointer mb-2 bg-gray-100 hover:bg-gray-200"
-          :class="{'bg-gray-700': isActiveLink(link), 'hover:bg-gray-700': isActiveLink(link),  'text-base':($route.params.language === 'en'), 'text-sm': ($route.params.language === 'fr')}"
+          :class="{
+            'bg-gray-700': isActiveLink(link),
+            'hover:bg-gray-700': isActiveLink(link),
+            'text-base': $route.params.language === 'en',
+            'text-sm': $route.params.language === 'fr',
+          }"
         >
           <a
             class="font-medium hover:underline"
-            :class="{'text-blue-800': !isActiveLink(link), 'text-white': isActiveLink(link),}"
+            :class="{
+              'text-blue-800': !isActiveLink(link),
+              'text-white': isActiveLink(link),
+            }"
             :href="href"
             @click="navigate"
-          >{{ link.title }}</a>
+            >{{ link.title }}</a
+          >
           <div
             v-if="link.subtitle"
             class="font-thin text-sm italic"
-            :class="{'text-gray-700': !isActiveLink(link), 'text-blue-100': isActiveLink(link),}"
-          >{{ link.subtitle }}</div>
+            :class="{
+              'text-gray-700': !isActiveLink(link),
+              'text-blue-100': isActiveLink(link),
+            }"
+          >
+            {{ link.subtitle }}
+          </div>
         </li>
       </router-link>
     </ul>
@@ -52,7 +66,7 @@ export default {
             },
           },
         },
-        {
+        /*{
           title: this.$root.strings.scenarioanalysis.title,
           destination: {
             name: "ScenarioAnalysis",
@@ -60,7 +74,7 @@ export default {
               language: this.$route.params.language,
             },
           },
-        },
+        },*/
         {
           title: this.$root.strings.parliamentariansrequests.title,
           destination: {

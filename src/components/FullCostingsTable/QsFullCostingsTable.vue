@@ -28,7 +28,9 @@
       <table class="w-full mb-8">
         <tbody>
           <tr>
-            <th style="text-align:left;">{{ $root.strings.fullcostings.no_incremental_impact }}</th>
+            <th style="text-align: left">
+              {{ $root.strings.fullcostings.no_incremental_impact }}
+            </th>
           </tr>
         </tbody>
         <tr
@@ -39,36 +41,21 @@
         ></tr>
       </table>
 
-      <figcaption style="text-align:left;font-size: 0.8em;caption-side: bottom;" class="mb-8">
-        <markdown-content :content="$root.strings.fullcostings.figcaption_line1"></markdown-content>
-        <markdown-content :content="$root.strings.fullcostings.figcaption_line2"></markdown-content>
+      <figcaption
+        style="text-align: left; font-size: 0.8em; caption-side: bottom"
+        class="mb-8 text-sm"
+      >
+        <markdown-content
+          :content="$root.strings.fullcostings.figcaption_line1"
+        ></markdown-content>
+        <markdown-content
+          :content="$root.strings.fullcostings.figcaption_line2"
+        ></markdown-content>
         <br />
-        <markdown-content :content="$root.strings.fullcostings.figcaption_line3"></markdown-content>
+        <markdown-content
+          :content="$root.strings.fullcostings.figcaption_line3"
+        ></markdown-content>
       </figcaption>
-
-      <template v-if="pendingCostings && pendingCostings.length">
-        <hr />
-
-        <table class="w-full mb-8">
-          <tbody>
-            <tr>
-              <th style="text-align:left;">
-                {{ $root.strings.fullcostings.pending_costings_title }}
-                <br />
-                <small
-                  style="font-weight:200;"
-                >{{ $root.strings.fullcostings.pending_costings_subtitle }}</small>
-              </th>
-            </tr>
-          </tbody>
-          <tr
-            is="qs-costings-group-row"
-            v-for="costing in pendingCostings"
-            :key="costing.title_en"
-            :costing="costing"
-          ></tr>
-        </table>
-      </template>
     </template>
   </div>
 </template>
