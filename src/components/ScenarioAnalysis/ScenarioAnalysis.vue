@@ -1,7 +1,9 @@
 <template>
   <div>
     <header class="mb-4">
-      <markdown-content :content="$root.strings.scenarioanalysis.descriptor"></markdown-content>
+      <markdown-content
+        :content="$root.strings.scenarioanalysis.descriptor"
+      ></markdown-content>
     </header>
     <list-view v-if="items" :items="items"></list-view>
   </div>
@@ -19,7 +21,7 @@ export default {
         return {
           url: req["url_" + this.$root.language],
           title: req["title_" + this.$root.language],
-          date: new Date(req.date),
+          date: new Date(req.date + "T09:00:00.000Z"),
           image: req["image_" + this.$root.language],
         };
       }).items;

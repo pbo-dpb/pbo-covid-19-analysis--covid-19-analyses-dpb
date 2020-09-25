@@ -34,7 +34,7 @@
           >Other COVID-19 costings</component
         >
         <div class="font-thin">
-          Lorem ipsum... optional supplementary description of this item.
+          Includes other COVID-19 costing measures as of the September EFO
         </div>
       </div>
       <div

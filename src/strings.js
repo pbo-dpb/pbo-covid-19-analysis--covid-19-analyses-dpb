@@ -21,6 +21,7 @@ export default {
             "wti": "WTI (US$/barrel)",
             "budgetary_balance": "Budgetary Balance ($ billions)",
             "federal_debt": "Federal Debt (% of GDP)",
+
             "is_pbo_costing": "Costing by PBO",
             "no_incremental_impact": "PBO costings without incremental fiscal impact",
             "figcaption_line1": "Sources: Finance Canada and Parliamentary Budget Officer.",
@@ -64,7 +65,12 @@ Please view the latest listing of the PBO’s COVID-19 Cost Estimates by clickin
                 "20202021": "2020-21",
             },
             "costing_date_label": "PBO costing",
-
+            "general_notes": "PBO Cost Estimates may not match previously published costing notes as the estimates were revised based on the 2020 September Economic and Fiscal Outlook. A positive (negative) number increases (reduces) the budgetary deficit. Totals may not add due to rounding.",
+            "indicators": {
+                "header_title": "Economic and Fiscal Indicators",
+                "header_note": "Economic and Fiscal Indicators are as of the September EFO. Economic indicators are on a calendar year basis.",
+                "covid_measures": "Total COVID-19 Measures included in the EFO ($ billions)",
+            }
         },
         "scenarioanalysis": {
             "title": "Scenario Analysis",
@@ -157,6 +163,13 @@ Vous pouvez consulter la plus récente liste des estimations de coûts relatifs 
                 "20202021": "2020-2021",
             },
             "costing_date_label": "Évaluation du coût par le DPB",
+
+            "general_notes": "Les estimations de coûts du DPB peuvent ne pas correspondre aux notes de coûts publiées précédemment car les estimations ont été révisées sur la base des Perspectives économiques et financières de septembre 2020. Un nombre positif (négatif) indique une augmentation (réduction) du déficit budgétaire. Les chiffres ayant été arrondis, les totaux peuvent ne pas correspondre.",
+
+            "indicators": {
+                "header_note": "Economic and Fiscal Indicators are as of the September EFO. Economic indicators are on a calendar year basis.",
+                "covid_measures": "Total COVID-19 Measures included in the EFO ($ billions)",
+            }
         },
         "scenarioanalysis": {
             "title": "Analyse de scénario",

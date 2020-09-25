@@ -6,9 +6,11 @@
     <list-view :items="efos"></list-view>
 
     <br />
+    <costing-indicators></costing-indicators>
     <measures-list></measures-list>
     <costing-total></costing-total>
-    <costing-indicators></costing-indicators>
+
+    <small>{{ $root.strings.costingerp.general_notes }}</small>
   </div>
 </template>
 <script>
@@ -25,7 +27,7 @@ export default {
           title: "Economic and Fiscal Outlook",
           url:
             "https://www.pbo-dpb.gc.ca/en/blog/news/RP-2021-027-S--economic-fiscal-outlook-september-2020--perspectives-economiques-financieres-septembre-2020",
-          date: new Date("2020-09-29 01:01:01"),
+          date: new Date("2020-09-29" + "T09:00:00.000Z"),
           image:
             "https://pbo-dpb.s3.ca-central-1.amazonaws.com/images/7b5393d01473a0408e33e0308b25c2c6abf0b533",
         },
