@@ -59,6 +59,11 @@ The tool provides access to all the PBO’s COVID-19 Analysis, including:
 Consistent with the Parliamentary Budget Officer (PBO)’s mandate to provide independent, non-partisan analysis to Parliament on matters of particular significance relating to the nation’s finances or economy, the PBO will prepare cost estimates of the components of the Government’s COVID-19 Economic Response Plan.
 
 Please view the latest listing of the PBO’s COVID-19 Cost Estimates by clicking on the links below.`,
+            "costed_years": {
+                '20192020': "2019-20",
+                "20202021": "2020-21",
+            },
+            "costing_date_label": "PBO costing",
 
         },
         "scenarioanalysis": {
@@ -147,6 +152,11 @@ Conformément à son mandat, qui consiste à fournir au Parlement des analyses n
 Le tableau ci-dessous résume le coût estimé de toutes les mesures d'intervention du COVID-19 jusqu'au 12 juin 2020. Ces mesures sont conformes au dernier scénario économique et financière du DPB, publié le 18 juin 2020.
 
 Vous pouvez consulter la plus récente liste des estimations de coûts relatifs à la COVID-19 en cliquant sur les liens suivants.`,
+            "costed_years": {
+                '20192020': "2019-2020",
+                "20202021": "2020-2021",
+            },
+            "costing_date_label": "Évaluation du coût par le DPB",
         },
         "scenarioanalysis": {
             "title": "Analyse de scénario",

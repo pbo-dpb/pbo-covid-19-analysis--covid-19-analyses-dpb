@@ -3,9 +3,16 @@
     <table class="table-fixed w-full">
       <thead>
         <tr>
-          <th class="w-1/2 p-2">Date of PBO costing</th>
-          <th class="w-1/4 p-2">2019-2020</th>
-          <th class="w-1/4 p-2">2020-2021</th>
+          <th class="w-1/2 px-2 py-1">
+            {{ $root.strings.costingerp.costing_date_label }}
+          </th>
+          <th
+            v-for="localizedCostedYear in $root.strings.costingerp.costed_years"
+            :key="'costing_header_' + localizedCostedYear"
+            class="w-1/4 px-2 py-1 text-center"
+          >
+            {{ localizedCostedYear }}
+          </th>
         </tr>
       </thead>
       <tbody>

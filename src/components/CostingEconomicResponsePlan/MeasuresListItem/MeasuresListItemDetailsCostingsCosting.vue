@@ -9,8 +9,13 @@
         })
       }}
     </td>
-    <td class="border p-2">123</td>
-    <td class="border p-2">456</td>
+    <td
+      v-for="cost in costing.cost.localizedCost($root.language)"
+      :key="costing.id + cost.year"
+      class="border px-2 py-1 text-center"
+    >
+      <costings-number :value="cost.cost" />
+    </td>
   </tr>
 </template>
 <script>
