@@ -1,6 +1,5 @@
 <template>
   <ul class="divide-y divide-gray-200">
-    <!-- TODO Remove mockup -->
     <li
       class="grid grid-2 md:grid-cols-8 gap-2 py-2 md:py-1 even:bg-gray-100 invisible md:visible"
       aria-hidden="true"
@@ -10,15 +9,15 @@
           {{ $root.strings.fullcostings.in_millions }}
         </div>
       </div>
+
       <div
-        v-for="year in ['2019-2020', '2020-2021']"
-        :key="year + 'othermeasures'"
+        v-for="localizedCostedYear in $root.strings.costingerp.costed_years"
+        :key="'costing_header_' + localizedCostedYear"
         class="col-span-1 text-center"
       >
-        <div class="font-bold text-gray-700">{{ year }}</div>
+        <div class="font-bold text-gray-700">{{ localizedCostedYear }}</div>
       </div>
     </li>
-    <!-- End of todo -->
 
     <measures-list-item
       v-for="measure in measures"

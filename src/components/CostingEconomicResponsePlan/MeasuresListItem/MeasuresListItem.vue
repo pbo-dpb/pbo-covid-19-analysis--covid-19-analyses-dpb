@@ -1,9 +1,6 @@
 <template>
   <li class="py-2 md:py-1">
-    <div
-      class="grid grid-2 md:grid-cols-8 gap-2"
-      :class="{ 'items-center': !showDetails }"
-    >
+    <div class="grid grid-2 md:grid-cols-8 gap-2 items-center">
       <div class="col-span-2 md:col-span-6 text-center md:text-left">
         <div
           role="switch"
