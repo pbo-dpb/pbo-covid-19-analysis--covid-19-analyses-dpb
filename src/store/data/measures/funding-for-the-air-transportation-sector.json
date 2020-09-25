@@ -10,12 +10,30 @@
   },
   "costings": [
     {
-      "id": "LEG-2021-007-S",
-      "hasArtifacts": true,
-      "publication_date": "2020-06-16",
+      "id": "XXLEG-2021-007-S",
+      "hasArtifacts": false,
+      "publication_date": "2020-06-18",
       "cost": {
         "20192020": 15.16,
         "20202021": 136.42
+      }
+    },
+    {
+      "id": "XLEG-2021-007-S",
+      "hasArtifacts": false,
+      "publication_date": "2020-04-30",
+      "cost": {
+        "20192020": 13.7,
+        "20202021": 123
+      }
+    },
+    {
+      "id": "LEG-2021-007-S",
+      "hasArtifacts": true,
+      "publication_date": "2020-04-09",
+      "cost": {
+        "20192020": 11.9,
+        "20202021": 107
       }
     }
   ],

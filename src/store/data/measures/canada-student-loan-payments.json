@@ -1,6 +1,6 @@
 {
   "title": {
-    "en": "Canada Student Loan Payments",
+    "en": "Moratorium on the Repayment of Canada Student Loans",
     "fr": "Remboursement des prêts d’études canadiens"
   },
   "notes": [],
@@ -10,12 +10,30 @@
   },
   "costings": [
     {
-      "id": "LEG-2021-005-S",
-      "hasArtifacts": true,
-      "publication_date": "2020-06-16",
+      "id": "XXLEG-2021-005-S",
+      "hasArtifacts": false,
+      "publication_date": "2020-06-18",
       "cost": {
         "20192020": 0,
         "20202021": 157
+      }
+    },
+    {
+      "id": "XLEG-2021-005-S",
+      "hasArtifacts": false,
+      "publication_date": "2020-04-20",
+      "cost": {
+        "20192020": 0,
+        "20202021": 158.6
+      }
+    },
+    {
+      "id": "LEG-2021-005-S",
+      "hasArtifacts": true,
+      "publication_date": "2020-04-09",
+      "cost": {
+        "20192020": 0,
+        "20202021": 150
       }
     }
   ],

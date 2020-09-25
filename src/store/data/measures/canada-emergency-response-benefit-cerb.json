@@ -1,0 +1,59 @@
+{
+  "title": {
+    "en": "Canada Emergency Response Benefit (CERB)",
+    "fr": "Prestation canadienne d’urgence (PCU)"
+  },
+  "notes": [],
+  "subtitle": {
+    "en": "",
+    "fr": ""
+  },
+  "costings": [
+    {
+      "id": "LEG-2021-043-S",
+      "hasArtifacts": false,
+      "publication_date": "2020-09-30",
+      "cost": {
+        "20192020": 0,
+        "20202021": 82339
+      }
+    },
+    {
+      "id": "LEG-2021-032-S",
+      "hasArtifacts": true,
+      "publication_date": "2020-06-23",
+      "cost": {
+        "20192020": 0,
+        "20202021": 71328
+      }
+    },
+    {
+      "id": "LEG-2021-030-S",
+      "hasArtifacts": true,
+      "publication_date": "2020-06-18",
+      "cost": {
+        "20192020": 0,
+        "20202021": 53413.82
+      }
+    },
+    {
+      "id": "LEG-2021-019-S",
+      "hasArtifacts": true,
+      "publication_date": "2020-04-20",
+      "cost": {
+        "20192020": 0,
+        "20202021": 35471.1
+      }
+    },
+    {
+      "id": "LEG-2021-006-S",
+      "hasArtifacts": true,
+      "publication_date": "2020-04-09",
+      "cost": {
+        "20192020": 0,
+        "20202021": 22312.1
+      }
+    }
+  ],
+  "hasFiscalImpact": true
+}

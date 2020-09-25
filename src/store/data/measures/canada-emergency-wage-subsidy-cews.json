@@ -3,25 +3,37 @@
     "en": "Canada Emergency Wage Subsidy (CEWS)",
     "fr": "Subvention salariale d’urgence du Canada (SSUC)"
   },
-  "notes": [
-    {
-      "en": "On August 13, 2020, the PBO published an [updated cost estimate for this measure]( https://www.pbo-dpb.gc.ca/en/blog/legislative-costing-notes--notes-evaluation-cout-mesure-legislative/LEG-2021-035-S--canada-emergency-wage-subsidy-cews-40-week-program--subvention-salariale-urgence-canada-ssuc-programme-40-semaines).",
-      "fr": "Le 13 août 2020, le DPB a publié une [estimation mise à jour du coût de cette mesure]( https://www.pbo-dpb.gc.ca/fr/blog/legislative-costing-notes--notes-evaluation-cout-mesure-legislative/LEG-2021-035-S--canada-emergency-wage-subsidy-cews-40-week-program--subvention-salariale-urgence-canada-ssuc-programme-40-semaines).",
-      "type": "warning"
-    }
-  ],
+  "notes": [],
   "subtitle": {
     "en": "",
     "fr": ""
   },
   "costings": [
     {
+      "id": "LEG-2021-035-S",
+      "hasArtifacts": true,
+      "publication_date": "2020-08-13",
+      "cost": {
+        "20192020": 0,
+        "20202021": 59223
+      }
+    },
+    {
       "id": "LEG-2021-029-S",
       "hasArtifacts": true,
-      "publication_date": "2020-06-16",
+      "publication_date": "2020-06-18",
       "cost": {
         "20192020": 0,
         "20202021": 55645
+      }
+    },
+    {
+      "id": "LEG-2021-018-S",
+      "hasArtifacts": true,
+      "publication_date": "2020-04-30",
+      "cost": {
+        "20192020": 0,
+        "20202021": 75975
       }
     }
   ],

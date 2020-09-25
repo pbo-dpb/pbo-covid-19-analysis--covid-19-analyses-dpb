@@ -12,12 +12,12 @@
     {
       "id": "LEG-2021-015-S",
       "hasArtifacts": true,
-      "publication_date": "2020-06-16",
+      "publication_date": "2020-04-28",
       "cost": {
         "20192020": 0,
         "20202021": 456
       }
     }
   ],
-  "hasFiscalImpact": true
+  "hasFiscalImpact": false
 }

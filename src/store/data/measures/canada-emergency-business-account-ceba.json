@@ -12,10 +12,19 @@
     {
       "id": "LEG-2021-033-S",
       "hasArtifacts": true,
-      "publication_date": "2020-06-16",
+      "publication_date": "2020-06-30",
       "cost": {
         "20192020": 0,
         "20202021": 9335
+      }
+    },
+    {
+      "id": "LEG-2021-013-S",
+      "hasArtifacts": true,
+      "publication_date": "2020-04-24",
+      "cost": {
+        "20192020": 0,
+        "20202021": 9106
       }
     }
   ],
