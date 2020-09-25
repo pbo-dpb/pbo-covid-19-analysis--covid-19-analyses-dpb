@@ -3,7 +3,7 @@ export default class Costing {
     constructor(rawCosting) {
         this.id = rawCosting.id;
         this.hasArtifacts = rawCosting.hasArtifacts;
-        this.publication_date = new Date(rawCosting.publication_date);
+        this.publication_date = new Date(rawCosting.publication_date + "T09:00:00.000Z");
         this.cost = new Cost(rawCosting.cost);
     }
 

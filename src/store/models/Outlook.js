@@ -3,7 +3,7 @@ import Cost from './Cost.js'
 export default class Outlook {
     constructor(rawOutlook) {
         this.id = rawOutlook.id;
-        this.publication_date = new Date(rawOutlook.publication_date);
+        this.publication_date = new Date(rawOutlook.publication_date + "T09:00:00.000Z");
         this.title = rawOutlook.title;
         this.url = rawOutlook.url;
         this.poster = rawOutlook.poster;
