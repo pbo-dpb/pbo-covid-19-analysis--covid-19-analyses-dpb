@@ -1,5 +1,5 @@
 <template>
-  <ul>
+  <ul class="divide-y divide-gray-200">
     <!-- TODO Remove mockup -->
     <li
       class="grid grid-2 md:grid-cols-8 gap-2 py-2 md:py-1 even:bg-gray-100 invisible md:visible"
@@ -27,9 +27,7 @@
     ></measures-list-item>
 
     <!-- TODO Remove mockup -->
-    <li
-      class="grid grid-2 md:grid-cols-8 gap-2 py-2 md:py-1 even:bg-gray-100 items-center"
-    >
+    <li class="grid grid-2 md:grid-cols-8 gap-2 py-2 md:py-1 items-center">
       <div
         class="col-span-2 md:col-span-6 text-center md:text-left leading-tight"
       >
