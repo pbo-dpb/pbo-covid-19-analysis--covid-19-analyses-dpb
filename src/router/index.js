@@ -28,6 +28,16 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../components/ParliamentariansRequests/ParliamentariansRequests.vue')
   },
   {
+    path: '/:language/economic-fiscal-analysis--analyses-economiques-financieres',
+    name: 'EfasHome',
+    component: () => import(/* webpackChunkName: "about" */ '../components/EconomicFiscalAnalysis/EconomicFiscalAnalysis.vue')
+  },
+  {
+    path: '/:language/economic-fiscal-analysis--analyses-economiques-financieres/:efaId',
+    name: 'EfaAnalysis',
+    component: () => import(/* webpackChunkName: "about" */ '../components/EconomicFiscalAnalysis/EconomicFiscalAnalysisAnalysis.vue')
+  },
+  {
     path: '/:language/fullcostingtable',
     name: 'FullCostingTable',
     component: () => import(/* webpackChunkName: "about" */ '../components/FullCostingsTable/FullCostingsTable.vue')

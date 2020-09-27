@@ -13,7 +13,6 @@
   </aside>
 </template>
 <script>
-import Measure from "../../../store/models/Measure";
 export default {
   props: {
     measure: Object,

@@ -5,6 +5,10 @@
         "en": "Economic and Fiscal Outlook – September 2020",
         "fr": "Perspectives économiques et financières – Septembre 2020"
     },
+    "description": {
+        "en": "Consistent with the Parliamentary Budget Officer’s legislated mandate, this report provides PBO’s economic and fiscal outlook.\nThe table below summarizes the estimated cost of all COVID-19 response measures up to September 29, 2020. These measures are consistent with PBO’s economic and fiscal outlook, published on September 29, 2020.",
+        "fr": "Consistent with the Parliamentary Budget Officer’s legislated mandate, this report provides PBO’s economic and fiscal outlook.\nThe table below summarizes the estimated cost of all COVID-19 response measures up to September 29, 2020. These measures are consistent with PBO’s economic and fiscal outlook, published on September 29, 2020."
+    },
     "url": {
         "en": "https://www.pbo-dpb.gc.ca/en/blog/news/RP-2021-027-S--economic-fiscal-outlook-september-2020--perspectives-economiques-financieres-septembre-2020",
         "fr": "https://www.pbo-dpb.gc.ca/fr/blog/news/RP-2021-027-S--economic-fiscal-outlook-september-2020--perspectives-economiques-financieres-septembre-2020"
@@ -47,14 +51,15 @@
     },
     "costings": [
         {
-            "id": "LEG-2021-029-S",
+            "id": "LEG-2021-035-S",
             "cost": {
-                "20192020": 0,
-                "20202021": 55645
+                "20192020": 123,
+                "20202021": 456
             }
         },
         {
-            "id": "LEG-2021-030-S"
+            "id": "LEG-2021-043-S",
+            "_comment": "CERB"
         },
         {
             "id": "LEG-2021-033-S"
@@ -88,9 +93,6 @@
         },
         {
             "id": "LEG-2021-040-S"
-        },
-        {
-            "id": "LEG-2021-015-S"
         },
         {
             "id": "LEG-2021-026-S"
@@ -127,9 +129,6 @@
         },
         {
             "id": "LEG-2021-009-S"
-        },
-        {
-            "id": "LEG-2021-032-S"
         },
         {
             "id": "LEG-2021-031-S"

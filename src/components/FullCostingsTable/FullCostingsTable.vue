@@ -72,6 +72,7 @@ export default {
           title: req["title_" + this.$root.language],
           date: new Date(req.date + "T09:00:00.000Z"),
           image: req["image_" + this.$root.language],
+          icon: "pdf",
         };
       }).items;
     },

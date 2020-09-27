@@ -72,6 +72,10 @@ Please view the latest listing of the PBO’s COVID-19 Cost Estimates by clickin
                 "covid_measures": "Total COVID-19 Measures included in the EFO ($ billions)",
             }
         },
+        "efas": {
+            "title": "Economic and Fiscal Analysis",
+            "read_report_cta": "Read the report",
+        },
         "scenarioanalysis": {
             "title": "Scenario Analysis",
             "descriptor": `The Parliamentary Budget Officer (PBO)’s scenario analysis reports are designed to help parliamentarians gauge the potential implications of the COVID-19 pandemic and oil price shocks on the Canadian economy and the Government’s finances.
@@ -170,6 +174,10 @@ Vous pouvez consulter la plus récente liste des estimations de coûts relatifs 
                 "header_note": "Economic and Fiscal Indicators are as of the September EFO. Economic indicators are on a calendar year basis.",
                 "covid_measures": "Total COVID-19 Measures included in the EFO ($ billions)",
             }
+        },
+        "efas": {
+            "title": "Analyses économiques et financières",
+            "read_report_cta": "Lire le rapport",
         },
         "scenarioanalysis": {
             "title": "Analyse de scénario",

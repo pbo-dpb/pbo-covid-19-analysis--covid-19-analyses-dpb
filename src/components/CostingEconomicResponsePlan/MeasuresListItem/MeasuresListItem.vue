@@ -12,17 +12,17 @@
           <i v-if="showDetails" class="fas fa-caret-down fa-fw"></i>
           <i v-else class="fas fa-caret-right fa-fw"></i>
           <span class="hover:underline">{{
-            measure.title[$root.language]
+            _measure.title[$root.language]
           }}</span>
         </div>
 
-        <div v-if="measure.subtitle[$root.language]" class="font-thin">
-          {{ measure.subtitle[$root.language] }}
+        <div v-if="_measure.subtitle[$root.language]" class="font-thin">
+          {{ _measure.subtitle[$root.language] }}
         </div>
       </div>
       <div
-        v-for="year in measure.cost.localizedCost($root.language)"
-        :key="year.year + measure.title.en"
+        v-for="year in cost.localizedCost($root.language)"
+        :key="year.year + _measure.title.en"
         class="col-span-1 text-center"
       >
         <div class="md:sr-only font-thin text-sm text-gray-700">
@@ -33,7 +33,7 @@
     </div>
     <measures-list-item-details
       :id="'item-details-' + uid"
-      :measure="measure"
+      :measure="_measure"
       v-if="showDetails"
     ></measures-list-item-details>
   </li>
@@ -42,6 +42,21 @@
 export default {
   props: {
     measure: Object,
+    efaMeasure: Object,
+  },
+
+  computed: {
+    _measure() {
+      if (this.measure) return this.measure;
+      return this.efaMeasure.measure;
+    },
+
+    cost() {
+      if (this.efaMeasure && this.efaMeasure.cost) {
+        return this.efaMeasure.cost;
+      }
+      return this._measure.cost;
+    },
   },
 
   data() {

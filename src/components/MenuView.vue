@@ -66,6 +66,15 @@ export default {
             },
           },
         },
+        {
+          title: this.$root.strings.efas.title,
+          destination: {
+            name: "EfasHome",
+            params: {
+              language: this.$route.params.language,
+            },
+          },
+        },
         /*{
           title: this.$root.strings.scenarioanalysis.title,
           destination: {
@@ -100,7 +109,11 @@ export default {
   },
   methods: {
     isActiveLink(link) {
-      return link.destination.name === this.$route.name;
+      return (
+        link.destination.name === this.$route.name ||
+        (link.destination.name === "EfasHome" &&
+          this.$route.name === "EfaAnalysis")
+      );
     },
   },
 };

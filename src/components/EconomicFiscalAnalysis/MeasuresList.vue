@@ -20,9 +20,9 @@
     </li>
 
     <measures-list-item
-      v-for="measure in measures"
-      :key="measure.title_en"
-      :measure="measure"
+      v-for="efaMeasure in efaMeasures"
+      :key="efaMeasure.measure.title.en"
+      :efa-measure="efaMeasure"
     ></measures-list-item>
 
     <!-- TODO Remove mockup -->
@@ -52,10 +52,11 @@
 <script>
 export default {
   components: {
-    measuresListItem: require("./MeasuresListItem/MeasuresListItem").default,
+    measuresListItem: require("../CostingEconomicResponsePlan/MeasuresListItem/MeasuresListItem")
+      .default,
   },
   props: {
-    measures: {
+    efaMeasures: {
       type: Array,
       required: true,
     },

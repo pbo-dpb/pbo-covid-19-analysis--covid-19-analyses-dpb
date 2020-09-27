@@ -16,4 +16,6 @@ export default class Measure {
     get cost() {
         return collect(this.costings).first().cost;
     }
+
+
 }

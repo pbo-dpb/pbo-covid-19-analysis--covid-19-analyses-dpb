@@ -22,6 +22,7 @@ export default {
           url: req["url_" + this.$root.language],
           title: req["title_" + this.$root.language],
           date: new Date(req.date + "T09:00:00.000Z"),
+          icon: "pdf",
         };
       }).items;
     },

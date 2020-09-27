@@ -20,6 +20,7 @@ Vue.component('costings-number', require('./components/QsCostingsNumber.vue').de
 Vue.component('markdown-content', require('./components/MarkdownContent.vue').default);
 Vue.component('notification-block', require('./components/NotificationBlock.vue').default);
 Vue.component('list-view', require('./components/ListView.vue').default);
+Vue.component('breadcrumb-view', require('./components/BreadcrumbView.vue').default);
 
 new Vue({
   render: h => h(App),
