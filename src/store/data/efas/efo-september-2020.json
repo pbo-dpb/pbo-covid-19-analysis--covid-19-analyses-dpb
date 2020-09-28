@@ -6,8 +6,8 @@
         "fr": "Perspectives économiques et financières – Septembre 2020"
     },
     "description": {
-        "en": "Consistent with the Parliamentary Budget Officer’s legislated mandate, this report provides PBO’s economic and fiscal outlook.\nThe table below summarizes the estimated cost of all COVID-19 response measures up to September 29, 2020. These measures are consistent with PBO’s economic and fiscal outlook, published on September 29, 2020.",
-        "fr": "Consistent with the Parliamentary Budget Officer’s legislated mandate, this report provides PBO’s economic and fiscal outlook.\nThe table below summarizes the estimated cost of all COVID-19 response measures up to September 29, 2020. These measures are consistent with PBO’s economic and fiscal outlook, published on September 29, 2020."
+        "en": "Consistent with the Parliamentary Budget Officer’s legislated mandate, PBO’s latest economic and fiscal outlook is provided below. \nThe table below summarizes the estimated cost of all COVID-19 response measures up to September 1, 2020. These measures are consistent with PBO’s economic and fiscal outlook, published on September 29, 2020.",
+        "fr": "Conformément au mandat légal du directeur parlementaire du budget, les dernières perspectives économiques et financières du DPB sont présentées ci-dessous.\nLe tableau ci-dessous résume le coût estimé de toutes les mesures d'intervention du COVID-19 jusqu'au 1er septembre 2020. Ces mesures sont conformes aux perspectives économiques et financières du DPB, publiées le 29 septembre 2020."
     },
     "url": {
         "en": "https://www.pbo-dpb.gc.ca/en/blog/news/RP-2021-027-S--economic-fiscal-outlook-september-2020--perspectives-economiques-financieres-septembre-2020",
@@ -20,52 +20,44 @@
     "indicators": {
         "real_gdp_growth": {
             "2019": "1.7",
-            "2020": "-6.8"
+            "2020": "-5.2"
         },
         "employment_rate": {
             "2019": "62.0",
-            "2020": "56.4"
+            "2020": "57.7"
         },
         "wti": {
             "2019": "57",
-            "2020": "38"
-        },
-        "covid_measures_included": {
-            "2019-2020": "123",
-            "2020-2021": "456"
+            "2020": "39"
         },
         "budgetary_balance": {
-            "2019-2020": "-23.8",
-            "2020-2021": "-256.0"
+            "2019-2020": "-36.5",
+            "2020-2021": "-328.5"
         },
         "federal_debt": {
-            "2019-2020": "30.6",
-            "2020-2021": "44.4"
+            "2019-2020": "31.3",
+            "2020-2021": "47.9"
         }
     },
     "other_measures": {
         "cost": {
-            "20192020": 9999,
-            "20202021": 9999
+            "20192020": 549,
+            "20202021": 58540
         }
     },
     "costings": [
         {
-            "id": "LEG-2021-035-S",
-            "cost": {
-                "20192020": 123,
-                "20202021": 456
-            }
+            "id": "XLEG-2021-035-S"
         },
         {
             "id": "LEG-2021-043-S",
             "_comment": "CERB"
         },
         {
-            "id": "LEG-2021-033-S"
+            "id": "XLEG-2021-033-S"
         },
         {
-            "id": "LEG-2021-027-S"
+            "id": "XXLEG-2021-027-S"
         },
         {
             "id": "LEG-2021-001-S"
@@ -77,40 +69,40 @@
             "id": "LEG-2021-003-S"
         },
         {
-            "id": "LEG-2021-023-S"
+            "id": "XXLEG-2021-023-S"
         },
         {
-            "id": "LEG-2021-017-S"
+            "id": "XLEG-2021-017-S"
         },
         {
-            "id": "LEG-2021-024-S"
+            "id": "XXLEG-2021-024-S"
         },
         {
-            "id": "LEG-2021-008-S"
+            "id": "XXXLEG-2021-008-S"
         },
         {
-            "id": "LEG-2021-004-S"
+            "id": "XXXLEG-2021-004-S"
         },
         {
-            "id": "LEG-2021-040-S"
+            "id": "LEG-2021-042-S"
         },
         {
             "id": "LEG-2021-026-S"
         },
         {
-            "id": "LEG-2021-011-S"
+            "id": "XLEG-2021-011-S"
         },
         {
-            "id": "LEG-2021-005-S"
+            "id": "XXXLEG-2021-005-S"
         },
         {
-            "id": "LEG-2021-007-S"
+            "id": "XXXLEG-2021-007-S"
         },
         {
             "id": "LEG-2021-028-S"
         },
         {
-            "id": "LEG-2021-016-S"
+            "id": "XXLEG-2021-016-S"
         },
         {
             "id": "LEG-2021-025-S"
@@ -119,22 +111,16 @@
             "id": "LEG-2021-012-S"
         },
         {
-            "id": "LEG-2021-002-S"
+            "id": "XLEG-2021-002-S"
         },
         {
-            "id": "LEG-2021-014-S"
+            "id": "XLEG-2021-014-S"
         },
         {
-            "id": "LEG-2021-010-S"
+            "id": "XXLEG-2021-010-S"
         },
         {
-            "id": "LEG-2021-009-S"
-        },
-        {
-            "id": "LEG-2021-031-S"
-        },
-        {
-            "id": "LEG-2021-035-S"
+            "id": "XLEG-2021-009-S"
         },
         {
             "id": "LEG-2021-037-S"
