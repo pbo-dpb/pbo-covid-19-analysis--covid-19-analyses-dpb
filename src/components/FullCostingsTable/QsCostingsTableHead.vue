@@ -3,11 +3,16 @@
     <tr>
       <th
         rowspan="2"
-        style="border-bottom: 1px solid gray;"
+        style="border-bottom: 1px solid gray"
         class="text-sm text-left font-thin"
-      >{{ $root.strings.fullcostings.in_millions }}</th>
+      >
+        {{ $root.strings.fullcostings.in_millions }}
+      </th>
 
-      <th colspan="2" style="border-bottom: 1px solid gray;width:20%;line-height:0.9em;">
+      <th
+        colspan="2"
+        style="border-bottom: 1px solid gray; width: 20%; line-height: 0.9em"
+      >
         {{ $root.strings.fullcostings.current_scenario }}
         <span>
           <br />
@@ -16,27 +21,34 @@
       </th>
 
       <template v-if="previousUpdateTitle">
-        <th colspan="2" style="border-bottom: 1px solid gray;width:20%;line-height:0.9em;">
+        <th
+          colspan="2"
+          style="border-bottom: 1px solid gray; width: 20%; line-height: 0.9em"
+        >
           {{ $root.strings.fullcostings.previous_scenario }}
           <br />
           <small>{{ previousUpdateTitle }}</small>
         </th>
       </template>
     </tr>
-    <tr style="border-bottom: 1px solid gray;">
+    <tr style="border-bottom: 1px solid gray">
       <th
         v-for="number in numbersHeaders"
         :key="'header_current_' + number"
-        style="width:10%"
-      >{{ number }}</th>
+        style="width: 10%"
+      >
+        {{ number }}
+      </th>
 
       <template v-if="previousUpdateTitle">
         <th
           v-for="number in numbersHeaders"
           :key="'header_compared_' + number"
-          style="width:10%"
+          style="width: 10%"
           class="comparative-cell"
-        >{{ number }}</th>
+        >
+          {{ number }}
+        </th>
       </template>
     </tr>
   </thead>

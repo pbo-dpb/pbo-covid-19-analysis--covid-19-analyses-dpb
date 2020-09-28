@@ -11,9 +11,9 @@ export default {
                 "description": "This page has been archived and is provided for reference, research or recordkeeping purposes."
             },
             "in_millions": "$ millions",
-            "compare_label": "Select previous scenario for comparison",
+            "compare_label": "Select other scenario for comparison",
             "total": "Total",
-            "current_scenario": "Current Scenario",
+            "current_scenario": "Latest Scenario",
             "previous_scenario": "Previous Scenario",
             "read_previous_pdf": "Read previous cost estimate",
             "real_gdp_growth": "Real GDP growth (%)",
@@ -112,9 +112,9 @@ Please view the latest cost estimates prepared by the PBO in response to request
                 "description": "Ce tableau n'a pas été mis à jour depuis le 18 juin 2020 et ne le sera plus dans le futur."
             },
             "in_millions": "Millions de dollars",
-            "compare_label": "Sélectionner un scénario précédent à des fins de comparaison",
+            "compare_label": "Sélectionner un autre scénario à des fins de comparaison",
             "total": "Total",
-            "current_scenario": "Scénario courant",
+            "current_scenario": "Dernier scénario",
             "previous_scenario": "Scénario comparé",
             "read_previous_pdf": "Lire l'estimation de coût précédente",
             "real_gdp_growth": "Croissance du PIB réel (%)",
