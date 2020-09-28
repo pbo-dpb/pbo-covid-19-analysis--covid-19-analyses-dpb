@@ -5,6 +5,7 @@
         <slot></slot>
       </h3>
       <button
+        hidden
         title="$root.strings.options_label"
         class="text-gray-700 rounded border border-gray-100 p-1 text-sm font-thin"
         role="switch"
