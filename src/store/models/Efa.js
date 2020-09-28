@@ -14,8 +14,12 @@ export default class Efa {
             cost: new Cost(rawEfa.other_measures.cost),
         }
 
-        this.costings = rawEfa.costings.map(efaCosting=>{
-            if (efaCosting.cost){
+        this.total = {
+            cost: new Cost(rawEfa.total.cost)
+        }
+
+        this.costings = rawEfa.costings.map(efaCosting => {
+            if (efaCosting.cost) {
                 efaCosting.cost = new Cost(efaCosting.cost);
             }
             return efaCosting;

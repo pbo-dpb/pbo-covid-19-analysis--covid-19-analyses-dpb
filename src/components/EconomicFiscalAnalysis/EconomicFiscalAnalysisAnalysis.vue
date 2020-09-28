@@ -47,7 +47,9 @@
 
     <measures-list :efa-measures="efaMeasures"></measures-list>
 
-    <li class="grid grid-2 md:grid-cols-8 gap-2 py-2 md:py-1 items-center">
+    <li
+      class="grid grid-2 md:grid-cols-8 gap-2 py-2 md:py-1 items-center border-t border-gray-200"
+    >
       <div
         class="col-span-2 md:col-span-6 text-center md:text-left leading-tight"
       >
@@ -70,7 +72,7 @@
       </div>
     </li>
 
-    <costing-total :totals="costingTotal"></costing-total>
+    <costing-total :efa="efa"></costing-total>
 
     <costing-indicators :efa="efa"></costing-indicators>
 
@@ -87,6 +89,7 @@ export default {
     costingIndicators: require("./CostingIndicators").default,
     costingsTools: require("../CostingsTools/CostingsTools").default,
   },
+
   computed: {
     efa() {
       return this.$store.getters.getEfaById(this.$route.params.efaId);
@@ -127,7 +130,7 @@ export default {
         ).items;
     },
 
-    costingTotal() {
+    /*costingTotal() {
       return collect(this.efa.costings)
         .map((efaCosting) => {
           return efaCosting.cost
@@ -146,7 +149,7 @@ export default {
         .map((localizedCostings, localizedYear) => {
           return { year: localizedYear, amount: localizedCostings.sum("cost") };
         }).items;
-    },
+    },*/
   },
 };
 </script>

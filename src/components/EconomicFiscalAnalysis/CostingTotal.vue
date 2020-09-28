@@ -9,22 +9,25 @@
       }}</component>
     </div>
     <div
-      v-for="year in totals"
+      v-for="year in efa.total.cost.localizedCost($root.language)"
       :key="year.year + '_othermeasures'"
       class="col-span-1 text-center font-bold"
     >
       <div class="md:hidden font-thin text-sm text-gray-700">
         {{ year.year }}
       </div>
-      <costings-number :value="year.amount" />
+
+      <costings-number :value="year.cost" />
     </div>
   </li>
   <!-- End of todo -->
 </template>
 <script>
+import Efa from "../../store/models/Efa";
 export default {
   props: {
-    totals: Object,
+    //totals: Object,
+    efa: Efa,
   },
 };
 </script>
