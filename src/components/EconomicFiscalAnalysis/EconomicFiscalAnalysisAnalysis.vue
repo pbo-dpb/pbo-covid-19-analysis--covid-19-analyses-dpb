@@ -114,7 +114,17 @@ export default {
         })
         .unique((efaMeasure) => {
           return efaMeasure.measure.title.en;
-        }).items;
+        })
+        .when(this.$store.state.settings.sortCostingsBy === "name", (items) =>
+          items.sortBy((item) => {
+            return item.measure.title[this.$root.language];
+          })
+        )
+        .when(this.$store.state.settings.sortCostingsBy === "cost", (items) =>
+          items.sortBy((item) => {
+            return item.measure.cost.aggregatedCost;
+          })
+        ).items;
     },
 
     costingTotal() {

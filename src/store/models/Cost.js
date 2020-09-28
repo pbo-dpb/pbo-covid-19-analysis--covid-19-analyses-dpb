@@ -17,4 +17,8 @@ export default class Cost {
             }
         }).items;
     }
+
+    aggregatedCost() {
+        return collect(this.localizedCost).sum("cost");
+    }
 }

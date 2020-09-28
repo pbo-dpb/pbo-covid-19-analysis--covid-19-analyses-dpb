@@ -21,7 +21,17 @@ export default {
   },
   computed: {
     measures() {
-      return collect(this.$store.state.measures).items;
+      return collect(this.$store.state.measures)
+        .when(this.$store.state.settings.sortCostingsBy === "name", (items) =>
+          items.sortBy((item) => {
+            return item.title[this.$root.language];
+          })
+        )
+        .when(this.$store.state.settings.sortCostingsBy === "cost", (items) =>
+          items.sortBy((item) => {
+            return item.cost.aggregatedCost;
+          })
+        ).items;
     },
     latestEfa() {
       return this.$store.getters.getLatestEfa();

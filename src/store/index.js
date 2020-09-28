@@ -9,6 +9,9 @@ const store = new Vuex.Store({
     state: {
         measures: (require.context('./data/measures/', true, /\.json$/i).keys().map(key => require("./data/measures/" + key.split('/').pop().split('.')[0]))).map(rawMeasure => new Measure(rawMeasure)),
         efas: require.context('./data/efas/', true, /\.json$/i).keys().map(key => require("./data/efas/" + key.split('/').pop().split('.')[0])).map(rawEfa => new Efa(rawEfa)),
+        settings: {
+            sortCostingsBy: "name"
+        }
     },
 
     getters: {
