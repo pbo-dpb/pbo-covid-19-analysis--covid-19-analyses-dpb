@@ -79,18 +79,9 @@ Please view the latest listing of the PBO’s COVID-19 Cost Estimates by clickin
             "title": "Economic and Fiscal Analysis",
             "read_report_cta": "Read the report",
             "table_title": "COVID-19 Measures included in the Outlook",
-            "other_measures": {
-                "title": "Other COVID-19 costings",
-                "subtitle": "Includes other COVID-19 costing measures as of the September EFO"
-            },
             "indicators": {
-                "employment_rate": "Employment Rate (%)",
-                "real_gdp_growth": "Real GDP growth (%)",
-                "wti": "WTI (US$/barrel)",
-                "budgetary_balance": "Budgetary Balance ($ billions)",
-                "federal_debt": "Federal Debt (% of GDP)",
-            },
-
+                "employment_rate": "Employment Rate (%)"
+            }
         },
         "scenarioanalysis": {
             "title": "Scenario Analysis",
@@ -165,7 +156,9 @@ L'outil donne accès à toutes les analyses COVID-19 du PBO, y compris :
 
 - Les évaluations de coûts liées à la COVID-19 du DPB;
 - Les dernières perspectives économiques et financières du DPB, et les mesures liées à la COVID-19 incluses dans celles-ci; et
-- Aux évaluation de coûts (liées à la COVID-19) demandées par les parlementaires.`,
+- Aux évaluation de coûts (liées à la COVID-19) demandées par les parlementaires.
+
+La précédente analyse de scénario du PBO a été archivée et est également disponible.`,
 
         },
 
@@ -174,8 +167,6 @@ L'outil donne accès à toutes les analyses COVID-19 du PBO, y compris :
             "descriptor": `Le Plan d’intervention économique du Canada pour répondre à la COVID-19 a été lancé le 13 mars 2020. Il comprend divers nouveaux programmes et est étayé par de nouvelles autorités législatives(les projets de loi C - 13, C - 14 et C - 15), qui promulguent de nouveaux programmes et prestations et accordent au gouvernement des pouvoirs extraordinaires.
 
 Conformément à son mandat, qui consiste à fournir au Parlement des analyses neutres et indépendantes sur des questions économiques et financières particulièrement importantes pour le pays, le directeur parlementaire du budget estimera le coût des éléments du Plan d’intervention économique du Canada pour répondre à la COVID-19.
-
-Le tableau ci - dessous résume le coût estimé de toutes les mesures d'intervention du COVID-19 jusqu'au 12 juin 2020. Ces mesures sont conformes au dernier scénario économique et financière du DPB, publié le 18 juin 2020.
 
 Vous pouvez consulter la plus récente liste des estimations de coûts relatifs à la COVID-19 en cliquant sur les liens suivants.`,
             "costed_years": {
@@ -187,7 +178,6 @@ Vous pouvez consulter la plus récente liste des estimations de coûts relatifs 
             "general_notes": "Les estimations de coûts du DPB peuvent ne pas correspondre aux notes de coûts publiées précédemment car les estimations ont été révisées sur la base des Perspectives économiques et financières de septembre 2020. Un nombre positif (négatif) indique une augmentation (réduction) du déficit budgétaire. Les chiffres ayant été arrondis, les totaux peuvent ne pas correspondre.",
 
             "indicators": {
-                "header_title": "Indicateurs économiques et fiscaux",
                 "header_note": "Les indicateurs économiques sont établis sur la base de l'année civile.",
                 "covid_measures": "Total COVID-19 Measures included in the EFO ($ billions)",
             }
@@ -196,16 +186,8 @@ Vous pouvez consulter la plus récente liste des estimations de coûts relatifs 
             "title": "Analyses économiques et financières",
             "read_report_cta": "Lire le rapport",
             "table_title": "Mesures liées à la COVID-19 comprises dans les perspectives",
-            "other_measures": {
-                "title": "Autres mesures liées à la COVID-19",
-                "subtitle": "Inclus d'autres mesures liées à la COVID-19 en date des perspectives économiques et financières de septembre 2020"
-            },
             "indicators": {
-                "real_gdp_growth": "Croissance du PIB réel (%)",
-                "employment_rate": "Taux d'emploi (%)",
-                "wti": "WTI ($ US/baril)",
-                "budgetary_balance": "Solde budgétaire (milliards de dollars)",
-                "federal_debt": "Dette fédérale (% du PIB)",
+                "employment_rate": "Taux d'emploi (%)"
             }
         },
         "scenarioanalysis": {
