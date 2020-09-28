@@ -25,6 +25,10 @@ const store = new Vuex.Store({
                     return meas.id == id;
                 });
             });
+        },
+
+        getLatestEfa: (state) => () => {
+            return collect(state.efas).sortByDesc("publication_date").first();
         }
     }
 

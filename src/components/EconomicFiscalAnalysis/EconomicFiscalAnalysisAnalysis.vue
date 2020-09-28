@@ -42,7 +42,31 @@
     <br />
 
     <measures-list :efa-measures="efaMeasures"></measures-list>
-    <costing-total></costing-total>
+
+    <li class="grid grid-2 md:grid-cols-8 gap-2 py-2 md:py-1 items-center">
+      <div
+        class="col-span-2 md:col-span-6 text-center md:text-left leading-tight"
+      >
+        <component :is="'span'" class="font-medium"
+          >Other COVID-19 costings</component
+        >
+        <div class="font-thin">
+          Includes other COVID-19 costing measures as of the September EFO
+        </div>
+      </div>
+      <div
+        v-for="year in efa.otherMeasures.cost.localizedCost($root.language)"
+        :key="year + 'othermeasures'"
+        class="col-span-1 text-center"
+      >
+        <div class="md:hidden font-thin text-sm text-gray-700">
+          {{ year.year }}
+        </div>
+        <costings-number :value="year.cost" />
+      </div>
+    </li>
+
+    <costing-total :totals="costingTotal"></costing-total>
 
     <costing-indicators></costing-indicators>
 
@@ -55,8 +79,7 @@ import collect from "collect.js";
 export default {
   components: {
     measuresList: require("./MeasuresList").default,
-    costingTotal: require("../CostingEconomicResponsePlan/CostingTotal")
-      .default,
+    costingTotal: require("./CostingTotal").default,
     costingIndicators: require("./CostingIndicators").default,
   },
   computed: {
@@ -90,11 +113,24 @@ export default {
     },
 
     costingTotal() {
-      return this.efaMeasures.map((efaMeasure) => {
-        return efaMeasure.cost
-          ? efaMeasure.cost
-          : this.$store.getters.getMeasureForCostingWithId(efaMeasure.id).cost;
-      });
+      return collect(this.efa.costings)
+        .map((efaCosting) => {
+          return efaCosting.cost
+            ? efaCosting.cost
+            : this.$store.getters.getMeasureForCostingWithId(efaCosting.id)
+                .cost;
+        })
+        .push(this.efa.otherMeasures.cost)
+        .map((cost) => {
+          return cost.localizedCost(this.$root.language);
+        })
+        .flatten(1)
+        .groupBy((localizedCost) => {
+          return localizedCost.year;
+        })
+        .map((localizedCostings, localizedYear) => {
+          return { year: localizedYear, amount: localizedCostings.sum("cost") };
+        }).items;
     },
   },
 };
