@@ -12,6 +12,15 @@
     {
       "id": "XXLEG-2021-007-S",
       "hasArtifacts": false,
+      "publication_date": "2020-09-29",
+      "cost": {
+        "20192020": 9.02,
+        "20202021": 81.16
+      }
+    },
+    {
+      "id": "XXLEG-2021-007-S",
+      "hasArtifacts": false,
       "publication_date": "2020-06-18",
       "cost": {
         "20192020": 15.16,
