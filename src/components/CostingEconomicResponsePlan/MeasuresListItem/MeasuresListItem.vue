@@ -14,10 +14,12 @@
           <span class="hover:underline">{{
             _measure.title[$root.language]
           }}</span>
-        </div>
-
-        <div v-if="!_measure.hasFiscalImpact" class="text-sm font-thin">
-          {{ $root.strings.costingerp.no_incremental_impact }}
+          <span
+            v-if="!_measure.hasFiscalImpact"
+            class="ml-2 font-thin text-gray-600"
+          >
+            ({{ $root.strings.costingerp.no_incremental_impact }})
+          </span>
         </div>
 
         <div v-if="_measure.subtitle[$root.language]" class="font-thin">
