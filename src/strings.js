@@ -53,15 +53,15 @@ The tool provides access to all the PBO’s COVID-19 Analysis, including:
 -	The PBO’s latest Economic and Fiscal Outlook, and the COVID-19 measures included in it; and,
 -	COVID-19 Costings Requested by Parliamentarians.
 
-The PBO’s prior Scenario Analysis has been archived and is also available. 
+The PBO’s prior Scenario Analysis has been archived and is also available.`
         },
         "costingerp": {
             "title": "Cost Estimates",
-            "descriptor": `The Government’s COVID-19 Economic Response Plan was launched on March 13, 2020.  It includes a range of new programs and is underpinned by new legislative authorities (Bills C-13, C-14, C-15 and C-20), which enact new benefits and programs and grant the Government extraordinary powers.
+            "descriptor": `The Government’s COVID- 19 Economic Response Plan was launched on March 13, 2020. It includes a range of new programs and is underpinned by new legislative authorities(Bills C- 13, C- 14, C - 15 and C - 20), which enact new benefits and programs and grant the Government extraordinary powers.
 
-Consistent with the Parliamentary Budget Officer (PBO)’s mandate to provide independent, non-partisan analysis to Parliament on matters of particular significance relating to the nation’s finances or economy, the PBO will prepare cost estimates of the components of the Government’s COVID-19 Economic Response Plan.
+Consistent with the Parliamentary Budget Officer(PBO)'s mandate to provide independent, non - partisan analysis to Parliament on matters of particular significance relating to the nation’s finances or economy, the PBO will prepare cost estimates of the components of the Government’s COVID - 19 Economic Response Plan.
 
-Please view the latest listing of the PBO’s COVID-19 Cost Estimates by clicking on the links below.`,
+Please view the latest listing of the PBO’s COVID - 19 Cost Estimates by clicking on the links below.`,
             "costed_years": {
                 '20192020': "2019-20",
                 "20202021": "2020-21",
@@ -85,19 +85,19 @@ Please view the latest listing of the PBO’s COVID-19 Cost Estimates by clickin
         },
         "scenarioanalysis": {
             "title": "Scenario Analysis",
-            "descriptor": `The Parliamentary Budget Officer (PBO)’s scenario analysis reports are designed to help parliamentarians gauge the potential implications of the COVID-19 pandemic and oil price shocks on the Canadian economy and the Government’s finances.
+            "descriptor": `The Parliamentary Budget Officer(PBO) ’s scenario analysis reports are designed to help parliamentarians gauge the potential implications of the COVID - 19 pandemic and oil price shocks on the Canadian economy and the Government’s finances.
 
 This analysis provides a plausible illustrative scenario for the Canadian economy and the Government’s finances—it is not a forecast.
 
-Please view the PBO’s COVID-19 scenario analysis reports by clicking on the links below.`,
+Please view the PBO’s COVID - 19 scenario analysis reports by clicking on the links below.`,
 
 
         },
         "parliamentariansrequests": {
             "title": "Costings Requested by Parliamentarians",
-            "descriptor": `The Parliamentary Budget Officer (PBO) is committed to providing high quality, non-partisan economic and fiscal analysis to parliamentarians during the pandemic and through the transition to recovery.
+            "descriptor": `The Parliamentary Budget Officer(PBO) is committed to providing high quality, non - partisan economic and fiscal analysis to parliamentarians during the pandemic and through the transition to recovery.
 
-The PBO continues to respond to requests from committees and parliamentarians for cost estimates of new legislation and program proposals related to the COVID-19 pandemic.
+The PBO continues to respond to requests from committees and parliamentarians for cost estimates of new legislation and program proposals related to the COVID - 19 pandemic.
 
 Please view the latest cost estimates prepared by the PBO in response to requests from parliamentarians by clicking on the links below.`,
         }
@@ -152,23 +152,23 @@ Please view the latest cost estimates prepared by the PBO in response to request
             "title": "Accueil",
             "descriptor": `Les produits d'analyse COVID-19 du DPB sont conçus pour aider les Canadiens et les parlementaires à évaluer les implications potentielles de la pandémie sur l'économie canadienne et les finances du gouvernement.
 
-L'outil donne accès à toutes les analyses COVID-19 du PBO, y compris :
-            
--	Les estimations de coûts COVID-19 du PBO ; 
--	Les dernières perspectives économiques et financières du DPB, et les mesures COVID-19 qui y sont incluses ; et
--	COVID-19 coûts demandés par les parlementaires.`,
+    L'outil donne accès à toutes les analyses COVID-19 du PBO, y compris :
+
+        - Les estimations de coûts COVID - 19 du PBO;
+-	Les dernières perspectives économiques et financières du DPB, et les mesures COVID - 19 qui y sont incluses; et
+    - COVID - 19 coûts demandés par les parlementaires.`,
 
         },
 
         "costingerp": {
             "title": "Établissement des coûts du Plan d’intervention économique du Canada",
-            "descriptor": `Le Plan d’intervention économique du Canada pour répondre à la COVID-19 a été lancé le 13 mars 2020. Il comprend divers nouveaux programmes et est étayé par de nouvelles autorités législatives (les projets de loi C-13, C-14 et C-15), qui promulguent de nouveaux programmes et prestations et accordent au gouvernement des pouvoirs extraordinaires.
+            "descriptor": `Le Plan d’intervention économique du Canada pour répondre à la COVID - 19 a été lancé le 13 mars 2020. Il comprend divers nouveaux programmes et est étayé par de nouvelles autorités législatives(les projets de loi C - 13, C - 14 et C - 15), qui promulguent de nouveaux programmes et prestations et accordent au gouvernement des pouvoirs extraordinaires.
 
-Conformément à son mandat, qui consiste à fournir au Parlement des analyses neutres et indépendantes sur des questions économiques et financières particulièrement importantes pour le pays, le directeur parlementaire du budget estimera le coût des éléments du Plan d’intervention économique du Canada pour répondre à la COVID-19.
+Conformément à son mandat, qui consiste à fournir au Parlement des analyses neutres et indépendantes sur des questions économiques et financières particulièrement importantes pour le pays, le directeur parlementaire du budget estimera le coût des éléments du Plan d’intervention économique du Canada pour répondre à la COVID - 19.
 
-Le tableau ci-dessous résume le coût estimé de toutes les mesures d'intervention du COVID-19 jusqu'au 12 juin 2020. Ces mesures sont conformes au dernier scénario économique et financière du DPB, publié le 18 juin 2020.
+Le tableau ci - dessous résume le coût estimé de toutes les mesures d'intervention du COVID-19 jusqu'au 12 juin 2020. Ces mesures sont conformes au dernier scénario économique et financière du DPB, publié le 18 juin 2020.
 
-Vous pouvez consulter la plus récente liste des estimations de coûts relatifs à la COVID-19 en cliquant sur les liens suivants.`,
+Vous pouvez consulter la plus récente liste des estimations de coûts relatifs à la COVID - 19 en cliquant sur les liens suivants.`,
             "costed_years": {
                 '20192020': "2019-2020",
                 "20202021": "2020-2021",
@@ -192,7 +192,7 @@ Vous pouvez consulter la plus récente liste des estimations de coûts relatifs 
         },
         "scenarioanalysis": {
             "title": "Analyse de scénario",
-            "descriptor": `Les rapports d’analyse de scénario du directeur parlementaire du budget (DPB) visent à aider les parlementaires à évaluer les possibles répercussions des chocs dus à la pandémie de COVID-19 et à la chute des prix du pétrole sur l’économie canadienne et les finances du gouvernement.
+            "descriptor": `Les rapports d’analyse de scénario du directeur parlementaire du budget(DPB) visent à aider les parlementaires à évaluer les possibles répercussions des chocs dus à la pandémie de COVID - 19 et à la chute des prix du pétrole sur l’économie canadienne et les finances du gouvernement.
 
 Cette analyse fournit un scénario illustratif plausible pour l'économie canadienne et les finances publiques - il ne s'agit pas d'une prévision.
 
@@ -202,11 +202,11 @@ Pour consulter les derniers rapports d’analyse de scénario du DPB, cliquer su
         },
         "parliamentariansrequests": {
             "title": "Établissement des coûts – demandes des parlementaires",
-            "descriptor": `Le directeur parlementaire du budget (DPB) est résolu à offrir aux parlementaires des analyses économiques et financières impartiales et de grande qualité au cours de la pandémie et pendant toute la transition vers le rétablissement.
+            "descriptor": `Le directeur parlementaire du budget(DPB) est résolu à offrir aux parlementaires des analyses économiques et financières impartiales et de grande qualité au cours de la pandémie et pendant toute la transition vers le rétablissement.
 
-Le DPB continue de répondre aux demandes des comités et des parlementaires quant aux coûts estimatifs des mesures législatives et des programmes proposés en réponse à la pandémie de COVID-19.
+Le DPB continue de répondre aux demandes des comités et des parlementaires quant aux coûts estimatifs des mesures législatives et des programmes proposés en réponse à la pandémie de COVID - 19.
 
-Vous pouvez consulter les dernières prévisions de coûts produites par le DPB en réponse aux demandes des parlementaires en cliquant sur les liens ci-dessous.`,
+Vous pouvez consulter les dernières prévisions de coûts produites par le DPB en réponse aux demandes des parlementaires en cliquant sur les liens ci - dessous.`,
         }
     }
 }
