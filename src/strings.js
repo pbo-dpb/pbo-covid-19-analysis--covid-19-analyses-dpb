@@ -50,8 +50,10 @@ export default {
 The tool provides access to all the PBO’s COVID-19 Analysis, including:
             
 -	The PBO’s COVID-19 Cost Estimates; 
--	The PBO’s COVID-19 Pandemic and Oil Price Shocks Scenario Analysis Reports; and
--	COVID-19 Costings Requested by Parliamentarians.”`,
+-	The PBO’s latest Economic and Fiscal Outlook, and the COVID-19 measures included in it; and,
+-	COVID-19 Costings Requested by Parliamentarians.
+
+The PBO’s prior Scenario Analysis has been archived and is also available. 
         },
         "costingerp": {
             "title": "Cost Estimates",
@@ -148,13 +150,13 @@ Please view the latest cost estimates prepared by the PBO in response to request
 
         "home": {
             "title": "Accueil",
-            "descriptor": `The PBO’s COVID-19 analysis products are designed to assist Canadians and parliamentarians gauge the potential implications of the pandemic on the Canadian economy and the Government’s finances.
+            "descriptor": `Les produits d'analyse COVID-19 du DPB sont conçus pour aider les Canadiens et les parlementaires à évaluer les implications potentielles de la pandémie sur l'économie canadienne et les finances du gouvernement.
 
-The tool provides access to all the PBO’s COVID-19 Analysis, including:
+L'outil donne accès à toutes les analyses COVID-19 du PBO, y compris :
             
--	The PBO’s COVID-19 Cost Estimates; 
--	The PBO’s COVID-19 Pandemic and Oil Price Shocks Scenario Analysis Reports; and
--	COVID-19 Costings Requested by Parliamentarians.”`,
+-	Les estimations de coûts COVID-19 du PBO ; 
+-	Les dernières perspectives économiques et financières du DPB, et les mesures COVID-19 qui y sont incluses ; et
+-	COVID-19 coûts demandés par les parlementaires.`,
 
         },
 
@@ -176,7 +178,7 @@ Vous pouvez consulter la plus récente liste des estimations de coûts relatifs 
             "general_notes": "Les estimations de coûts du DPB peuvent ne pas correspondre aux notes de coûts publiées précédemment car les estimations ont été révisées sur la base des Perspectives économiques et financières de septembre 2020. Un nombre positif (négatif) indique une augmentation (réduction) du déficit budgétaire. Les chiffres ayant été arrondis, les totaux peuvent ne pas correspondre.",
 
             "indicators": {
-                "header_note": "Economic and Fiscal Indicators are as of the September EFO. Economic indicators are on a calendar year basis.",
+                "header_note": "Les indicateurs économiques sont établis sur la base de l'année civile.",
                 "covid_measures": "Total COVID-19 Measures included in the EFO ($ billions)",
             }
         },
