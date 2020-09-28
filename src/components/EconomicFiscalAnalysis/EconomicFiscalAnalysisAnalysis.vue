@@ -51,16 +51,16 @@
       <div
         class="col-span-2 md:col-span-6 text-center md:text-left leading-tight"
       >
-        <component :is="'span'" class="font-medium"
-          >Other COVID-19 costings</component
-        >
+        <component :is="'span'" class="font-medium">{{
+          $root.strings.efas.other_measures.title
+        }}</component>
         <div class="font-thin">
-          Includes other COVID-19 costing measures as of the September EFO
+          {{ $root.strings.efas.other_measures.subtitle }}
         </div>
       </div>
       <div
         v-for="year in efa.otherMeasures.cost.localizedCost($root.language)"
-        :key="year + 'othermeasures'"
+        :key="year.year + '_othermeasures'"
         class="col-span-1 text-center"
       >
         <div class="md:hidden font-thin text-sm text-gray-700">
@@ -72,7 +72,7 @@
 
     <costing-total :totals="costingTotal"></costing-total>
 
-    <costing-indicators></costing-indicators>
+    <costing-indicators :efa="efa"></costing-indicators>
 
     <small>{{ $root.strings.costingerp.general_notes }}</small>
   </div>

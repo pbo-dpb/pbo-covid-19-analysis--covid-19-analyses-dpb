@@ -10,7 +10,7 @@
     </div>
     <div
       v-for="year in totals"
-      :key="year + 'othermeasures'"
+      :key="year.year + '_othermeasures'"
       class="col-span-1 text-center font-bold"
     >
       <div class="md:hidden font-thin text-sm text-gray-700">

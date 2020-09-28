@@ -79,9 +79,18 @@ Please view the latest listing of the PBO’s COVID-19 Cost Estimates by clickin
             "title": "Economic and Fiscal Analysis",
             "read_report_cta": "Read the report",
             "table_title": "COVID-19 Measures included in the Outlook",
+            "other_measures": {
+                "title": "Other COVID-19 costings",
+                "subtitle": "Includes other COVID-19 costing measures as of the September EFO"
+            },
             "indicators": {
-                "employment_rate": "Employment Rate (%)"
-            }
+                "employment_rate": "Employment Rate (%)",
+                "real_gdp_growth": "Real GDP growth (%)",
+                "wti": "WTI (US$/barrel)",
+                "budgetary_balance": "Budgetary Balance ($ billions)",
+                "federal_debt": "Federal Debt (% of GDP)",
+            },
+
         },
         "scenarioanalysis": {
             "title": "Scenario Analysis",
@@ -178,6 +187,7 @@ Vous pouvez consulter la plus récente liste des estimations de coûts relatifs 
             "general_notes": "Les estimations de coûts du DPB peuvent ne pas correspondre aux notes de coûts publiées précédemment car les estimations ont été révisées sur la base des Perspectives économiques et financières de septembre 2020. Un nombre positif (négatif) indique une augmentation (réduction) du déficit budgétaire. Les chiffres ayant été arrondis, les totaux peuvent ne pas correspondre.",
 
             "indicators": {
+                "header_title": "Indicateurs économiques et fiscaux",
                 "header_note": "Les indicateurs économiques sont établis sur la base de l'année civile.",
                 "covid_measures": "Total COVID-19 Measures included in the EFO ($ billions)",
             }
@@ -186,8 +196,16 @@ Vous pouvez consulter la plus récente liste des estimations de coûts relatifs 
             "title": "Analyses économiques et financières",
             "read_report_cta": "Lire le rapport",
             "table_title": "Mesures liées à la COVID-19 comprises dans les perspectives",
+            "other_measures": {
+                "title": "Autres mesures liées à la COVID-19",
+                "subtitle": "Inclus d'autres mesures liées à la COVID-19 en date des perspectives économiques et financières de septembre 2020"
+            },
             "indicators": {
-                "employment_rate": "Taux d'emploi (%)"
+                "real_gdp_growth": "Croissance du PIB réel (%)",
+                "employment_rate": "Taux d'emploi (%)",
+                "wti": "WTI ($ US/baril)",
+                "budgetary_balance": "Solde budgétaire (milliards de dollars)",
+                "federal_debt": "Dette fédérale (% du PIB)",
             }
         },
         "scenarioanalysis": {
