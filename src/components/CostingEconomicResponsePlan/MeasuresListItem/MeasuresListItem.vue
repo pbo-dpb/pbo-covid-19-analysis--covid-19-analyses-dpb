@@ -16,6 +16,10 @@
           }}</span>
         </div>
 
+        <div v-if="!_measure.hasFiscalImpact" class="text-sm font-thin">
+          {{ $root.strings.costingerp.no_incremental_impact }}
+        </div>
+
         <div v-if="_measure.subtitle[$root.language]" class="font-thin">
           {{ _measure.subtitle[$root.language] }}
         </div>
@@ -24,6 +28,7 @@
         v-for="year in cost.localizedCost($root.language)"
         :key="year.year + _measure.title.en"
         class="col-span-1 text-center"
+        :class="{ italic: !_measure.hasFiscalImpact }"
       >
         <div class="md:sr-only font-thin text-sm text-gray-700">
           {{ year.year }}
