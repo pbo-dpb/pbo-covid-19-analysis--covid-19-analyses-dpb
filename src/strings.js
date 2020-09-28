@@ -75,7 +75,10 @@ Please view the latest listing of the PBO’s COVID-19 Cost Estimates by clickin
         "efas": {
             "title": "Economic and Fiscal Analysis",
             "read_report_cta": "Read the report",
-            "table_title": "COVID-19 Measures included in the Outlook"
+            "table_title": "COVID-19 Measures included in the Outlook",
+            "indicators": {
+                "employment_rate": "Employment Rate (%)"
+            }
         },
         "scenarioanalysis": {
             "title": "Scenario Analysis",
@@ -179,7 +182,10 @@ Vous pouvez consulter la plus récente liste des estimations de coûts relatifs 
         "efas": {
             "title": "Analyses économiques et financières",
             "read_report_cta": "Lire le rapport",
-            "table_title": "Mesures liées à la COVID-19 comprises dans les perspectives"
+            "table_title": "Mesures liées à la COVID-19 comprises dans les perspectives",
+            "indicators": {
+                "employment_rate": "Taux d'emploi (%)"
+            }
         },
         "scenarioanalysis": {
             "title": "Analyse de scénario",
