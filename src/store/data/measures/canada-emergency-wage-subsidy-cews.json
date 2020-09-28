@@ -9,6 +9,16 @@
     "fr": ""
   },
   "costings": [
+        {
+      "id": "LEG-2021-035-S",
+      "hasArtifacts": false,
+      "publication_date": "2020-09-29",
+      "cost": {
+        "20192020": 0,
+        "20202021": 65933
+      }
+    },
+    
     {
       "id": "LEG-2021-035-S",
       "hasArtifacts": true,
