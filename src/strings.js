@@ -68,7 +68,7 @@ Please view the latest listing of the PBO’s COVID-19 Cost Estimates by clickin
             "general_notes": "PBO Cost Estimates may not match previously published costing notes as the estimates were revised based on the 2020 September Economic and Fiscal Outlook. A positive (negative) number increases (reduces) the budgetary deficit. Totals may not add due to rounding.",
             "indicators": {
                 "header_title": "Economic and Fiscal Indicators",
-                "header_note": "Economic and Fiscal Indicators are as of the September EFO. Economic indicators are on a calendar year basis.",
+                "header_note": "Economic indicators are on a calendar year basis.",
                 "covid_measures": "Total COVID-19 Measures included in the EFO ($ billions)",
             }
         },
