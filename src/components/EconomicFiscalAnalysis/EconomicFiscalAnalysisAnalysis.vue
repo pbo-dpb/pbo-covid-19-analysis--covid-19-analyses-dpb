@@ -41,9 +41,9 @@
 
     <br />
 
-    <h3 class="font-bold text-lg text-blue-800">
+    <costings-tools>
       {{ $root.strings.efas.table_title }}
-    </h3>
+    </costings-tools>
 
     <measures-list :efa-measures="efaMeasures"></measures-list>
 
@@ -85,6 +85,7 @@ export default {
     measuresList: require("./MeasuresList").default,
     costingTotal: require("./CostingTotal").default,
     costingIndicators: require("./CostingIndicators").default,
+    costingsTools: require("../CostingsTools/CostingsTools").default,
   },
   computed: {
     efa() {
