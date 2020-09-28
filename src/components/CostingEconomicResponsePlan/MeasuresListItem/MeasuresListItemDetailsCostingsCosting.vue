@@ -1,5 +1,5 @@
 <template>
-  <tr :class="{ 'bg-orange-100': highlighted }">
+  <tr :class="{ 'bg-yellow-200': highlighted }">
     <td class="border p-2">
       <a
         v-if="costing.hasArtifacts"
