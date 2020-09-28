@@ -4,7 +4,11 @@
       <thead>
         <tr>
           <th class="w-1/2 px-2 py-1">
-            {{ $root.strings.costingerp.costing_date_label }}
+            {{
+              costingsCount > 1
+                ? $root.strings.costingerp.costing_date_label.plural
+                : $root.strings.costingerp.costing_date_label.singular
+            }}
           </th>
           <th
             v-for="localizedCostedYear in $root.strings.costingerp.costed_years"
@@ -28,6 +32,8 @@
   </figure>
 </template>
 <script>
+import collect from "collect.js";
+
 export default {
   props: {
     measure: Object,
@@ -36,6 +42,11 @@ export default {
   components: {
     measuresListItemDetailsCostingsCosting: require("./MeasuresListItemDetailsCostingsCosting")
       .default,
+  },
+  computed: {
+    costingsCount() {
+      return collect(this.measure.costings).count();
+    },
   },
 };
 </script>
