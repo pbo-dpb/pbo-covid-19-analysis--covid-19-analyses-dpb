@@ -12,6 +12,15 @@
     {
       "id": "XLEG-2021-023-S",
       "hasArtifacts": false,
+      "publication_date": "2020-09-29",
+      "cost": {
+        "20192020": 0,
+        "20202021": 1363
+      }
+    },
+    {
+      "id": "XLEG-2021-023-S",
+      "hasArtifacts": false,
       "publication_date": "2020-06-18",
       "cost": {
         "20192020": 0,
