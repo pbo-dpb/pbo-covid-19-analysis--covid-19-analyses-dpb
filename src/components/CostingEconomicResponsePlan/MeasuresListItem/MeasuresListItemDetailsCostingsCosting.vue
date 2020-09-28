@@ -1,5 +1,5 @@
 <template>
-  <tr>
+  <tr :class="{ 'bg-orange-100': highlighted }">
     <td class="border p-2">
       <a
         v-if="costing.hasArtifacts"
@@ -44,6 +44,10 @@ export default {
     costing: {
       required: true,
       type: Costing,
+    },
+    highlighted: {
+      required: false,
+      default: false,
     },
   },
 };

@@ -113,6 +113,7 @@ export default {
               efaCosting.id
             ),
             cost: efaCosting.cost,
+            costingId: efaCosting.id,
           };
         })
         .unique((efaMeasure) => {

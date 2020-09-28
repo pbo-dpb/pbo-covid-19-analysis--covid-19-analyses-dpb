@@ -9,13 +9,17 @@
       {{ measure.title[$root.language] }}
     </h3>
 
-    <measures-list-item-details-costings :measure="measure" />
+    <measures-list-item-details-costings
+      :measure="measure"
+      :highlighted-costing-id="highlightedCostingId"
+    />
   </aside>
 </template>
 <script>
 export default {
   props: {
     measure: Object,
+    highlightedCostingId: String,
   },
   components: {
     measuresListItemDetailsCostings: require("./MeasuresListItemDetailsCostings")

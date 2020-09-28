@@ -41,6 +41,7 @@
     <measures-list-item-details
       :id="'item-details-' + uid"
       :measure="_measure"
+      :highlighted-costing-id="highlightedCostingId"
       v-if="showDetails"
     ></measures-list-item-details>
   </li>
@@ -50,6 +51,7 @@ export default {
   props: {
     measure: Object,
     efaMeasure: Object,
+    highlightedCostingId: String,
   },
 
   computed: {

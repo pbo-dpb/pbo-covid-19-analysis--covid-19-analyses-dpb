@@ -23,6 +23,7 @@
       v-for="efaMeasure in efaMeasures"
       :key="efaMeasure.measure.title.en"
       :efa-measure="efaMeasure"
+      :highlighted-costing-id="efaMeasure.costingId"
     ></measures-list-item>
   </ul>
 </template>

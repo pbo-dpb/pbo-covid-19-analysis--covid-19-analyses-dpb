@@ -21,6 +21,7 @@
           :key="costing.id"
           :costing="costing"
           is="measures-list-item-details-costings-costing"
+          :highlighted="highlightedCostingId === costing.id"
         ></tr>
       </tbody>
     </table>
@@ -30,6 +31,7 @@
 export default {
   props: {
     measure: Object,
+    highlightedCostingId: String,
   },
   components: {
     measuresListItemDetailsCostingsCosting: require("./MeasuresListItemDetailsCostingsCosting")
