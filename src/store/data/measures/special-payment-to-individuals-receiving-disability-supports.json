@@ -17,6 +17,15 @@
         "20192020": 0,
         "20202021": 792
       }
+    },
+    {
+      "id": "LEG-2021-031-S",
+      "hasArtifacts": true,
+      "publication_date": "2020-06-25",
+      "cost": {
+        "20192020": 0,
+        "20202021": 595
+      }
     }
   ],
   "hasFiscalImpact": true
