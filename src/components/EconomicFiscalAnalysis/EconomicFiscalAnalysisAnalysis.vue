@@ -41,6 +41,10 @@
 
     <br />
 
+    <h3 class="font-bold text-lg text-blue-800">
+      {{ $root.strings.efas.table_title }}
+    </h3>
+
     <measures-list :efa-measures="efaMeasures"></measures-list>
 
     <li class="grid grid-2 md:grid-cols-8 gap-2 py-2 md:py-1 items-center">
