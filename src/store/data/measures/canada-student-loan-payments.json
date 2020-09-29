@@ -1,7 +1,7 @@
 {
   "title": {
     "en": "Moratorium on the Repayment of Canada Student Loans",
-    "fr": "Remboursement des prêts d’études canadiens"
+    "fr": "Interruption du remboursement de prêts canadiens aux étudiants"
   },
   "notes": [],
   "subtitle": {
@@ -30,7 +30,7 @@
     {
       "id": "XLEG-2021-005-S",
       "hasArtifacts": false,
-      "publication_date": "2020-04-20",
+      "publication_date": "2020-04-30",
       "cost": {
         "20192020": 0,
         "20202021": 158.6
