@@ -10,12 +10,8 @@
         <div
           class="py-4 flex flex-col md:flex-row-reverse items-center justify-between"
         >
-          <a :href="url">
-            <img
-              :src="logo"
-              class="w-full mx-4 md:mx-0 md:w-64"
-              :alt="logoAlt"
-            />
+          <a :href="url" class="mx-4 md:px-0">
+            <img :src="logo" class="w-full md:w-64" :alt="logoAlt" />
           </a>
           <nav>
             <h1
