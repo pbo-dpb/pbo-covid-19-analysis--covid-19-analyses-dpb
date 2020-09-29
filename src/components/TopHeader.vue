@@ -7,17 +7,27 @@
     </div>
     <div class="border-b border-gray-400">
       <section class="container mx-auto">
-        <div class="py-4 flex flex-col md:flex-row-reverse items-center justify-between">
+        <div
+          class="py-4 flex flex-col md:flex-row-reverse items-center justify-between"
+        >
           <a :href="url">
-            <img :src="logo" class="w-full md:w-64" :alt="logoAlt" />
+            <img
+              :src="logo"
+              class="w-full mx-4 md:mx-0 md:w-64"
+              :alt="logoAlt"
+            />
           </a>
           <nav>
             <h1
               class="text-2xl md:text-4xl font-hairline text-gray-800 text-center md:text-left mt-4 md:mt-0"
             >
               <router-link
-                :to="{name:'welcome', params:{'language': $route.params.language}}"
-              >{{ title }}</router-link>
+                :to="{
+                  name: 'welcome',
+                  params: { language: $route.params.language },
+                }"
+                >{{ title }}</router-link
+              >
               <br />
             </h1>
           </nav>
