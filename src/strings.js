@@ -125,9 +125,9 @@ Please view the latest cost estimates prepared by the PBO in response to request
             "title": "Analyse de scénario",
             "descriptor": "The table below summarizes the estimated cost of all COVID-19 response measures up to June 12, 2020. These measures are consistent with the PBO’s economic and fiscal scenario, published on June 18, 2020.",
             "archived": {
-                "title": "Ce tableau a été archivé",
+                "title": "Cette page a été archivée",
                 "label": "Archivé [2020-06-18]",
-                "description": "Ce tableau n'a pas été mis à jour depuis le 18 juin 2020 et ne le sera plus dans le futur."
+                "description": "Cette page a été archivée et n'est encore disponible qu'à des fins de référence, de recherche et d'archivage."
             },
             "in_millions": "Millions de dollars",
             "compare_label": "Sélectionner un autre scénario à des fins de comparaison",
@@ -166,13 +166,13 @@ Please view the latest cost estimates prepared by the PBO in response to request
 
         "home": {
             "title": "Accueil",
-            "descriptor": `Les produits d'analyse COVID-19 du DPB sont conçus pour aider les Canadiens et les parlementaires à évaluer les implications potentielles de la pandémie sur l'économie canadienne et les finances du gouvernement.
+            "descriptor": `Les produits d'analyse liées à la COVID-19 du DPB sont conçus pour aider les Canadiens et les parlementaires à évaluer les implications potentielles de la pandémie sur l'économie canadienne et les finances du gouvernement.
 
-L'outil donne accès à toutes les analyses COVID-19 du PBO, y compris :
+Cet outil donne accès à toutes les analyses et autres travaux liées à la COVID-19 du DPB :
 
-- Les évaluations de coûts liées à la COVID-19 du DPB;
+- Les évaluations de coûts du DPB liées à la COVID-19;
 - Les dernières perspectives économiques et financières du DPB, et les mesures liées à la COVID-19 incluses dans celles-ci; et
-- Aux évaluation de coûts (liées à la COVID-19) demandées par les parlementaires.
+- Les évaluation de coûts (liées à la COVID-19) demandées par les parlementaires.
 
 Les précédentes analyses de scénario du DPB ont été archivées et sont également disponibles.`,
 
