@@ -1,7 +1,7 @@
 <template>
   <li class="py-2 md:py-1">
-    <div class="grid grid-2 md:grid-cols-8 gap-2 items-center">
-      <div class="col-span-2 md:col-span-6 text-center md:text-left">
+    <div class="grid grid-3 md:grid-cols-8 gap-2 items-center">
+      <div class="col-span-3 md:col-span-5 text-center md:text-left">
         <div
           role="switch"
           class="font-medium cursor-pointer"

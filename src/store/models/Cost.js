@@ -13,7 +13,7 @@ export default class Cost {
         return collect(strings[language].costingerp.costed_years).map((costedYear, costedYearKey) => {
             return {
                 year: costedYear,
-                cost: this._cost[costedYearKey]
+                cost: this._cost[costedYearKey] ? this._cost[costedYearKey] : 0
             }
         }).items;
     }
