@@ -1,0 +1,24 @@
+{
+    "title": {
+        "en": "Canada Recovery Sickness Benefit (CRSB)",
+        "fr": "Prestation canadienne de maladie pour la relance économique (PCMRE)"
+    },
+    "notes": [],
+    "subtitle": {
+        "en": "",
+        "fr": ""
+    },
+    "costings": [
+        {
+            "id": "LEG-2021-044-S",
+            "hasArtifacts": true,
+            "publication_date": "2020-10-07",
+            "cost": {
+                "20192020": 0,
+                "20202021": 599,
+                "20212022": 550
+            }
+        }
+    ],
+    "hasFiscalImpact": true
+}
