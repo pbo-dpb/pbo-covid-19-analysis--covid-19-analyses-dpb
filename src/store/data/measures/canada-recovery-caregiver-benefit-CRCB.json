@@ -1,0 +1,24 @@
+{
+    "title": {
+        "en": "Canada Recovery Caregiver Benefit (CRCB)",
+        "fr": "Prestation canadienne de la relance économique pour proches aidants (PCREPA)"
+    },
+    "notes": [],
+    "subtitle": {
+        "en": "",
+        "fr": ""
+    },
+    "costings": [
+        {
+            "id": "LEG-2021-047-S",
+            "hasArtifacts": true,
+            "publication_date": "2020-10-07",
+            "cost": {
+                "20192020": 0,
+                "20202021": 1188,
+                "20212022": 214
+            }
+        }
+    ],
+    "hasFiscalImpact": true
+}

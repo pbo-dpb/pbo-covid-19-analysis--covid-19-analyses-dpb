@@ -65,6 +65,7 @@ Please view the latest listing of the PBO’s COVID-19 Cost Estimates by clickin
             "costed_years": {
                 '20192020': "2019-20",
                 "20202021": "2020-21",
+                /*"20212022": "2021-22",*/
             },
             "costing_date_label": {
                 "plural": "PBO Costings",
@@ -188,6 +189,7 @@ Vous pouvez consulter la plus récente liste des estimations de coûts relatifs 
             "costed_years": {
                 '20192020': "2019-2020",
                 "20202021": "2020-2021",
+                /*"20212022": "2021-2022",*/
             },
             "costing_date_label": {
                 "plural": "Évaluations du coût par le DPB",
