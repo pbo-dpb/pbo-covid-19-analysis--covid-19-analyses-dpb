@@ -17,5 +17,10 @@ export default class Measure {
         return collect(this.costings).first().cost;
     }
 
+    getCostingWithId(id) {
+        return collect(this.costings).first(costing => {
+            return costing.id === id;
+        });
+    }
 
 }

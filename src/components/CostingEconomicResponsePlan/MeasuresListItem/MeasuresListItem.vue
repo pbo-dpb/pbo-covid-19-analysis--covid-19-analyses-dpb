@@ -26,6 +26,7 @@
           {{ _measure.subtitle[$root.language] }}
         </div>
       </div>
+
       <div
         v-for="year in cost.localizedCost($root.language)"
         :key="year.year + _measure.title.en"
@@ -38,6 +39,7 @@
         <costings-number :value="year.cost" />
       </div>
     </div>
+
     <measures-list-item-details
       :id="'item-details-' + uid"
       :measure="_measure"
@@ -64,6 +66,15 @@ export default {
       if (this.efaMeasure && this.efaMeasure.cost) {
         return this.efaMeasure.cost;
       }
+
+      if (this.efaMeasure && this.highlightedCostingId) {
+        let highlightedCosting = this.efaMeasure.measure.getCostingWithId(
+          this.highlightedCostingId
+        );
+        if (highlightedCosting && highlightedCosting.cost)
+          return highlightedCosting.cost;
+      }
+
       return this._measure.cost;
     },
   },
