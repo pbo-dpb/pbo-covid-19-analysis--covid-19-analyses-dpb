@@ -3,7 +3,12 @@ module.exports = {
     // removeDeprecatedGapUtilities: true,
     // purgeLayersByDefault: true,
   },
-  purge: [],
+  /*purge: {
+    options: {
+      whitelistPatterns: [/^col-span-/, /^grid-cols-/],
+      whitelist: ['col-span-5', 'grid-cols-3'],
+    }
+  },*/
   theme: {
     extend: {},
   },

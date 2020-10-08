@@ -156,6 +156,10 @@ export default {
           return { year: localizedYear, amount: localizedCostings.sum("cost") };
         }).items;
     },*/
+
+    /*
+    
+    */
   },
 };
 </script>

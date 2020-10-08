@@ -1,7 +1,7 @@
 <template>
   <aside class="bg-blue-100 p-2 my-8 rounded-lg">
     <div
-      class="col-span-2 text-center text-xl pb-2 mb-2 border-b border-blue-800 leading-none"
+      class="col-span-2 text-center text-xl pt-2 pb-4 mb-4 border-b border-blue-800 leading-none"
     >
       <component :is="'div'" class="font-bold text-blue-800">{{
         $root.strings.costingerp.indicators.header_title
@@ -14,9 +14,11 @@
       <li
         v-for="(cost, indicator) in efa.indicators"
         :key="indicator"
-        class="grid grid-2 gap-2 py-2 items-center"
+        class="grid grid-2 gap-2 py-4 items-center"
       >
-        <div class="col-span-2 text-center text-lg pb-2 text-blue-900">
+        <div
+          class="col-span-2 text-center text-lg font-semibold pb-2 text-blue-900"
+        >
           <component :is="'span'">
             {{ $root.strings.efas.indicators[indicator] }}</component
           >
@@ -26,10 +28,10 @@
           :key="year + indicator"
           class="col-span-1 text-center"
         >
-          <div class="font-thin text-sm text-gray-700">{{ year }}</div>
-          <span class="text-blue-900 font-bold">{{
+          <span class="text-blue-900 text-xl font-bold">{{
             number.toLocaleString($root.language)
           }}</span>
+          <div class="font-thin text-sm text-gray-700">{{ year }}</div>
         </div>
       </li>
     </ul>
