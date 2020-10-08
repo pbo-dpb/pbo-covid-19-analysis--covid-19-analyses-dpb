@@ -1,7 +1,16 @@
 <template>
   <li class="py-2 md:py-1">
-    <div class="grid grid-3 md:grid-cols-8 gap-2 items-center">
-      <div class="col-span-3 md:col-span-5 text-center md:text-left">
+    <div
+      class="grid md:grid-cols-8 gap-2 items-center"
+      :class="['grid-' + $store.state.costedYearsCount]"
+    >
+      <div
+        class="text-center md:text-left"
+        :class="[
+          'col-span-' + $store.state.costedYearsCount,
+          'md:col-span-' + (8 - $store.state.costedYearsCount),
+        ]"
+      >
         <div
           role="switch"
           class="font-medium cursor-pointer"

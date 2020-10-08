@@ -48,10 +48,15 @@
     <measures-list :efa-measures="efaMeasures"></measures-list>
 
     <li
-      class="grid grid-2 md:grid-cols-8 gap-2 py-2 md:py-1 items-center border-t border-gray-200"
+      class="grid md:grid-cols-8 gap-2 py-2 md:py-1 items-center border-t border-gray-200"
+      :class="['grid-cols-' + $store.state.costedYearsCount]"
     >
       <div
-        class="col-span-2 md:col-span-6 text-center md:text-left leading-tight"
+        class="text-center md:text-left leading-tight"
+        :class="[
+          'col-span-' + $store.state.costedYearsCount,
+          'md:col-span-' + (8 - $store.state.costedYearsCount),
+        ]"
       >
         <component :is="'span'" class="font-medium">{{
           $root.strings.efas.other_measures.title

@@ -3,6 +3,8 @@ import Vuex from 'vuex'
 import Measure from "./models/Measure"
 import Efa from "./models/Efa"
 import { collect } from 'collect.js'
+import strings from "../strings"
+
 Vue.use(Vuex)
 
 const store = new Vuex.Store({
@@ -11,7 +13,8 @@ const store = new Vuex.Store({
         efas: require.context('./data/efas/', true, /\.json$/i).keys().map(key => require("./data/efas/" + key.split('/').pop().split('.')[0])).map(rawEfa => new Efa(rawEfa)),
         settings: {
             sortCostingsBy: "name"
-        }
+        },
+        costedYearsCount: Object.keys(strings["en"].costingerp.costed_years).length,
     },
 
     getters: {
@@ -32,7 +35,9 @@ const store = new Vuex.Store({
 
         getLatestEfa: (state) => () => {
             return collect(state.efas).sortByDesc("publication_date").first();
-        }
+        },
+
+
     }
 
 })

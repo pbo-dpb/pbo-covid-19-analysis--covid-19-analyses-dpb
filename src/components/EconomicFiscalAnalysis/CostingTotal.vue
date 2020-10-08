@@ -1,25 +1,34 @@
 <template>
   <!-- TODO Remove mockup -->
-  <li
-    class="grid grid-2 md:grid-cols-8 gap-2 py-2 md:py-1 items-center border-t-2 border-blue-800"
-  >
-    <div class="col-span-2 md:col-span-6 text-center md:text-left">
-      <component :is="'span'" class="font-bold">{{
-        $root.strings.efas.total.title
-      }}</component>
-    </div>
-    <div
-      v-for="year in efa.total.cost.localizedCost($root.language)"
-      :key="year.year + '_othermeasures'"
-      class="col-span-1 text-center font-bold"
+  <div class="border-blue-800 border-t-2">
+    <li
+      class="grid md:grid-cols-8 gap-2 py-2 md:py-1 items-center"
+      :class="['grid-cols-' + $store.state.costedYearsCount]"
     >
-      <div class="md:hidden font-thin text-sm text-gray-700">
-        {{ year.year }}
+      <div
+        class="text-center md:text-left"
+        :class="[
+          'col-span-' + $store.state.costedYearsCount,
+          'md:col-span-' + (8 - $store.state.costedYearsCount),
+        ]"
+      >
+        <component :is="'span'" class="font-bold">{{
+          $root.strings.efas.total.title
+        }}</component>
       </div>
+      <div
+        v-for="year in years"
+        :key="year.year + '_othermeasures'"
+        class="col-span-1 text-center font-bold"
+      >
+        <div class="md:hidden font-thin text-sm text-gray-700">
+          {{ year.year }}
+        </div>
 
-      <costings-number :value="year.cost" />
-    </div>
-  </li>
+        <costings-number :value="year.cost" />
+      </div>
+    </li>
+  </div>
   <!-- End of todo -->
 </template>
 <script>
@@ -28,6 +37,11 @@ export default {
   props: {
     //totals: Object,
     efa: Efa,
+  },
+  computed: {
+    years() {
+      return this.efa.total.cost.localizedCost(this.$root.language);
+    },
   },
 };
 </script>

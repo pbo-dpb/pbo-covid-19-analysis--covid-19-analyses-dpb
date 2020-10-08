@@ -1,10 +1,17 @@
 <template>
   <ul class="divide-y divide-gray-200">
     <li
-      class="grid grid-2 md:grid-cols-8 gap-2 py-2 md:py-1 even:bg-gray-100 invisible md:visible"
+      class="grid md:grid-cols-8 gap-2 py-2 md:py-1 even:bg-gray-100 invisible md:visible"
+      :class="['grid-cols-' + $store.state.costedYearsCount]"
       aria-hidden="true"
     >
-      <div class="col-span-2 md:col-span-6 text-center md:text-left">
+      <div
+        class="text-center md:text-left"
+        :class="[
+          'col-span-' + $store.state.costedYearsCount,
+          'md:col-span-' + (8 - $store.state.costedYearsCount),
+        ]"
+      >
         <div class="font-thin text-sm">
           {{ $root.strings.fullcostings.in_millions }}
         </div>
