@@ -14,14 +14,21 @@
       "hasArtifacts": true,
       "publication_date": "2020-10-07",
       "cost": {
-        "20192020": 10508,
-        "20202021": 66179
+        "gross": {
+          "20192020": 10508,
+          "20202021": 66179
+        },
+        "net": {
+          "20192020": 10508,
+          "20202021": 69779
+        }
       }
     },
     {
       "id": "XLEG-2021-032-S",
       "hasArtifacts": false,
       "publication_date": "2020-09-29",
+      "hide_from_measures_list": true,
       "cost": {
         "20192020": 11079.58,
         "20202021": 71259.83
