@@ -57,11 +57,11 @@ The PBO’s prior Scenario Analysis has been archived and is also available.`
         },
         "costingerp": {
             "title": "Cost Estimates",
-            "descriptor": `The Government’s COVID- 19 Economic Response Plan was launched on March 13, 2020. It includes a range of new programs and is underpinned by new legislative authorities (Bills C-13, C-14, C-15 and C-20), which enact new benefits and programs and grant the Government extraordinary powers.
+            "descriptor": `The Government’s COVID- 19 Economic Response Plan was launched on March 13, 2020. It includes a range of new programs and is underpinned by new legislative authorities (Bills C-13, C-14, C-15, C-20, and C-4), which enact new benefits and programs and grant the Government extraordinary powers.
 
 Consistent with the Parliamentary Budget Officer (PBO)'s mandate to provide independent, non-partisan analysis to Parliament on matters of particular significance relating to the nation’s finances or economy, the PBO will prepare cost estimates of the components of the Government’s COVID-19 Economic Response Plan.
 
-Please view the latest listing of the PBO’s COVID-19 Cost Estimates by clicking on the links below.`,
+Please view the latest listing of the PBO’s COVID-19 Cost Estimates by clicking on the links below. The Cost Estimates below represent the net cost to the government.`,
             "costed_years": {
                 '20192020': "2019-20",
                 "20202021": "2020-21",
@@ -72,7 +72,7 @@ Please view the latest listing of the PBO’s COVID-19 Cost Estimates by clickin
                 "singular": "PBO Costing"
             },
             "no_incremental_impact": "No incremental fiscal impact",
-            "general_notes": "PBO Cost Estimates may not match previously published costing notes as the estimates were revised based on the 2020 September Economic and Fiscal Outlook. A positive (negative) number increases (reduces) the budgetary deficit. Totals may not add due to rounding.",
+            "general_notes": "PBO Cost Estimates may not match previously published costing notes as the estimates were revised based on the 2020 September Economic and Fiscal Outlook (EFO). Where applicable, starting with the 2020 September EFO estimates for 2021-22 are also presented. Estimates prior to the 2020 September EFO are on a net basis. A positive (negative) number increases (reduces) the budgetary deficit. Totals may not add due to rounding.",
             "indicators": {
                 "header_title": "Economic and Fiscal Indicators",
                 "header_note": "Economic indicators are on a calendar year basis.",
@@ -86,6 +86,9 @@ Please view the latest listing of the PBO’s COVID-19 Cost Estimates by clickin
             "other_measures": {
                 "title": "Other COVID-19 costings",
                 "subtitle": "Includes other COVID-19 costing measures as of the September EFO"
+            },
+            "Canada Emergency Commercial Rent Assistance (CECRA)": {
+                "subtitle": "Based on the September 8, 2020 announcement"
             },
 
             "total": {
@@ -181,11 +184,11 @@ Les précédentes analyses de scénario du DPB ont été archivées et sont éga
 
         "costingerp": {
             "title": "Évaluation de coûts",
-            "descriptor": `Le Plan d’intervention économique du Canada pour répondre à la COVID-19 a été lancé le 13 mars 2020. Il comprend divers nouveaux programmes et est étayé par de nouvelles autorités législatives(les projets de loi C - 13, C - 14 et C - 15), qui promulguent de nouveaux programmes et prestations et accordent au gouvernement des pouvoirs extraordinaires.
+            "descriptor": `Le Plan d’intervention économique du Canada pour répondre à la COVID-19 a été lancé le 13 mars 2020. Il comprend divers nouveaux programmes et est étayé par de nouvelles autorités législatives(les projets de loi C - 13, C - 14, C - 15, et C - 4), qui promulguent de nouveaux programmes et prestations et accordent au gouvernement des pouvoirs extraordinaires.
 
 Conformément à son mandat, qui consiste à fournir au Parlement des analyses neutres et indépendantes sur des questions économiques et financières particulièrement importantes pour le pays, le directeur parlementaire du budget estimera le coût des éléments du Plan d’intervention économique du Canada pour répondre à la COVID-19.
 
-Vous pouvez consulter la plus récente liste des estimations de coûts relatifs à la COVID-19 en cliquant sur les liens suivants.`,
+Vous pouvez consulter la plus récente liste des estimations de coûts relatifs à la COVID-19 en cliquant sur les liens suivants.Les estimations de coûts ci-dessous représentent le coût net pour le gouvernement.`,
             "costed_years": {
                 '20192020': "2019-2020",
                 "20202021": "2020-2021",
@@ -196,7 +199,7 @@ Vous pouvez consulter la plus récente liste des estimations de coûts relatifs 
                 "singular": "Évaluation du coût par le DPB"
             },
             "no_incremental_impact": "Pas d'impact fiscal supplémentaire",
-            "general_notes": "Les estimations de coûts du DPB peuvent ne pas correspondre aux notes de coûts publiées précédemment car les estimations ont été révisées sur la base des Perspectives économiques et financières de septembre 2020. Un nombre positif (négatif) indique une augmentation (réduction) du déficit budgétaire. Les chiffres ayant été arrondis, les totaux peuvent ne pas correspondre.",
+            "general_notes": "Les estimations de coûts du DPB peuvent ne pas correspondre aux notes de coûts publiées précédemment car les estimations ont été révisées sur la base des Perspectives économiques et financières de septembre 2020 (PEF). Le cas échéant, à partir de septembre 2020, les estimations de l'PEF pour 2021-22 sont également présentées. Les estimations antérieures à l'PEF de septembre 2020 sont présentées sur une base nette. Un nombre positif (négatif) indique une augmentation (réduction) du déficit budgétaire. Les chiffres ayant été arrondis, les totaux peuvent ne pas correspondre.",
 
             "indicators": {
                 "header_title": "Indicateurs économiques et fiscaux",
@@ -211,6 +214,9 @@ Vous pouvez consulter la plus récente liste des estimations de coûts relatifs 
             "other_measures": {
                 "title": "Autres mesures liées à la COVID-19",
                 "subtitle": "Inclus d'autres mesures liées à la COVID-19 en date des perspectives économiques et financières de septembre 2020"
+            },
+             "Aide d’urgence du Canada pour le loyer commercial (AUCLC)": {
+                "subtitle": "Basé sur l'annonce du 8 septembre 2020"
             },
             "total": {
                 "title": "Total des mesures liées à la COVID-19"
