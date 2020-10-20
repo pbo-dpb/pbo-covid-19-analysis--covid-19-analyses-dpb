@@ -1,0 +1,29 @@
+{
+    "title": {
+        "en": "Employment Insurance Temporary Benefit Enhancements",
+        "fr": "Améliorations temporaires des prestations d’assurance-emploi"
+    },
+    "notes": [],
+    "subtitle": {
+        "en": "",
+        "fr": ""
+    },
+    "costings": [
+        {
+            "id": "LEG-2021-046-S",
+            "hasArtifacts": true,
+            "publication_date": "2020-10-19",
+            "cost": {
+                "gross": {
+                    "20202021": 8632,
+                    "20212022": 6508
+                },
+                "net": {
+                    "20202021": 7704,
+                    "20212022": 5807
+                }
+            }
+        }
+    ],
+    "hasFiscalImpact": true
+}
