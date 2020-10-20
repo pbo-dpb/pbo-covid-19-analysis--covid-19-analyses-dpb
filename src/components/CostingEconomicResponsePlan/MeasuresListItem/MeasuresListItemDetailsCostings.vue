@@ -26,6 +26,7 @@
           :costing="costing"
           is="measures-list-item-details-costings-costing"
           :highlighted="highlightedCostingId === costing.id"
+          :prefer-net-cost="preferNetCost"
         ></tr>
       </tbody>
     </table>
@@ -38,6 +39,10 @@ export default {
   props: {
     measure: Object,
     highlightedCostingId: String,
+    preferNetCost: {
+      type: Boolean,
+      default: false,
+    },
   },
   components: {
     measuresListItemDetailsCostingsCosting: require("./MeasuresListItemDetailsCostingsCosting")

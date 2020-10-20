@@ -12,6 +12,7 @@
     <measures-list-item-details-costings
       :measure="measure"
       :highlighted-costing-id="highlightedCostingId"
+      :prefer-net-cost="preferNetCost"
     />
   </aside>
 </template>
@@ -20,6 +21,10 @@ export default {
   props: {
     measure: Object,
     highlightedCostingId: String,
+    preferNetCost: {
+      type: Boolean,
+      default: false,
+    },
   },
   components: {
     measuresListItemDetailsCostings: require("./MeasuresListItemDetailsCostings")

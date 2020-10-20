@@ -29,7 +29,7 @@
       }}</span>
     </td>
     <td
-      v-for="cost in costing.cost.localizedCost($root.language)"
+      v-for="cost in costing.cost.localizedCost($root.language, preferNetCost)"
       :key="costing.id + cost.year"
       class="border px-2 py-1 text-center"
     >
@@ -47,6 +47,10 @@ export default {
     },
     highlighted: {
       required: false,
+      default: false,
+    },
+    preferNetCost: {
+      type: Boolean,
       default: false,
     },
   },

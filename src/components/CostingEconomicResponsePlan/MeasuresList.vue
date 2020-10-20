@@ -30,6 +30,7 @@
       v-for="measure in measures"
       :key="measure.title_en"
       :measure="measure"
+      :prefer-net-cost="preferNetCost"
     ></measures-list-item>
   </ul>
 </template>
@@ -42,6 +43,10 @@ export default {
     measures: {
       type: Array,
       required: true,
+    },
+    preferNetCost: {
+      type: Boolean,
+      default: false,
     },
   },
 };

@@ -37,7 +37,7 @@
       </div>
 
       <div
-        v-for="year in cost.localizedCost($root.language)"
+        v-for="year in cost.localizedCost($root.language, preferNetCost)"
         :key="year.year + _measure.title.en"
         class="col-span-1 text-center"
         :class="{ italic: !_measure.hasFiscalImpact }"
@@ -54,6 +54,7 @@
       :measure="_measure"
       :highlighted-costing-id="highlightedCostingId"
       v-if="showDetails"
+      :prefer-net-cost="preferNetCost"
     ></measures-list-item-details>
   </li>
 </template>
@@ -63,6 +64,10 @@ export default {
     measure: Object,
     efaMeasure: Object,
     highlightedCostingId: String,
+    preferNetCost: {
+      type: Boolean,
+      default: false,
+    },
   },
 
   computed: {

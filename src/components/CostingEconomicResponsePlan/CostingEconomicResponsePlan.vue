@@ -5,7 +5,7 @@
     ></markdown-content>
 
     <br />
-    <measures-list :measures="measures"></measures-list>
+    <measures-list :measures="measures" :prefer-net-cost="true"></measures-list>
 
     <div class="my-4 pt-4 text-sm text-gray-800 border-t border-gray-100">
       {{ $root.strings.costingerp.general_notes }}
