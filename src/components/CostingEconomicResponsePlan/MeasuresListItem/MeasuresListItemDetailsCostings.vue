@@ -21,7 +21,7 @@
       </thead>
       <tbody>
         <tr
-          v-for="costing in measure.costings"
+          v-for="costing in costings"
           :key="costing.id"
           :costing="costing"
           is="measures-list-item-details-costings-costing"
@@ -51,6 +51,11 @@ export default {
   computed: {
     costingsCount() {
       return collect(this.measure.costings).count();
+    },
+    costings() {
+      return collect(this.measure.costings).when(this.preferNetCost, (coll) => {
+        return coll.filter((costing) => costing.hasArtifacts);
+      }).items;
     },
   },
 };

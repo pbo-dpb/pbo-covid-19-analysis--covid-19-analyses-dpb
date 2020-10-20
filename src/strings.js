@@ -87,9 +87,7 @@ Please view the latest listing of the PBO’s COVID-19 Cost Estimates by clickin
                 "title": "Other COVID-19 costings",
                 "subtitle": "Includes other COVID-19 costing measures as of the September EFO"
             },
-            "Canada Emergency Commercial Rent Assistance (CECRA)": {
-                "subtitle": "Based on the September 8, 2020 announcement"
-            },
+
 
             "total": {
                 "title": "Total COVID-19 measures"
@@ -215,9 +213,7 @@ Vous pouvez consulter la plus récente liste des estimations de coûts relatifs 
                 "title": "Autres mesures liées à la COVID-19",
                 "subtitle": "Inclus d'autres mesures liées à la COVID-19 en date des perspectives économiques et financières de septembre 2020"
             },
-             "Aide d’urgence du Canada pour le loyer commercial (AUCLC)": {
-                "subtitle": "Basé sur l'annonce du 8 septembre 2020"
-            },
+
             "total": {
                 "title": "Total des mesures liées à la COVID-19"
             },
