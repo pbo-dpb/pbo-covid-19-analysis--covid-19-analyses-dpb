@@ -81,7 +81,7 @@
 
     <costing-indicators :efa="efa"></costing-indicators>
 
-    <small>{{ $root.strings.costingerp.general_notes }}</small>
+    <small>{{ $root.strings.efas.general_notes }}</small>
   </div>
 </template>
 <script>
