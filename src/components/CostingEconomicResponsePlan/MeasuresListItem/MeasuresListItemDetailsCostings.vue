@@ -54,7 +54,7 @@ export default {
     },
     costings() {
       return collect(this.measure.costings).when(this.preferNetCost, (coll) => {
-        return coll.filter((costing) => costing.hasArtifacts);
+        return coll.reject((costing) => costing.hideFromMeasuresTable);
       }).items;
     },
   },

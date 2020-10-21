@@ -14,10 +14,10 @@
       <li
         v-for="(cost, indicator) in efa.indicators"
         :key="indicator"
-        class="grid grid-2 gap-2 py-4 items-center"
+        class="grid grid-3 md:grid-cols-8 gap-2 py-4 items-center"
       >
         <div
-          class="col-span-2 text-center text-lg font-semibold pb-2 text-blue-900"
+          class="col-span-3 md:col-span-5 text-center text-lg font-semibold pb-2 text-blue-900"
         >
           <component :is="'span'">
             {{ $root.strings.efas.indicators[indicator] }}</component
