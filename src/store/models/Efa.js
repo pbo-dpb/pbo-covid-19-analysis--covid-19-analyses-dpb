@@ -9,6 +9,7 @@ export default class Efa {
         this.url = rawEfa.url;
         this.poster = rawEfa.poster;
         this.indicators = rawEfa.indicators;
+        this.files = rawEfa.files;
 
         this.otherMeasures = {
             cost: new Cost(rawEfa.other_measures.cost),

@@ -100,7 +100,7 @@ export default {
       return this.$store.getters.getEfaById(this.$route.params.efaId);
     },
     documents() {
-      return [
+      let docs = [
         {
           title: this.efa.title[this.$root.language],
           url: this.efa.url[this.$root.language],
@@ -109,6 +109,15 @@ export default {
           icon: "pdf",
         },
       ];
+      return collect(docs).merge(
+        collect(this.efa.files).map((file) => {
+          return {
+            title: file[this.$root.language].title,
+            url: file[this.$root.language].url,
+            icon: file.type,
+          };
+        }).items
+      ).items;
     },
     efaMeasures() {
       return collect(this.efa.costings)

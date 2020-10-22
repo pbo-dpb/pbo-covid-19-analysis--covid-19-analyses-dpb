@@ -65,6 +65,8 @@ export default {
           return ["fas", "fa-arrow-right"];
         case "pdf":
           return ["fas", "fa-file-pdf"];
+        case "xlsx":
+          return ["fas", "fa-file-excel"];
       }
       return null;
     },

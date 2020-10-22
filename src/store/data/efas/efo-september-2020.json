@@ -17,6 +17,19 @@
         "en": "https://pbo-dpb.s3.ca-central-1.amazonaws.com/images/7cf000de2c3d22e6e7337e14c748f647fef4a1c7",
         "fr": "https://pbo-dpb.s3.ca-central-1.amazonaws.com/images/04e180f534ebbd5434b4e42b9a2abb17f894d5e6"
     },
+    "files": [
+        {
+            "type": "xlsx",
+            "en": {
+                "title": "Supplementary Data",
+                "url": "https://www.pbo-dpb.gc.ca/web/default/files/Documents/Reports/RP-2021-027-S/RP-2021-027-S.xlsx"
+            },
+            "fr": {
+                "title": "Données supplémentaires",
+                "url": "https://www.pbo-dpb.gc.ca/web/default/files/Documents/Reports/RP-2021-027-S/RP-2021-027-S.xlsx"
+            }
+        }
+    ],
     "indicators": {
         "real_gdp_growth": {
             "2019": "1.7",
@@ -48,14 +61,14 @@
         "cost": {
             "20192020": 549,
             "20202021": 58540,
-            "20212022": 9537 
+            "20212022": 9537
         }
     },
     "total": {
         "cost": {
             "20192020": 11751,
             "20202021": 225899,
-            "20212022":  9647 
+            "20212022": 9647
         }
     },
     "costings": [
