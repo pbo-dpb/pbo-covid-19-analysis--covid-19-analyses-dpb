@@ -28,6 +28,17 @@
                 "title": "Données supplémentaires",
                 "url": "https://www.pbo-dpb.gc.ca/web/default/files/Documents/Reports/RP-2021-027-S/RP-2021-027-S.xlsx"
             }
+        },
+        {
+            "type": "xlsx",
+            "en": {
+                "title": "Other COVID-19 costings",
+                "url": "https://www.pbo-dpb.gc.ca/web/default/files/Documents/Reports/RP-2021-027-S/data2.xlsx"
+            },
+            "fr": {
+                "title": "Autres évaluations de coûts liées aux mesures concernant la COVID-19",
+                "url": "https://www.pbo-dpb.gc.ca/web/default/files/Documents/Reports/RP-2021-027-S/data2.xlsx"
+            }
         }
     ],
     "indicators": {
