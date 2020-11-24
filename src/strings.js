@@ -120,6 +120,10 @@ Please view the PBO’s COVID-19 scenario analysis reports by clicking on the li
 The PBO continues to respond to requests from committees and parliamentarians for cost estimates of new legislation and program proposals related to the COVID-19 pandemic.
 
 Please view the latest cost estimates prepared by the PBO in response to requests from parliamentarians by clicking on the links below.`,
+        },
+        "monitoringframework": {
+            "title": "Monitoring Framework for Government Spending",
+            "descriptor": `TThe Parliamentary Budget Officer (PBO) has developed a monitoring framework to assist parliamentarians in tracking all the Government’s announcements and spending related to COVID-19. This tracking document enumerates the COVID-19 measures announced by the Government and includes high level implementation and spending data collected by the PBO from numerous federal departments and agencies through information requests.`,
         }
     },
     fr: {
@@ -245,6 +249,10 @@ Pour consulter les derniers rapports d’analyse de scénario du DPB, cliquer su
 Le DPB continue de répondre aux demandes des comités et des parlementaires quant aux coûts estimatifs des mesures législatives et des programmes proposés en réponse à la pandémie de COVID-19.
 
 Vous pouvez consulter les dernières prévisions de coûts produites par le DPB en réponse aux demandes des parlementaires en cliquant sur les liens ci - dessous.`,
+        },
+        "monitoringframework": {
+            "title": "Cadre de surveillance des dépenses du gouvernement",
+            "descriptor": `Le directeur parlementaire du budget (DPB) a développé un cadre de surveillance pour aider les parlementaires à suivre toutes les annonces et les dépenses du gouvernement liées à la COVID-19. Le présent document de surveillance dresse la liste des mesures liées à la COVID-19 annoncées par le gouvernement et comprend des données de haut niveau sur la mise en œuvre et les dépenses recueillies par le DPB auprès de nombreux ministères et organismes fédéraux au moyen de demandes d'information.`,
         }
     }
 }

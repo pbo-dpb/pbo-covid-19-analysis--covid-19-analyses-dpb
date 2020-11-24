@@ -9,16 +9,16 @@
       >
         <li
           @click="navigate"
-          class="px-4 xl:px-2 py-2 xl:mr-0 xl:-ml-2 xl:-mr-2 cursor-pointer mb-2 bg-gray-100 hover:bg-gray-200"
+          class="px-4 xl:px-2 py-4 xl:mr-0 xl:-ml-2 xl:-mr-2 cursor-pointer mb-2 bg-gray-100 hover:bg-gray-200 text-sm leading-tight"
           :class="{
-            'bg-gray-700': isActiveLink(link),
+            'bg-gray-800': isActiveLink(link),
             'hover:bg-gray-700': isActiveLink(link),
-            'text-base': $route.params.language === 'en',
-            'text-sm': $route.params.language === 'fr',
+            'tracking-tight': $route.params.language === 'en',
+            'tracking-tighter': $route.params.language === 'fr',
           }"
         >
           <a
-            class="font-medium hover:underline"
+            class="hover:underline"
             :class="{
               'text-blue-800': !isActiveLink(link),
               'text-white': isActiveLink(link),
@@ -88,6 +88,15 @@ export default {
           title: this.$root.strings.parliamentariansrequests.title,
           destination: {
             name: "ParliamentariansRequests",
+            params: {
+              language: this.$route.params.language,
+            },
+          },
+        },
+        {
+          title: this.$root.strings.monitoringframework.title,
+          destination: {
+            name: "MonitoringFramework",
             params: {
               language: this.$route.params.language,
             },
