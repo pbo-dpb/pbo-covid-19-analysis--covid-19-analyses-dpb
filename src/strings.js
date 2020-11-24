@@ -50,8 +50,9 @@ export default {
 The tool provides access to all the PBO’s COVID-19 Analysis, including:
             
 -	The PBO’s COVID-19 Cost Estimates; 
--	The PBO’s latest Economic and Fiscal Outlook, and the COVID-19 measures included in it; and,
--	COVID-19 Costings Requested by Parliamentarians.
+-	The PBO’s latest Economic and Fiscal Outlook, and the COVID-19 measures included in it
+-	COVID-19 Costings Requested by Parliamentarians; and,
+-   The PBO's COVID-19 Monitoring Framework for Government Spending.
 
 The PBO’s prior Scenario Analysis has been archived and is also available.`
         },
@@ -123,7 +124,7 @@ Please view the latest cost estimates prepared by the PBO in response to request
         },
         "monitoringframework": {
             "title": "Monitoring Framework for Government Spending",
-            "descriptor": `TThe Parliamentary Budget Officer (PBO) has developed a monitoring framework to assist parliamentarians in tracking all the Government’s announcements and spending related to COVID-19. This tracking document enumerates the COVID-19 measures announced by the Government and includes high level implementation and spending data collected by the PBO from numerous federal departments and agencies through information requests.`,
+            "descriptor": `The Parliamentary Budget Officer (PBO) has developed a monitoring framework to assist parliamentarians in tracking all the Government’s announcements and spending related to COVID-19. This tracking document enumerates the COVID-19 measures announced by the Government and includes high level implementation and spending data collected by the PBO from numerous federal departments and agencies through information requests.`,
         }
     },
     fr: {
@@ -179,8 +180,9 @@ Please view the latest cost estimates prepared by the PBO in response to request
 Cet outil donne accès à toutes les analyses et autres travaux liées à la COVID-19 du DPB :
 
 - Les évaluations de coûts du DPB liées à la COVID-19;
-- Les dernières perspectives économiques et financières du DPB, et les mesures liées à la COVID-19 incluses dans celles-ci; et
-- Les évaluation de coûts (liées à la COVID-19) demandées par les parlementaires.
+- Les dernières perspectives économiques et financières du DPB, et les mesures liées à la COVID-19 incluses dans celles-ci
+- Les évaluation de coûts (liées à la COVID-19) demandées par les parlementaires; et
+- Le cadre de surveillance des dépenses du gouvernement du DPB pour la COVID-19.
 
 Les précédentes analyses de scénario du DPB ont été archivées et sont également disponibles.`,
 
