@@ -9,7 +9,7 @@
       >
         <li
           @click="navigate"
-          class="px-4 xl:px-2 py-4 xl:mr-0 xl:-ml-2 xl:-mr-2 cursor-pointer mb-2 bg-gray-100 hover:bg-gray-200 text-sm leading-tight"
+          class="px-4 xl:px-2 py-4 xl:-ml-2 xl:-mr-2 cursor-pointer mb-2 bg-gray-100 hover:bg-gray-200 text-sm leading-tight"
           :class="{
             'bg-gray-800': isActiveLink(link),
             'hover:bg-gray-700': isActiveLink(link),

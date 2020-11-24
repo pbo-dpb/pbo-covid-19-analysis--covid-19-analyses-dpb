@@ -9,7 +9,6 @@
   </div>
 </template>
 <script>
-import collect from "collect.js";
 export default {
   computed: {
     items() {
