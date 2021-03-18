@@ -10,6 +10,16 @@
     },
     "costings": [
         {
+            "id": "LEG-2021-071-S",
+            "hasArtifacts": true,
+            "publication_date": "2021-03-18",
+            "cost": {
+                "20192020": 0,
+                "20202021": 441,
+                "20212022": 458
+            }
+        },
+        {
             "id": "LEG-2021-044-S",
             "hasArtifacts": true,
             "publication_date": "2020-10-07",
