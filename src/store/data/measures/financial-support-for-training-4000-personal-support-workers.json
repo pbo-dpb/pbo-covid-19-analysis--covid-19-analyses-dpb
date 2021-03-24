@@ -1,0 +1,25 @@
+{
+    "title": {
+        "en": "Financial support for training 4,000 personal support workers",
+        "fr": "Aide financière pour la formation de 4 000 préposés aux bénéficiaires"
+    },
+    "notes": [],
+    "subtitle": {
+        "en": "",
+        "fr": ""
+    },
+    "costings": [
+        {
+            "id": "LEG-2021-064-M",
+            "hasArtifacts": true,
+            "publication_date": "2021-02-09",
+            "cost": {
+                "20192020": 0,
+                "20202021": 1.3,
+                "20212022": 20.3,
+                "20222023": 11.9
+            }
+        }
+    ],
+    "hasFiscalImpact": true
+}
