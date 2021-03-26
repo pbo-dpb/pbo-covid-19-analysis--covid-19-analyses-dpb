@@ -1,0 +1,143 @@
+{
+    "id": "RP-2021-027-S",
+    "publication_date": "2021-03-31",
+    "title": {
+        "en": "Pre-Budget Outlook",
+        "fr": "Perspectives prébudgétaires"
+    },
+    "description": {
+        "en": "This report updates PBO’s September 2020 Economic and Fiscal Outlook in advance of Budget 2021. Our updated outlook incorporates economic data up to and including 12 March 2021.",
+        "fr": "Ce rapport actualise les Perspectives économiques et financières de septembre 2020 du DPB en prévision du budget de 2021. Il comprend les données économiques disponibles jusqu’au 12 mars 2021 inclusivement."
+    },
+    "url": {
+        "en": "https://www.pbo-dpb.gc.ca/en/blog/news/RP-2021-047-S--pre-budget-outlook--perspectives-prebudgetaires",
+        "fr": "https://www.pbo-dpb.gc.ca/fr/blog/news/RP-2021-047-S--pre-budget-outlook--perspectives-prebudgetaires"
+    },
+    "poster": {
+        "en": "https://pbo-dpb.s3.ca-central-1.amazonaws.com/images/7cf000de2c3d22e6e7337e14c748f647fef4a1c7",
+        "fr": "https://pbo-dpb.s3.ca-central-1.amazonaws.com/images/04e180f534ebbd5434b4e42b9a2abb17f894d5e6"
+    },
+    "files": [],
+    "indicators": {
+        "real_gdp_growth": {
+            "2019": "1.7",
+            "2020": "-5.2",
+            "2021": "4.7"
+        },
+        "employment_rate": {
+            "2019": "62.0",
+            "2020": "57.7",
+            "2021": "59.4"
+        },
+        "wti": {
+            "2019": "57",
+            "2020": "39",
+            "2021": "41"
+        },
+        "budgetary_balance": {
+            "2019-2020": "-36.5",
+            "2020-2021": "-328.5",
+            "2021-2022": "-73.8"
+        },
+        "federal_debt": {
+            "2019-2020": "31.3",
+            "2020-2021": "47.9",
+            "2021-2022": "48.1"
+        }
+    },
+    "other_measures": {
+        "cost": {
+            "20192020": 549,
+            "20202021": 58540,
+            "20212022": 9537
+        }
+    },
+    "total": {
+        "cost": {
+            "20192020": 11751,
+            "20202021": 225899,
+            "20212022": 9647
+        }
+    },
+    "costings": [
+        {
+            "id": "XLEG-2021-035-S"
+        },
+        {
+            "id": "XLEG-2021-032-S",
+            "_comment": "CERB"
+        },
+        {
+            "id": "XLEG-2021-033-S"
+        },
+        {
+            "id": "XLEG-2021-027-S"
+        },
+        {
+            "id": "LEG-2021-001-S"
+        },
+        {
+            "id": "LEG-2021-022-S"
+        },
+        {
+            "id": "LEG-2021-003-S"
+        },
+        {
+            "id": "XXLEG-2021-023-S"
+        },
+        {
+            "id": "XLEG-2021-017-S"
+        },
+        {
+            "id": "XXLEG-2021-024-S"
+        },
+        {
+            "id": "XXXLEG-2021-008-S"
+        },
+        {
+            "id": "XXXLEG-2021-004-S"
+        },
+        {
+            "id": "LEG-2021-042-S"
+        },
+        {
+            "id": "LEG-2021-026-S"
+        },
+        {
+            "id": "XLEG-2021-011-S"
+        },
+        {
+            "id": "XXXLEG-2021-005-S"
+        },
+        {
+            "id": "XXXLEG-2021-007-S"
+        },
+        {
+            "id": "LEG-2021-028-S"
+        },
+        {
+            "id": "XXLEG-2021-016-S"
+        },
+        {
+            "id": "LEG-2021-025-S"
+        },
+        {
+            "id": "LEG-2021-012-S"
+        },
+        {
+            "id": "XLEG-2021-002-S"
+        },
+        {
+            "id": "XLEG-2021-014-S"
+        },
+        {
+            "id": "XXLEG-2021-010-S"
+        },
+        {
+            "id": "XLEG-2021-009-S"
+        },
+        {
+            "id": "LEG-2021-037-S"
+        }
+    ]
+}
