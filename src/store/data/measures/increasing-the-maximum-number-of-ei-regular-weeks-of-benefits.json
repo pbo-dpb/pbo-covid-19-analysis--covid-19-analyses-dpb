@@ -1,0 +1,27 @@
+{
+    "title": {
+        "en": "Increasing the maximum number of EI regular weeks of benefits",
+        "fr": "Augmentation du nombre maximal de semaines de prestations régulières d’AE"
+    },
+    "notes": [],
+    "subtitle": {
+        "en": "",
+        "fr": ""
+    },
+    "costings": [
+        {
+            "id": "LEG-2021-073-S",
+            "hasArtifacts": true,
+            "publication_date": "2021-03-31",
+            "cost": {
+                "gross": {
+                    "20212022": 3128
+                },
+                "net": {
+                    "20212022": 2989
+                }
+            }
+        }
+    ],
+    "hasFiscalImpact": true
+}

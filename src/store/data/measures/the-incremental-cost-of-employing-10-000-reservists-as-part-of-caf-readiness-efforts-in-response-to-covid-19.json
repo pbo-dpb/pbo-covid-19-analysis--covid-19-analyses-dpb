@@ -3,12 +3,26 @@
     "en": "The Incremental Cost of Employing 10,000 Reservists as Part of CAF Readiness Efforts in Response to COVID-19",
     "fr": "Coût supplémentaire lié à l’emploi de 10 000 réservistes dans le cadre des activités de préparation des Forces armées canadiennes face à la COVID-19"
   },
-  "notes": [],
+  "notes": [
+    {
+      "en": "The cost of the measure is $456 million. In the 2020 Fall Economic Statement the government has indicated that $126M will come from existing departmental resources.",
+      "fr": "Le coût de cette mesure est de 456 millions de dollars. Dans l'énoncé économique de l'automne 2020, le gouvernement a indiqué que 126 millions de dollars proviendront des ressources ministérielles existantes."
+    }
+  ],
   "subtitle": {
     "en": "",
     "fr": ""
   },
   "costings": [
+    {
+      "id": "XLEG-2021-015-S",
+      "hasArtifacts": false,
+      "publication_date": "2021-03-31",
+      "cost": {
+        "20192020": 0,
+        "20202021": 330
+      }
+    },
     {
       "id": "LEG-2021-015-S",
       "hasArtifacts": true,

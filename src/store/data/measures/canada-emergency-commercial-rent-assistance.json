@@ -16,6 +16,16 @@
   },
   "costings": [
     {
+      "id": "XLEG-2021-042-S",
+      "hasArtifacts": false,
+      "publication_date": "2021-03-31",
+      "cost": {
+        "20192020": 0,
+        "20202021": 1522,
+        "20212022": 0
+      }
+    },
+    {
       "id": "LEG-2021-042-S",
       "hasArtifacts": true,
       "publication_date": "2020-09-29",

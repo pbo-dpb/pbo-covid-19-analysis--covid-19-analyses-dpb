@@ -1,14 +1,14 @@
 {
-    "title": {
-        "en": "Canada Recovery Benefit (CRB)",
-        "fr": "Prestation Canadienne de la relance économique (PCRE)"
-    },
-    "notes": [],
-    "subtitle": {
-        "en": "",
-        "fr": ""
-    },
-    "costings": [
+  "title": {
+    "en": "Canada Recovery Benefit (CRB)",
+    "fr": "Prestation Canadienne de la relance économique (PCRE)"
+  },
+  "notes": [],
+  "subtitle": {
+    "en": "",
+    "fr": ""
+  },
+  "costings": [
     {
       "id": "LEG-2021-072-S",
       "hasArtifacts": true,
@@ -26,16 +26,23 @@
         }
       }
     },
-        {
-            "id": "LEG-2021-045-S",
-            "hasArtifacts": true,
-            "publication_date": "2020-10-07",
-            "cost": {
-                "20192020": 0,
-                "20202021": 12853,
-                "20212022": 5087
-            }
+    {
+      "id": "LEG-2021-045-S",
+      "hasArtifacts": true,
+      "publication_date": "2020-10-07",
+      "cost": {
+        "gross": {
+          "20192020": 0,
+          "20202021": 15079,
+          "20212022": 5615
+        },
+        "net": {
+          "20192020": 0,
+          "20202021": 12853,
+          "20212022": 5087
         }
-    ],
-    "hasFiscalImpact": true
+      }
+    }
+  ],
+  "hasFiscalImpact": true
 }

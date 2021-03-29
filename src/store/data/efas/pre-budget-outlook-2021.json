@@ -47,28 +47,64 @@
     },
     "other_measures": {
         "cost": {
-            "20192020": 549,
-            "20202021": 58540,
-            "20212022": 9537
+            "20192020": 560,
+            "20202021": 45608,
+            "20212022": 12614
         }
     },
     "total": {
         "cost": {
-            "20192020": 11751,
-            "20202021": 225899,
-            "20212022": 9647
+            "20192020": 7191,
+            "20202021": 271287,
+            "20212022": 48467
         }
     },
     "costings": [
         {
-            "id": "XLEG-2021-035-S"
+            "id": "LEG-2021-050-S",
+            "_comment": "Junior Mining"
         },
         {
-            "id": "XLEG-2021-032-S",
+            "id": "XLEG-2021-015-S",
+            "_comment": "10000 Reservists"
+        },
+        {
+            "id": "XLEG-2021-052-S",
+            "_comment": "CERS"
+        },
+        {
+            "id": "LEG-2021-073-S",
+            "_comment": "Increasing the maximum number of EI regular weeks of benefits"
+        },
+        {
+            "id": "XLEG-2021-046-S",
+            "_comment": "EI enhancements"
+        },
+        {
+            "id": "LEG-2021-071-S",
+            "_comment": "CRSB"
+        },
+        {
+            "id": "LEG-2021-070-S",
+            "_comment": "CRCB"
+        },
+        {
+            "id": "LEG-2021-072-S",
+            "_comment": "CRB"
+        },
+        {
+            "id": "LEG-2021-073-S"
+        },
+        {
+            "id": "XLEG-2021-051-S",
+            "_comment": "CEWS"
+        },
+        {
+            "id": "XLEG-2021-043-S",
             "_comment": "CERB"
         },
         {
-            "id": "XLEG-2021-033-S"
+            "id": "LEG-2021-056-S"
         },
         {
             "id": "XLEG-2021-027-S"
@@ -98,7 +134,8 @@
             "id": "XXXLEG-2021-004-S"
         },
         {
-            "id": "LEG-2021-042-S"
+            "id": "XLEG-2021-042-S",
+            "_comment": "CECRA"
         },
         {
             "id": "LEG-2021-026-S"
