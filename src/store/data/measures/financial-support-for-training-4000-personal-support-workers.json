@@ -11,7 +11,7 @@
     "costings": [
         {
             "id": "LEG-2021-064-M",
-            "hasArtifacts": false,
+            "hasArtifacts": true,
             "publication_date": "2021-02-09",
             "cost": {
                 "gross": {

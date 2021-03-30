@@ -73,7 +73,7 @@ Please view the latest listing of the PBO’s COVID-19 Cost Estimates by clickin
                 "singular": "PBO Costing"
             },
             "no_incremental_impact": "No incremental fiscal impact",
-            "general_notes": "PBO Cost Estimates may not match previously published costing notes as the estimates were revised based on the 2020 September Economic and Fiscal Outlook (EFO). Where applicable, starting with the 2020 September EFO estimates for 2021-22 are also presented. A positive (negative) number increases (reduces) the budgetary deficit.",
+            "general_notes": "PBO Cost Estimates may not match previously published costing notes as the estimates were revised based on the March 2021 Pre-Budget Outlook. Where applicable, starting with the 2020 September EFO estimates for 2021-22 are also presented. A positive (negative) number increases (reduces) the budgetary deficit.",
             "measures_notes": {
                 "title": "Note"
             },
@@ -207,7 +207,7 @@ Vous pouvez consulter la plus récente liste des estimations de coûts relatifs 
                 "singular": "Évaluation du coût par le DPB"
             },
             "no_incremental_impact": "Pas d'impact fiscal supplémentaire",
-            "general_notes": "Les estimations de coûts du DPB peuvent ne pas correspondre aux notes de coûts publiées précédemment car les estimations ont été révisées sur la base des Perspectives économiques et financières de septembre 2020 (PEF). Le cas échéant, à partir de septembre 2020, les estimations de l'PEF pour 2021-22 sont également présentées. Un nombre positif (négatif) indique une augmentation (réduction) du déficit budgétaire.",
+            "general_notes": "Les estimations de coûts du DPB peuvent ne pas correspondre aux notes de coûts publiées précédemment car les estimations ont été révisées sur la base des Perspectives prébudgétaires de mars 2021. Le cas échéant, débutant avec les PEF de septembre 2020, les estimations pour 2021-2022 sont également présentées. Un nombre positif (négatif) indique une augmentation (réduction) du déficit budgétaire.",
             "measures_notes": {
                 "title": "Note"
             },
