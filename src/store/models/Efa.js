@@ -6,6 +6,7 @@ export default class Efa {
         this.publication_date = new Date(rawEfa.publication_date + "T09:00:00.000Z");
         this.title = rawEfa.title;
         this.description = rawEfa.description;
+        this.footer = rawEfa.footer;
         this.url = rawEfa.url;
         this.poster = rawEfa.poster;
         this.indicators = rawEfa.indicators;

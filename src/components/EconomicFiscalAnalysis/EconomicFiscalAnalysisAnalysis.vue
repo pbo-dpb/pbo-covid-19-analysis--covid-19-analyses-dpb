@@ -81,7 +81,7 @@
 
     <costing-indicators :efa="efa"></costing-indicators>
 
-    <small>{{ $root.strings.efas.general_notes }}</small>
+    <small>{{ efa.footer[$root.language] }}</small>
   </div>
 </template>
 <script>
