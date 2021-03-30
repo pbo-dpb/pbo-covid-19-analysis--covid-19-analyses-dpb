@@ -74,6 +74,9 @@ Please view the latest listing of the PBO’s COVID-19 Cost Estimates by clickin
             },
             "no_incremental_impact": "No incremental fiscal impact",
             "general_notes": "PBO Cost Estimates may not match previously published costing notes as the estimates were revised based on the 2020 September Economic and Fiscal Outlook (EFO). Where applicable, starting with the 2020 September EFO estimates for 2021-22 are also presented. A positive (negative) number increases (reduces) the budgetary deficit.",
+            "measures_notes": {
+                "title": "Note"
+            },
             "indicators": {
                 "header_title": "Economic and Fiscal Indicators",
                 "header_note": "Economic indicators are on a calendar year basis.",
@@ -101,7 +104,6 @@ Please view the latest listing of the PBO’s COVID-19 Cost Estimates by clickin
                 "federal_debt": "Federal Debt (% of GDP)",
             },
 
-            "general_notes": "PBO Cost Estimates may not match previously published costing notes as the estimates were revised based on the 2020 September Economic and Fiscal Outlook (EFO). Where applicable, starting with the 2020 September EFO estimates for 2021-22 are also presented. Estimates prior to the 2020 September EFO are on a net basis. A positive (negative) number increases (reduces) the budgetary deficit. Totals may not add due to rounding.",
 
         },
         "scenarioanalysis": {
@@ -206,7 +208,9 @@ Vous pouvez consulter la plus récente liste des estimations de coûts relatifs 
             },
             "no_incremental_impact": "Pas d'impact fiscal supplémentaire",
             "general_notes": "Les estimations de coûts du DPB peuvent ne pas correspondre aux notes de coûts publiées précédemment car les estimations ont été révisées sur la base des Perspectives économiques et financières de septembre 2020 (PEF). Le cas échéant, à partir de septembre 2020, les estimations de l'PEF pour 2021-22 sont également présentées. Un nombre positif (négatif) indique une augmentation (réduction) du déficit budgétaire.",
-
+            "measures_notes": {
+                "title": "Note"
+            },
             "indicators": {
                 "header_title": "Indicateurs économiques et fiscaux",
                 "header_note": "Les indicateurs économiques sont établis sur la base de l'année civile.",
@@ -232,7 +236,6 @@ Vous pouvez consulter la plus récente liste des estimations de coûts relatifs 
                 "budgetary_balance": "Solde budgétaire (milliards de dollars)",
                 "federal_debt": "Dette fédérale (% du PIB)",
             },
-            "general_notes": "Les estimations de coûts du DPB peuvent ne pas correspondre aux notes de coûts publiées précédemment car les estimations ont été révisées sur la base des Perspectives économiques et financières de septembre 2020 (PEF). Le cas échéant, à partir de septembre 2020, les estimations de l'PEF pour 2021-22 sont également présentées. Les estimations antérieures à l'PEF de septembre 2020 sont présentées sur une base nette. Un nombre positif (négatif) indique une augmentation (réduction) du déficit budgétaire. Les chiffres ayant été arrondis, les totaux peuvent ne pas correspondre.",
         },
         "scenarioanalysis": {
             "title": "Analyse de scénario",
