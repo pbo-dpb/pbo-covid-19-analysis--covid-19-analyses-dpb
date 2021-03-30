@@ -23,7 +23,7 @@
       </h4>
 
       <div>
-        {{ note.en }}
+        {{ note[$root.language] }}
       </div>
     </div>
 
