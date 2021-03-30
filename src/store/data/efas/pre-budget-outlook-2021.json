@@ -49,7 +49,7 @@
         "cost": {
             "20192020": 560,
             "20202021": 45608,
-            "20212022": 12614
+            "20212022": 12367
         }
     },
     "total": {
@@ -60,6 +60,10 @@
         }
     },
     "costings": [
+        {
+            "id": "LEG-2021-064-M",
+            "_comment": "Financial Support for Training 4,000 personal support workers"
+        },
         {
             "id": "LEG-2021-050-S",
             "_comment": "Junior Mining"
