@@ -14,6 +14,7 @@ export default class Efa {
 
         this.otherMeasures = {
             cost: new Cost(rawEfa.other_measures.cost),
+            description: rawEfa.other_measures.description
         }
 
         this.total = {

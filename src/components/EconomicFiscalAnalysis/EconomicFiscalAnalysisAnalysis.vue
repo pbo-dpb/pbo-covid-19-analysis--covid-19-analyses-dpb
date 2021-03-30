@@ -62,7 +62,7 @@
           $root.strings.efas.other_measures.title
         }}</component>
         <div class="font-thin">
-          {{ $root.strings.efas.other_measures.subtitle }}
+          {{ efa.otherMeasures.description[$root.language] }}
         </div>
       </div>
       <div

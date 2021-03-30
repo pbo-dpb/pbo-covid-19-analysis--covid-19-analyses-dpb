@@ -77,6 +77,10 @@
             "20192020": 549,
             "20202021": 58540,
             "20212022": 9537
+        },
+        "description": {
+            "en": "Includes other COVID-19 costing measures as of the September EFO",
+            "fr": "Inclus d'autres mesures liées à la COVID-19 en date des perspectives économiques et financières de septembre 2020"
         }
     },
     "total": {
