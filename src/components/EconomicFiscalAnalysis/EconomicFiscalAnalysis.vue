@@ -21,21 +21,23 @@ import collect from "collect.js";
 export default {
   computed: {
     items() {
-      return collect(this.$store.state.efas).map((efa) => {
-        return {
-          title: efa.title[this.$root.language],
-          date: efa.publication_date,
-          image: efa.poster[this.$root.language],
-          icon: "next",
-          route: {
-            name: "EfaAnalysis",
-            params: {
-              language: this.$route.params.language,
-              efaId: efa.id,
+      return collect(this.$store.state.efas)
+        .sortByDesc("publication_date")
+        .map((efa) => {
+          return {
+            title: efa.title[this.$root.language],
+            date: efa.publication_date,
+            image: efa.poster[this.$root.language],
+            icon: "next",
+            route: {
+              name: "EfaAnalysis",
+              params: {
+                language: this.$route.params.language,
+                efaId: efa.id,
+              },
             },
-          },
-        };
-      }).items;
+          };
+        }).items;
     },
   },
 };
