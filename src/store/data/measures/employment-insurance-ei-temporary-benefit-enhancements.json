@@ -11,7 +11,7 @@
     "costings": [
         {
             "id": "XLEG-2021-046-S",
-            "hasArtifacts": true,
+            "hasArtifacts": false,
             "publication_date": "2021-03-31",
             "cost": {
                 "gross": {
