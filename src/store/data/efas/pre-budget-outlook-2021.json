@@ -21,7 +21,19 @@
         "en": "https://pbo-dpb.s3.ca-central-1.amazonaws.com/images/1ee75927dd064d61439bf24ddcfbf6890bd314ae",
         "fr": "https://pbo-dpb.s3.ca-central-1.amazonaws.com/images/06a84746a7434be1c6e9273fda65037d2d1ded33"
     },
-    "files": [],
+    "files": [
+        {
+            "type": "xlsx",
+            "en": {
+                "title": "Supplementary Data",
+                "url": "https://www.pbo-dpb.gc.ca/web/default/files/Documents/Reports/RP-2021-046-S/data.xlsx"
+            },
+            "fr": {
+                "title": "Données supplémentaires",
+                "url": "https://www.pbo-dpb.gc.ca/web/default/files/Documents/Reports/RP-2021-046-S/data.xlsx"
+            }
+        }
+    ],
     "indicators": {
         "real_gdp_growth": {
             "2019": "1.9",
