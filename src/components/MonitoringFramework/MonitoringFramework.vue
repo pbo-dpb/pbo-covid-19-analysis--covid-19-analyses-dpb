@@ -18,6 +18,12 @@ export default {
 
       return [
         {
+          url: `/monitoring-framework--cadre-de-surveillance/2021-06-03-${this.$root.language}.xlsx`,
+          title: this.$root.strings.monitoringframework.title,
+          date: new Date("2021-06-03T09:00:00.000Z"),
+          icon: "xlsx",
+        },
+        {
           url: `/monitoring-framework--cadre-de-surveillance/2021-04-26-${this.$root.language}.xlsx`,
           title: this.$root.strings.monitoringframework.title,
           date: new Date("2021-04-26T09:00:00.000Z"),
