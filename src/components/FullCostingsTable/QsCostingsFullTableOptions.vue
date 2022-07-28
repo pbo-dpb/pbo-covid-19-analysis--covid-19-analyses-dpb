@@ -6,10 +6,13 @@
   </div>
 </template>
 <script>
+import QsCostingsCompareSelect from "./QsCostingsCompareSelect.vue"
+import QsCostingsSorter from "./QsCostingsSorter.vue"
+
 export default {
   components: {
-    qsCostingsCompareSelect: require("./QsCostingsCompareSelect.vue").default,
-    qsCostingsSorter: require("./QsCostingsSorter.vue").default,
+    QsCostingsCompareSelect,
+    QsCostingsSorter
   },
 };
 </script>

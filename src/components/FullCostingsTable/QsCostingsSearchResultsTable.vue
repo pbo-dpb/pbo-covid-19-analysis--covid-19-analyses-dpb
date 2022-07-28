@@ -21,11 +21,14 @@
 </template>
   
     <script>
+    import QsCostingsTableHead from "./QsCostingsTableHead.vue"
+    import QsCostingsGroupRow from "./QsCostingsGroupRow.vue"
+
 import collect from "collect.js";
 export default {
   components: {
-    qsCostingsTableHead: require("./QsCostingsTableHead.vue").default,
-    qsCostingsGroupRow: require("./QsCostingsGroupRow.vue").default,
+    QsCostingsTableHead,
+    QsCostingsGroupRow
   },
   computed: {
     costings() {

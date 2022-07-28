@@ -62,14 +62,19 @@
   
     <script>
 import collect from "collect.js";
+import QsCostingsGroup from "./QsCostingsGroup.vue"
+import QsCostingsTableHead from "./QsCostingsTableHead.vue"
+import QsCostingsTableFoot from "./QsCostingsTableFoot.vue"
+import QsCostingsMetaTable from "./QsCostingsMetaTable.vue"
+import QsCostingsGroupRow from "./QsCostingsGroupRow.vue"
 
 export default {
   components: {
-    qsCostingsGroup: require("./QsCostingsGroup.vue").default,
-    qsCostingsTableHead: require("./QsCostingsTableHead.vue").default,
-    qsCostingsTableFoot: require("./QsCostingsTableFoot.vue").default,
-    qsCostingsMetaTable: require("./QsCostingsMetaTable.vue").default,
-    QsCostingsGroupRow: require("./QsCostingsGroupRow.vue").default,
+    QsCostingsGroup,
+    QsCostingsTableHead,
+    QsCostingsTableFoot,
+   QsCostingsMetaTable,
+    QsCostingsGroupRow
   },
   computed: {
     groups() {

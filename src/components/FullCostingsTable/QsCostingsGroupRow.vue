@@ -146,8 +146,17 @@ tr > td {
   </tr>
 </template>
 <script>
+import QsPboCostedGlyph from "./QsPboCostedGlyph.vue"
+import QsCostingsNote from "./QsCostingsNote.vue"
+import CostingBadge from "./CostingBadge.vue"
+
 import collect from "collect.js";
 export default {
+  components: {
+    QsPboCostedGlyph,
+    QsCostingsNote,
+    CostingBadge
+  },
   props: {
     costing: {
       type: Object,
@@ -169,11 +178,7 @@ export default {
       console.log(this.costing.currentCostingUpdate);
     },
   },
-  components: {
-    qsPboCostedGlyph: require("./QsPboCostedGlyph.vue").default,
-    qsCostingsNote: require("./QsCostingsNote.vue").default,
-    costingBadge: require("./CostingBadge.vue").default,
-  },
+  
   computed: {
     shouldShowStatusBadges() {
       // Only show status badges for pending, simple and other costings AND full table but only when current scenario is the latest update.

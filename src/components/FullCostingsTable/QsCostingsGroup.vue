@@ -13,9 +13,11 @@
   </tbody>
 </template>
 <script>
+import QsCostingsGroupRow from "./QsCostingsGroupRow.vue"
+
 export default {
   components: {
-    qsCostingsGroupRow: require("./QsCostingsGroupRow.vue").default
+    QsCostingsGroupRow
   },
   props: {
     costings: {

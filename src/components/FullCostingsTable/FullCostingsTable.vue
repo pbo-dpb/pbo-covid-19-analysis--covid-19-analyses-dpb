@@ -46,19 +46,26 @@
 </template>
 
 <script>
+
+import QsCostingsLoader from "./QsCostingsLoader.vue";
+import QsCostingsFullTableOptions from "./QsCostingsFullTableOptions.vue";
+import QsFullCostingsTable from "./QsFullCostingsTable.vue";
+import QsCostingsSearchResultsTable from "./QsCostingsSearchResultsTable.vue";
+import QsCostingsSearchWidget from "./QsCostingsSearchWidget.vue";
+
+
+
+
 import collect from "collect.js";
 export default {
   name: "FullCostingsTable",
   components: {
-    qsCostingsLoader: require("./QsCostingsLoader.vue").default,
-    qsCostingsFullTableOptions: require("./QsCostingsFullTableOptions.vue")
-      .default,
-    qsFullCostingsTable: require("./QsFullCostingsTable.vue").default,
-
+    QsCostingsLoader,
+    QsCostingsFullTableOptions,
+   QsFullCostingsTable,
     /*qsSimpleCostingsTable: require("./QsSimpleCostingsTable.vue").default,*/
-    qsCostingsSearchResultsTable: require("./QsCostingsSearchResultsTable.vue")
-      .default,
-    qsCostingsSearchWidget: require("./QsCostingsSearchWidget.vue").default,
+   QsCostingsSearchResultsTable,
+    QsCostingsSearchWidget
   },
   computed: {
     scenarioItems() {

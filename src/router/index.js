@@ -33,12 +33,12 @@ const routes = [
       path: '/:language/economic-fiscal-analysis--analyses-economiques-financieres/:efaId',
       name: 'EfaAnalysis',
       component: () => import( '../components/EconomicFiscalAnalysis/EconomicFiscalAnalysisAnalysis.vue')
-    },
-    {
-      path: '/:language/fullcostingtable',
-      name: 'FullCostingTable',
-      component: () => import( '../components/FullCostingsTable/FullCostingsTable.vue')
-    }*/
+    },*/
+  {
+    path: '/fullcostingtable',
+    name: 'FullCostingTable',
+    component: () => import('../components/FullCostingsTable/FullCostingsTable.vue')
+  }
 
 ]
 

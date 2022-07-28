@@ -30,6 +30,11 @@
 <script>
 import collect from "collect.js";
 export default {
+  data() {
+    return {
+      _uid: String(Math.random()).replace(/\D+/g, "")
+    }
+  },
   computed: {
     options() {
       return collect(this.$root.payload.updates).reject(

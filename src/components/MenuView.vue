@@ -88,7 +88,7 @@ export default {
               language: this.$route.params.language,
             },
           },
-        },/*
+        },
         {
           title: this.$root.strings.fullcostings.title,
           subtitle: this.$root.strings.fullcostings.archived.label,
@@ -98,7 +98,7 @@ export default {
               language: this.$route.params.language,
             },
           },
-        },*/
+        },
       ];
       return links;
     },
