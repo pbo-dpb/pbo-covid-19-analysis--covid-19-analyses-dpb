@@ -52,22 +52,18 @@ export default {
           title: this.$root.strings.home.title,
           destination: {
             name: "AnalysisHome",
-            params: {
-              language: this.$route.params.language,
-            },
+            
           },
         },
         {
           title: this.$root.strings.costingerp.title,
           destination: {
             name: "CostingERP",
-            params: {
-              language: this.$route.params.language,
-            },
+            
           },
         },
-        /*
-        {
+        
+        /*{
           title: this.$root.strings.efas.title,
           destination: {
             name: "EfasHome",
@@ -75,17 +71,15 @@ export default {
               language: this.$route.params.language,
             },
           },
-        },
+        },*/
 
         {
           title: this.$root.strings.parliamentariansrequests.title,
           destination: {
             name: "ParliamentariansRequests",
-            params: {
-              language: this.$route.params.language,
-            },
+            
           },
-        },
+        },/*
         {
           title: this.$root.strings.monitoringframework.title,
           destination: {

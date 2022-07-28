@@ -9,6 +9,8 @@ import CostingsNumber from "./components/QsCostingsNumber.vue"
 
 import NotificationBlock from "./components/NotificationBlock.vue"
 import BreadcrumbView from "./components/BreadcrumbView.vue"
+import ListView from "./components/ListView.vue"
+
 import legacyPayload from './store/data/legacyPayload.json'
 import Fuse from "fuse.js"
 const language = document.documentElement.lang;
@@ -29,6 +31,8 @@ export const defineCustomElement = (component, { plugins = [] }) =>
       app.component('MarkdownContent', MarkdownContent);
       app.component('NotificationBlock', NotificationBlock);
       app.component('BreadcrumbView', BreadcrumbView);
+      app.component('ListView', ListView);
+
 
       /**
        * 

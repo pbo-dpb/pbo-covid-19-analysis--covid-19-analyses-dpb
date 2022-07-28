@@ -1,9 +1,10 @@
 <template>
   <ul class="divide-y divide-gray-300">
-    <li is="list-view-item" :item="item" :key="item.url" v-for="item in items"></li>
+    <li is="vue:list-view-item" :item="item" :key="item.url" v-for="item in items"></li>
   </ul>
 </template>
 <script>
+import ListViewItem from "./ListViewItem.vue"
 export default {
   props: {
     items: {
@@ -12,7 +13,7 @@ export default {
     },
   },
   components: {
-    listViewItem: require("./ListViewItem").default,
+    ListViewItem
   },
 };
 </script>

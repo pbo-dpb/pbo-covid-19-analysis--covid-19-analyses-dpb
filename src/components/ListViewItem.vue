@@ -35,18 +35,22 @@
         v-if="item.icon"
         class="text-2xl font-bold text-blue-800 pl-2 md:pl-4"
       >
-        <i :class="iconClasses"></i>
+        <list-view-item-icon :type="item.icon"></list-view-item-icon>
       </div>
     </component>
   </li>
 </template>
 <script>
+import ListViewItemIcon from './ListViewItemIcon.vue';
 export default {
   props: {
     item: {
       type: Object,
       required: true,
     },
+  },
+  components: {
+    ListViewItemIcon
   },
   computed: {
     date() {
@@ -57,19 +61,7 @@ export default {
         day: "numeric",
       });
     },
-    iconClasses() {
-      if (!this.item.icon) return null;
-
-      switch (this.item.icon) {
-        case "next":
-          return ["fas", "fa-arrow-right"];
-        case "pdf":
-          return ["fas", "fa-file-pdf"];
-        case "xlsx":
-          return ["fas", "fa-file-excel"];
-      }
-      return null;
-    },
+    
   },
   methods: {
     handleClick() {
