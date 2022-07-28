@@ -1,16 +1,17 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import { createStore } from 'vuex'
+
 import Measure from "./models/Measure"
 import Efa from "./models/Efa"
 import { collect } from 'collect.js'
 import strings from "../strings"
 
-Vue.use(Vuex)
+const measures = import.meta.glob('./data/measures/*.json', { eager: true })
+const efas = import.meta.glob('./data/efas/*.json', { eager: true })
 
-const store = new Vuex.Store({
+const store = createStore({
     state: {
-        measures: (require.context('./data/measures/', true, /\.json$/i).keys().map(key => require("./data/measures/" + key.split('/').pop().split('.')[0]))).map(rawMeasure => new Measure(rawMeasure)),
-        efas: require.context('./data/efas/', true, /\.json$/i).keys().map(key => require("./data/efas/" + key.split('/').pop().split('.')[0])).map(rawEfa => new Efa(rawEfa)),
+        measures: collect(measures).map(rawMeasure => {new Measure(rawMeasure)}),
+        efas: collect(efas).map(rawEfa => new Efa(rawEfa)),
         settings: {
             sortCostingsBy: "name"
         },
