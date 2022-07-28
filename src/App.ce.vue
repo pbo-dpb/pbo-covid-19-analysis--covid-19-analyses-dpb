@@ -1,26 +1,28 @@
 <template>
-<div class="flex flex-col justify-center items-center gap-8">
-  <img alt="Vue logo" :src="logoUrl" class="w-64" />
+  <div id="app">
+    <!--<top-header></top-header>-->
+
+    <main class="px-2 py-4">
+      <div class="container mx-auto">
+        <section class="lg:grid lg:grid-cols-4 lg:gap-4">
+          <nav class="lg:col-span-1">
+            <!--<menu-view></menu-view>-->
+          </nav>
+          <div class="lg:col-span-3">
+            <router-view></router-view>
+          </div>
+        </section>
+      </div>
+    </main>
   </div>
 </template>
 
 <script>
-import logoUrl from "./assets/logo.svg?url";
-const language = document.documentElement.lang;
 
 export default {
-  data() {
-    return {
-      language: language,
-    };
-  },
-  props: {
-    publicPath: String
-  },
-  computed: {
-    logoUrl() {
-      return this.publicPath ? this.publicPath + logoUrl : logoUrl
-    }
+  components: {
+//    topHeader: require("./components/TopHeader.vue").default,
+//    menuView: require("./components/MenuView.vue").default,
   },
 };
 </script>

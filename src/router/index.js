@@ -2,9 +2,6 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 
 import AnalysisHome from '../components/AnalysisHome/AnalysisHome.vue'
 
-
-Vue.use(VueRouter)
-
 const routes = [
   {
     path: '/',
@@ -49,8 +46,9 @@ const routes = [
 
 ]
 
-const router = new VueRouter({
-  routes
+const router = createRouter({
+  history: createWebHashHistory(),
+  routes,
 })
 
 export default router
