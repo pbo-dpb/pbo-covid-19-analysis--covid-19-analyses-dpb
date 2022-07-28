@@ -6,6 +6,7 @@ import Costing from "./store/legacyModels/Costing.js"
 import Update from "./store/legacyModels/Update.js"
 import MarkdownContent from "./components/MarkdownContent.vue"
 import legacyPayload from './store/data/legacyPayload.json'
+import Fuse from "fuse.js"
 const language = document.documentElement.lang;
 
 export const defineCustomElement = (component, { plugins = [] }) =>
@@ -35,14 +36,33 @@ export const defineCustomElement = (component, { plugins = [] }) =>
 
       return {
         language,
-        payload: null
+        payload: null,
+        compareWithUpdate: null,
+        sort: "alphabetically",
+        search: {
+          query: null,
+          engine: null
+        },
+
       }
     },
 
     computed: {
+
       strings() {
         return strings[this.language];
-      }
+      },
+      currentUpdate() {
+        return this.payload ? collect(this.payload.updates).sortByDesc('id').first() : null;
+      },
+
+      /**
+       * Return the latest ID used for costings that are not part of an official update (scenario, efo, etc.)
+       */
+      currentGhostUpdateId() {
+        return this.payload ? collect(this.payload.costings).pluck("costing_updates").flatten(1).pluck("update_id").sort().reverse().first() : null;
+      },
+
     },
 
     mounted() {
@@ -64,7 +84,12 @@ export const defineCustomElement = (component, { plugins = [] }) =>
     },
     methods: {
       initializeSearch() {
-
+        this.search.query = "";
+        this.search.engine = new Fuse(this.payload.costings.items, {
+          includeScore: true,
+          // We search both languages since some English acronyms are sometimes used in French
+          keys: this.language === 'fr' ? ["title_fr", "title_en"] : ["title_en", "title_fr"]
+        });
       }
     }
 
