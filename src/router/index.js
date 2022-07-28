@@ -18,12 +18,12 @@ const routes = [
     path: '/costings-requested-by-parliamentarians--etablissement-des-couts-demandes-des-parlementaires',
     name: 'ParliamentariansRequests',
     component: () => import('../components/ParliamentariansRequests/ParliamentariansRequests.vue')
+  },
+  {
+    path: '/monitoring-framework--cadre-de-surveillance',
+    name: 'MonitoringFramework',
+    component: () => import('../components/MonitoringFramework/MonitoringFramework.vue')
   },/*
-    {
-      path: '/:language/monitoring-framework--cadre-de-surveillance',
-      name: 'MonitoringFramework',
-      component: () => import( '../components/MonitoringFramework/MonitoringFramework.vue')
-    },
     {
       path: '/:language/economic-fiscal-analysis--analyses-economiques-financieres',
       name: 'EfasHome',

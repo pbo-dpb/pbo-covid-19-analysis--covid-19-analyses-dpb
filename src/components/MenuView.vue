@@ -79,7 +79,7 @@ export default {
             name: "ParliamentariansRequests",
             
           },
-        },/*
+        },
         {
           title: this.$root.strings.monitoringframework.title,
           destination: {
@@ -88,7 +88,7 @@ export default {
               language: this.$route.params.language,
             },
           },
-        },
+        },/*
         {
           title: this.$root.strings.fullcostings.title,
           subtitle: this.$root.strings.fullcostings.archived.label,
