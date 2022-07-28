@@ -1,9 +1,9 @@
 // Adapted from https://stackoverflow.com/questions/69808113/how-to-use-vue-router-and-vuex-inside-custom-element-from-root
-import { defineCustomElement, h, createApp, getCurrentInstance } from 'vue'
+import { defineCustomElement as vueDefineCustomElement, h, createApp, getCurrentInstance } from 'vue'
 const language = document.documentElement.lang;
 
-export const defineCustomPeatElement = (component, { plugins = [] }) =>
-defineCustomElement({
+export const defineCustomElement = (component, { plugins = [] }) =>
+vueDefineCustomElement({
     render: () => h(component),
     styles: component.styles,
     props: {
