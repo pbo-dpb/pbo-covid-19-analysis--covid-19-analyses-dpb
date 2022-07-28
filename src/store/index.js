@@ -10,8 +10,8 @@ const efas = import.meta.glob('./data/efas/*.json', { eager: true })
 
 const store = createStore({
     state: {
-        measures: collect(measures).map(rawMeasure => {new Measure(rawMeasure)}),
-        efas: collect(efas).map(rawEfa => new Efa(rawEfa)),
+        measures: collect(measures).map(rawMeasure => new Measure(rawMeasure)).values().items,
+        efas: collect(efas).map(rawEfa => new Efa(rawEfa)).values().items,
         settings: {
             sortCostingsBy: "name"
         },

@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 import AnalysisHome from '../components/AnalysisHome/AnalysisHome.vue'
+import CostingEconomicResponsePlan from "../components/CostingEconomicResponsePlan/CostingEconomicResponsePlan.vue"
 
 const routes = [
   {
@@ -8,12 +9,12 @@ const routes = [
     name: 'AnalysisHome',
     component: AnalysisHome
   },
-  /*{
-    path: '/:language/costing-economic-response-plan--etablissement-des-couts-plan-intervention-economique',
-    name: 'CostingERP',
-    component: () => import( '../components/CostingEconomicResponsePlan/CostingEconomicResponsePlan.vue')
-  },
   {
+    path: '/costing-economic-response-plan--etablissement-des-couts-plan-intervention-economique',
+    name: 'CostingERP',
+    component: CostingEconomicResponsePlan
+  },
+  /*{
     path: '/:language/scenario-analysis--analyse-de-scenario',
     name: 'ScenarioAnalysis',
     component: () => import( '../components/ScenarioAnalysis/ScenarioAnalysis.vue')

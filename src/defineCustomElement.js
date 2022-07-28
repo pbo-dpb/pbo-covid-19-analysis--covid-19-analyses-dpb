@@ -5,6 +5,8 @@ import strings from "./strings"
 import Costing from "./store/legacyModels/Costing.js"
 import Update from "./store/legacyModels/Update.js"
 import MarkdownContent from "./components/MarkdownContent.vue"
+import CostingsNumber from "./components/QsCostingsNumber.vue"
+
 import NotificationBlock from "./components/NotificationBlock.vue"
 import BreadcrumbView from "./components/BreadcrumbView.vue"
 import legacyPayload from './store/data/legacyPayload.json'
@@ -23,6 +25,7 @@ export const defineCustomElement = (component, { plugins = [] }) =>
       /**
        * Register global components
        */
+      app.component('CostingsNumber', CostingsNumber);
       app.component('MarkdownContent', MarkdownContent);
       app.component('NotificationBlock', NotificationBlock);
       app.component('BreadcrumbView', BreadcrumbView);

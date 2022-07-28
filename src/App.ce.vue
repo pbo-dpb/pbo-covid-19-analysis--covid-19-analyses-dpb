@@ -25,7 +25,7 @@ export default {
   components: {
     TopHeader,
     MenuView
-  },
+  }
 };
 </script>
 <style>

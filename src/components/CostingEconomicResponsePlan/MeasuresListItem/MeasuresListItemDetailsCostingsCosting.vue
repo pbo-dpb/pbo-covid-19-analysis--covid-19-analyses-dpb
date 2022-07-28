@@ -3,13 +3,13 @@
     <td class="border p-2">
       <a
         v-if="costing.hasArtifacts"
-        :href="costing.localizedArtifactUrl($root.language)"
+        :href="costing.localizedArtifactUrl(language)"
         target="_blank"
         class="text-blue-800 hover:text-blue-900"
         ><span class="underline">
           {{
             costing.publication_date.toLocaleDateString(
-              $root.language + "-CA",
+              language + "-CA",
               {
                 year: "numeric",
                 month: "long",
@@ -21,7 +21,7 @@
         <i aria-hidden="true" class="ml-1 far fa-file-pdf"></i
       ></a>
       <span v-else>{{
-        costing.publication_date.toLocaleDateString($root.language + "-CA", {
+        costing.publication_date.toLocaleDateString(language + "-CA", {
           year: "numeric",
           month: "long",
           day: "numeric",
@@ -29,7 +29,7 @@
       }}</span>
     </td>
     <td
-      v-for="cost in costing.cost.localizedCost($root.language, preferNetCost)"
+      v-for="cost in costing.cost.localizedCost(language, preferNetCost)"
       :key="costing.id + cost.year"
       class="border px-2 py-1 text-center"
     >
@@ -54,5 +54,10 @@ export default {
       default: false,
     },
   },
+  computed: {
+    language() {
+      return this.$root.language;
+    },
+  }
 };
 </script>

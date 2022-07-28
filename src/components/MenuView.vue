@@ -57,7 +57,7 @@ export default {
             },
           },
         },
-        /*{
+        {
           title: this.$root.strings.costingerp.title,
           destination: {
             name: "CostingERP",
@@ -66,6 +66,7 @@ export default {
             },
           },
         },
+        /*
         {
           title: this.$root.strings.efas.title,
           destination: {

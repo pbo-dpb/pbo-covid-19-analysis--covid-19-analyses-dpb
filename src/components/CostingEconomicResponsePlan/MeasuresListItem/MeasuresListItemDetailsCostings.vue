@@ -34,8 +34,12 @@
 </template>
 <script>
 import collect from "collect.js";
+import MeasuresListItemDetailsCostingsCosting from "./MeasuresListItemDetailsCostingsCosting.vue"
 
 export default {
+  components: {
+    MeasuresListItemDetailsCostingsCosting
+  },
   props: {
     measure: Object,
     highlightedCostingId: String,
@@ -44,10 +48,7 @@ export default {
       default: false,
     },
   },
-  components: {
-    measuresListItemDetailsCostingsCosting: require("./MeasuresListItemDetailsCostingsCosting")
-      .default,
-  },
+  
   computed: {
     costingsCount() {
       return collect(this.measure.costings).count();
