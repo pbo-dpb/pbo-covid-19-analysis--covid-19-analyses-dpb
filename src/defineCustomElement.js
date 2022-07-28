@@ -5,6 +5,8 @@ import strings from "./strings"
 import Costing from "./store/legacyModels/Costing.js"
 import Update from "./store/legacyModels/Update.js"
 import MarkdownContent from "./components/MarkdownContent.vue"
+import NotificationBlock from "./components/NotificationBlock.vue"
+import BreadcrumbView from "./components/BreadcrumbView.vue"
 import legacyPayload from './store/data/legacyPayload.json'
 import Fuse from "fuse.js"
 const language = document.documentElement.lang;
@@ -22,6 +24,17 @@ export const defineCustomElement = (component, { plugins = [] }) =>
        * Register global components
        */
       app.component('MarkdownContent', MarkdownContent);
+      app.component('NotificationBlock', NotificationBlock);
+      app.component('BreadcrumbView', BreadcrumbView);
+
+      /**
+       * 
+Vue.component('costings-number', require('./components/QsCostingsNumber.vue').default);
+Vue.component('markdown-content', require('./components/MarkdownContent.vue').default);
+Vue.component('notification-block', require('./components/NotificationBlock.vue').default);
+Vue.component('list-view', require('./components/ListView.vue').default);
+Vue.component('breadcrumb-view', require('./components/BreadcrumbView.vue').default);
+       */
 
       /**
        * Load plugins
