@@ -6,7 +6,7 @@
       <div class="container mx-auto">
         <section class="lg:grid lg:grid-cols-4 lg:gap-4">
           <nav class="lg:col-span-1">
-            <!--<menu-view></menu-view>-->
+            <menu-view></menu-view>
           </nav>
           <div class="lg:col-span-3">
             <router-view></router-view>
@@ -19,11 +19,12 @@
 
 <script>
 import TopHeader from "./components/TopHeader.vue";
+import MenuView from "./components/MenuView.vue";
 
 export default {
   components: {
-    TopHeader
-//    menuView: require("./components/MenuView.vue").default,
+    TopHeader,
+    MenuView
   },
 };
 </script>

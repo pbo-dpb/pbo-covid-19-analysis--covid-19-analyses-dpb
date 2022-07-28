@@ -57,7 +57,7 @@ export default {
             },
           },
         },
-        {
+        /*{
           title: this.$root.strings.costingerp.title,
           destination: {
             name: "CostingERP",
@@ -75,15 +75,7 @@ export default {
             },
           },
         },
-        /*{
-          title: this.$root.strings.scenarioanalysis.title,
-          destination: {
-            name: "ScenarioAnalysis",
-            params: {
-              language: this.$route.params.language,
-            },
-          },
-        },*/
+
         {
           title: this.$root.strings.parliamentariansrequests.title,
           destination: {
@@ -111,7 +103,7 @@ export default {
               language: this.$route.params.language,
             },
           },
-        },
+        },*/
       ];
       return links;
     },
