@@ -44,7 +44,7 @@
     </div>
 
     <measures-list-item-details
-      :id="'item-details-' + uid"
+      :id="`item-details-${uid}`"
       :measure="_measure"
       :highlighted-costing-id="highlightedCostingId"
       v-if="showDetails"

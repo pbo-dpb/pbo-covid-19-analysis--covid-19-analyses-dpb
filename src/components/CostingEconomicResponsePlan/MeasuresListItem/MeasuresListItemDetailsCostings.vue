@@ -24,7 +24,7 @@
           v-for="costing in costings"
           :key="costing.id"
           :costing="costing"
-          is="measures-list-item-details-costings-costing"
+          is="vue:measures-list-item-details-costings-costing"
           :highlighted="highlightedCostingId === costing.id"
           :prefer-net-cost="preferNetCost"
         ></tr>
