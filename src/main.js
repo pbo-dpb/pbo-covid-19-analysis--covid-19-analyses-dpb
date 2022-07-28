@@ -1,4 +1,6 @@
-import { defineCustomElement } from 'vue'
+import { defineCustomPeatElement } from './defineCustomPeatElement'
 import App from "./App.ce.vue"
+//import router from './router'
+//import store from './store'
 
-customElements.define('pbotool-sample', defineCustomElement(App))
+customElements.define('pbotool-covid', defineCustomPeatElement(App, {plugins: [  ]}))
