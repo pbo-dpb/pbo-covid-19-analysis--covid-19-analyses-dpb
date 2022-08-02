@@ -12,15 +12,15 @@
 
     <template v-if="groups">
       <table class="w-full mb-8">
-        <thead is="qs-costings-table-head"></thead>
+        <thead is="vue:qs-costings-table-head"></thead>
         <tbody
-          is="qs-costings-group"
+          is="vue:qs-costings-group"
           v-for="(costings, group) in groups"
           :group="group"
           :key="group"
           :costings="costings"
         ></tbody>
-        <tfoot is="qs-costings-table-foot"></tfoot>
+        <tfoot is="vue:qs-costings-table-foot"></tfoot>
       </table>
 
       <qs-costings-meta-table></qs-costings-meta-table>
@@ -34,7 +34,7 @@
           </tr>
         </tbody>
         <tr
-          is="qs-costings-group-row"
+          is="vue:qs-costings-group-row"
           v-for="costing in noIncrementalImpactCostings"
           :key="costing.title_en"
           :costing="costing"

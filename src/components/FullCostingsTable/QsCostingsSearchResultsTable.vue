@@ -8,10 +8,10 @@
 </style>
 <template>
   <table class="w-full mb-8">
-    <thead is="qs-costings-table-head"></thead>
+    <thead is="vue:qs-costings-table-head"></thead>
     <tbody>
       <tr
-        is="qs-costings-group-row"
+        is="vue:qs-costings-group-row"
         v-for="costing in costings"
         :key="costing.title_en"
         :costing="costing"

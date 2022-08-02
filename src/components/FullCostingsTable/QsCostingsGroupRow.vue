@@ -53,7 +53,7 @@ tr > td {
 <template>
   <tr class="covidcostings-row" :class="{'is-not-pbo-costing': !costing.isPboCosting}" @click="log">
     <td>
-      <div class="measure-name">
+      <div class="measure-name flex flex-row items-center">
         <qs-pbo-costed-glyph v-if="costing.isPboCosting" />
         <div>
           <component

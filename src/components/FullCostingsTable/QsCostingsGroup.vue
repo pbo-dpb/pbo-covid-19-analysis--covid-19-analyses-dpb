@@ -4,7 +4,7 @@
       <th style="text-align:left;padding-top:1rem;">{{ group }}</th>
     </tr>
     <tr
-      is="qs-costings-group-row"
+      is="vue:qs-costings-group-row"
       v-for="costing in orderedCostings"
       :costing="costing"
       :display-as-of-latest-scenario="true"
