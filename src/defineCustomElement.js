@@ -13,6 +13,8 @@ import ListView from "./components/ListView.vue"
 
 import legacyPayload from './store/data/legacyPayload.json'
 import Fuse from "fuse.js"
+import { reactive } from 'vue'
+
 const language = document.documentElement.lang;
 
 export const defineCustomElement = (component, { plugins = [] }) =>
@@ -54,7 +56,7 @@ Vue.component('breadcrumb-view', require('./components/BreadcrumbView.vue').defa
 
 
 
-      return {
+      return reactive({
         language,
         payload: null,
         compareWithUpdate: null,
@@ -64,7 +66,7 @@ Vue.component('breadcrumb-view', require('./components/BreadcrumbView.vue').defa
           engine: null
         },
 
-      }
+      })
     },
 
     computed: {

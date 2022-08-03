@@ -1,18 +1,4 @@
-<style scoped>
-img {
-  height: 20px;
-  width: 20px;
-  margin-right: 0.5em;
-}
 
-@media only screen and (max-width: 768px) {
-  img {
-    height: 15px;
-    width: 15px;
-    margin-right: 0.5em;
-  }
-}
-</style>
 <template>
   <img
   class="h-4 w-4 mr-1"

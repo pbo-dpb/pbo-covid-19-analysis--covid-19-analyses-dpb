@@ -11,7 +11,7 @@
         <costings-number :value="number" />
       </th>
 
-      <template v-if="$root.compareWithUpdate">
+      <template v-if="compareWithUpdate">
         <th
           class="comparative-cell"
           style="border-top: 1px solid gray;text-align:right;padding-left: 0.5em;"
@@ -61,6 +61,10 @@ export default {
         ? this.sumsByUpdateId(this.$root.compareWithUpdate.id)
         : null;
     },
+    compareWithUpdate() {
+    
+      return this.$root.compareWithUpdate;
+    }
   },
 };
 </script>

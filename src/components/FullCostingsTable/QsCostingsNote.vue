@@ -1,14 +1,5 @@
-<style scoped>
-div.note-container {
-  font-size: 0.95em;
-  line-height: 1.25em;
-
-  color: #272932;
-  padding: 14px 28px;
-}
-</style>
 <template>
-  <div class="note-container" @click="interceptClick">
+  <div class="my-2 p-2 bg-gray-50 rounded text-sm" @click="interceptClick">
     <markdown-content :content="note"></markdown-content>
   </div>
 </template>

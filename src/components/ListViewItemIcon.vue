@@ -27,6 +27,21 @@
         <line x1="15" y1="8" x2="19" y2="12"></line>
     </template>
 
+ <template v-if="type === 'down'">
+ <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+ </template>
+ 
+  <template v-if="type === 'up'">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+  </template>
+
+
+  <template v-if="type === 'note'">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+</template>
+
+  
+
 </svg>
 </template>
 <script>

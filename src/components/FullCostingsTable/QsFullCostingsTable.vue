@@ -42,18 +42,21 @@
       </table>
 
       <figcaption
-        style="text-align: left; font-size: 0.8em; caption-side: bottom"
-        class="mb-8 text-sm"
+        
+        class="mb-8 border-t border-gray-300 pt-4"
       >
         <markdown-content
           :content="$root.strings.fullcostings.figcaption_line1"
+          class="prose-sm"
         ></markdown-content>
         <markdown-content
           :content="$root.strings.fullcostings.figcaption_line2"
+          class="prose-sm"
         ></markdown-content>
         <br />
         <markdown-content
           :content="$root.strings.fullcostings.figcaption_line3"
+          class="prose-sm"
         ></markdown-content>
       </figcaption>
     </template>

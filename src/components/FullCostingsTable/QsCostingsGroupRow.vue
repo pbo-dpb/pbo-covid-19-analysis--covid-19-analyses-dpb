@@ -83,8 +83,8 @@ tr > td {
           :aria-label="$root.strings.fullcostings.display_warning"
           @click="displayWarning=!displayWarning"
         >
-          <i class="far fa-caret-square-down" v-if="!displayWarning"></i>
-          <i class="fas fa-caret-square-up" v-if="displayWarning"></i>
+          <list-view-item-icon type="down" v-if="!displayWarning" class="ml-2 bg-blue-100 rounded hover:bg-blue-200 px-1 h-4 w-6"></list-view-item-icon>
+          <list-view-item-icon type="up" v-if="displayWarning" class="ml-2 bg-blue-100 rounded hover:bg-blue-200 px-1  h-4 w-6"></list-view-item-icon>
         </div>
 
         <div
@@ -96,8 +96,9 @@ tr > td {
           :aria-label="$root.strings.fullcostings.display_note"
           @click="displayNote=!displayNote"
         >
-          <i class="far fa-sticky-note" v-if="!displayNote"></i>
-          <i class="fas fa-sticky-note" v-if="displayNote"></i>
+        <list-view-item-icon type="note"  v-if="!displayNote" class="ml-2 bg-blue-100 rounded hover:bg-blue-200 px-1 h-4 w-6"></list-view-item-icon>
+        <list-view-item-icon type="note" v-if="displayNote" class="ml-2 text-white bg-blue-800 rounded hover:bg-blue-700 px-1 h-4 w-6"></list-view-item-icon>
+
         </div>
 
         <template v-if="shouldShowStatusBadges">
@@ -151,12 +152,14 @@ import QsCostingsNote from "./QsCostingsNote.vue"
 import CostingBadge from "./CostingBadge.vue"
 
 import collect from "collect.js";
+import ListViewItemIcon from "../ListViewItemIcon.vue";
 export default {
   components: {
     QsPboCostedGlyph,
     QsCostingsNote,
-    CostingBadge
-  },
+    CostingBadge,
+    ListViewItemIcon
+},
   props: {
     costing: {
       type: Object,
