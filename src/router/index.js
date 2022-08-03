@@ -23,17 +23,17 @@ const routes = [
     path: '/monitoring-framework--cadre-de-surveillance',
     name: 'MonitoringFramework',
     component: () => import('../components/MonitoringFramework/MonitoringFramework.vue')
-  },/*
-    {
-      path: '/:language/economic-fiscal-analysis--analyses-economiques-financieres',
-      name: 'EfasHome',
-      component: () => import( '../components/EconomicFiscalAnalysis/EconomicFiscalAnalysis.vue')
-    },
-    {
-      path: '/:language/economic-fiscal-analysis--analyses-economiques-financieres/:efaId',
-      name: 'EfaAnalysis',
-      component: () => import( '../components/EconomicFiscalAnalysis/EconomicFiscalAnalysisAnalysis.vue')
-    },*/
+  },
+  {
+    path: '/economic-fiscal-analysis--analyses-economiques-financieres',
+    name: 'EfasHome',
+    component: () => import('../components/EconomicFiscalAnalysis/EconomicFiscalAnalysis.vue')
+  },
+  {
+    path: '/economic-fiscal-analysis--analyses-economiques-financieres/:efaId',
+    name: 'EfaAnalysis',
+    component: () => import('../components/EconomicFiscalAnalysis/EconomicFiscalAnalysisAnalysis.vue')
+  },
   {
     path: '/fullcostingtable',
     name: 'FullCostingTable',

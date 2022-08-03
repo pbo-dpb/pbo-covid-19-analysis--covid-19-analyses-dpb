@@ -63,15 +63,12 @@ export default {
           },
         },
         
-        /*{
+        {
           title: this.$root.strings.efas.title,
           destination: {
-            name: "EfasHome",
-            params: {
-              language: this.$route.params.language,
-            },
+            name: "EfasHome"
           },
-        },*/
+        },
 
         {
           title: this.$root.strings.parliamentariansrequests.title,

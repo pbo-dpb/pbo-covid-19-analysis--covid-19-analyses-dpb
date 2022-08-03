@@ -32,7 +32,6 @@ export default {
             route: {
               name: "EfaAnalysis",
               params: {
-                language: this.$route.params.language,
                 efaId: efa.id,
               },
             },

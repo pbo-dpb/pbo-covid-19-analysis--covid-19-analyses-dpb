@@ -31,9 +31,11 @@
   </div>
 </template>
 <script>
+import CostingsToolsSorter from "./CostingsToolsSorter.vue"
+
 export default {
   components: {
-    costingsToolsSorter: require("./CostingsToolsSorter").default,
+    CostingsToolsSorter
   },
   data() {
     return {

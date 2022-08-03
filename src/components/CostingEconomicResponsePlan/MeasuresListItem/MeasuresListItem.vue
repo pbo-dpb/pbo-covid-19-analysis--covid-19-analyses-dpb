@@ -13,13 +13,16 @@
       >
         <div
           role="switch"
-          class="font-medium cursor-pointer"
+          class="font-medium cursor-pointer flex flex-row gap-2 items-center"
           :aria-expanded="showDetails"
           :aria-controls="'item-details-' + uid"
           @click="showDetails = !showDetails"
         >
-          <i v-if="showDetails" class="fas fa-caret-down fa-fw"></i>
-          <i v-else class="fas fa-caret-right fa-fw"></i>
+          <list-view-item-icon v-if="showDetails" type="down" class="h-4 w-4"></list-view-item-icon>
+          <list-view-item-icon v-else type="right" class="h-4 w-4"></list-view-item-icon>
+          
+
+
           <span class="hover:underline">{{
             _measure.title[language]
           }}</span>
@@ -54,11 +57,13 @@
 </template>
 <script>
 import MeasuresListItemDetails from "./MeasuresListItemDetails.vue"
+import ListViewItemIcon from "../../ListViewItemIcon.vue";
 
 export default {
    components: {
-    MeasuresListItemDetails
-  },
+    MeasuresListItemDetails,
+    ListViewItemIcon
+},
   props: {
     measure: Object,
     efaMeasure: Object,

@@ -1,5 +1,5 @@
 <template>
-<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 stroke-current" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 stroke-current" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
    
     <template v-if="type === 'xlsx'">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -34,6 +34,10 @@
   <template v-if="type === 'up'">
   <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
   </template>
+
+  <template v-if="type === 'right'">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+</template>
 
 
   <template v-if="type === 'note'">

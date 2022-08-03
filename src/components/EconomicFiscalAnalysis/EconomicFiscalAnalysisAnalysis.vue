@@ -86,13 +86,17 @@
 </template>
 <script>
 import collect from "collect.js";
+import MeasuresList from './MeasuresList.vue';
+import CostingTotal from './CostingTotal.vue';
+import CostingIndicators from './CostingIndicators.vue';
+import CostingsTools from '../CostingsTools/CostingsTools.vue';
 
 export default {
   components: {
-    measuresList: require("./MeasuresList").default,
-    costingTotal: require("./CostingTotal").default,
-    costingIndicators: require("./CostingIndicators").default,
-    costingsTools: require("../CostingsTools/CostingsTools").default,
+    MeasuresList,
+    CostingTotal,
+    CostingIndicators,
+    CostingsTools,
   },
 
   computed: {
