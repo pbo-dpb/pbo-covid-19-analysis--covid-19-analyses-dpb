@@ -33,11 +33,6 @@ npm install
 
 ### Compiles and hot-reloads for development // Compilations et recharges à chaud pour le développement
 ```
-npm run serve
-```
-
-### Compiles for development // Compilations pour le développement
-```
 npm run dev
 ```
 
@@ -45,11 +40,3 @@ npm run dev
 ```
 npm run build
 ```
-
-### Lints and fixes files // Paufinage et corrections de fichiers
-```
-npm run lint
-```
-
-### Customize configuration // Personnaliser la configuration (en anglais seulement)
-See [Configuration Reference](https://cli.vuejs.org/config/).
