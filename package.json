@@ -1,58 +1,27 @@
 {
-  "name": "covid19.pbo-dpb.ca",
-  "version": "1.0.0",
+  "name": "pbotool-ce-covid19",
   "private": true,
+  "version": "2.0.0",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "dev": "vue-cli-service build --mode development",
-    "prod": "vue-cli-service build",
-    "watch": "vue-cli-service build --mode development --watch"
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@tailwindcss/typography": "^0.2.0",
-    "axios": "^0.21.1",
-    "collect.js": "^4.28.6",
-    "core-js": "^3.13.1",
-    "get-value": "^3.0.1",
-    "luxon": "^1.27.0",
+    "collect.js": "^4.34.3",
+    "fuse.js": "^6.6.2",
+    "luxon": "^3.0.1",
     "remarkable": "^2.0.1",
-    "vue": "^2.6.13",
-    "vue-router": "^3.5.1",
-    "vuex": "^3.6.2"
+    "vue": "^3.2.25",
+    "vue-router": "^4.1.2",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.5.13",
-    "@vue/cli-plugin-eslint": "^4.5.13",
-    "@vue/cli-plugin-router": "^4.5.13",
-    "@vue/cli-service": "^4.5.13",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.2.2",
-    "vue-cli-plugin-tailwind": "~1.5.0",
-    "vue-template-compiler": "^2.6.13"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {},
-    "globals": {
-      "Fuse": "readonly"
-    }
-  },
-  "browserslist": [
-    "defaults",
-    "IE 11",
-    "edge 16"
-  ]
+    "@tailwindcss/typography": "^0.5.4",
+    "@vitejs/plugin-vue": "^3.0.1",
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1",
+    "vite": "^3.0.0"
+  }
 }

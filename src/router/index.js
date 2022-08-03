@@ -1,57 +1,50 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
+
 import AnalysisHome from '../components/AnalysisHome/AnalysisHome.vue'
 
-
-Vue.use(VueRouter)
-
 const routes = [
-  { path: '/', redirect: '/en' },
   {
-    path: '/:language',
+    path: '/',
     name: 'AnalysisHome',
     component: AnalysisHome
   },
   {
-    path: '/:language/costing-economic-response-plan--etablissement-des-couts-plan-intervention-economique',
+    path: '/costing-economic-response-plan--etablissement-des-couts-plan-intervention-economique',
     name: 'CostingERP',
-    component: () => import(/* webpackChunkName: "about" */ '../components/CostingEconomicResponsePlan/CostingEconomicResponsePlan.vue')
+    component: () => import('../components/CostingEconomicResponsePlan/CostingEconomicResponsePlan.vue')
   },
+
   {
-    path: '/:language/scenario-analysis--analyse-de-scenario',
-    name: 'ScenarioAnalysis',
-    component: () => import(/* webpackChunkName: "about" */ '../components/ScenarioAnalysis/ScenarioAnalysis.vue')
-  },
-  {
-    path: '/:language/costings-requested-by-parliamentarians--etablissement-des-couts-demandes-des-parlementaires',
+    path: '/costings-requested-by-parliamentarians--etablissement-des-couts-demandes-des-parlementaires',
     name: 'ParliamentariansRequests',
-    component: () => import(/* webpackChunkName: "about" */ '../components/ParliamentariansRequests/ParliamentariansRequests.vue')
+    component: () => import('../components/ParliamentariansRequests/ParliamentariansRequests.vue')
   },
   {
-    path: '/:language/monitoring-framework--cadre-de-surveillance',
+    path: '/monitoring-framework--cadre-de-surveillance',
     name: 'MonitoringFramework',
-    component: () => import(/* webpackChunkName: "about" */ '../components/MonitoringFramework/MonitoringFramework.vue')
+    component: () => import('../components/MonitoringFramework/MonitoringFramework.vue')
   },
   {
-    path: '/:language/economic-fiscal-analysis--analyses-economiques-financieres',
+    path: '/economic-fiscal-analysis--analyses-economiques-financieres',
     name: 'EfasHome',
-    component: () => import(/* webpackChunkName: "about" */ '../components/EconomicFiscalAnalysis/EconomicFiscalAnalysis.vue')
+    component: () => import('../components/EconomicFiscalAnalysis/EconomicFiscalAnalysis.vue')
   },
   {
-    path: '/:language/economic-fiscal-analysis--analyses-economiques-financieres/:efaId',
+    path: '/economic-fiscal-analysis--analyses-economiques-financieres/:efaId',
     name: 'EfaAnalysis',
-    component: () => import(/* webpackChunkName: "about" */ '../components/EconomicFiscalAnalysis/EconomicFiscalAnalysisAnalysis.vue')
+    component: () => import('../components/EconomicFiscalAnalysis/EconomicFiscalAnalysisAnalysis.vue')
   },
   {
-    path: '/:language/fullcostingtable',
+    path: '/fullcostingtable',
     name: 'FullCostingTable',
-    component: () => import(/* webpackChunkName: "about" */ '../components/FullCostingsTable/FullCostingsTable.vue')
+    component: () => import('../components/FullCostingsTable/FullCostingsTable.vue')
   }
 
 ]
 
-const router = new VueRouter({
-  routes
+const router = createRouter({
+  history: createWebHashHistory(),
+  routes,
 })
 
 export default router

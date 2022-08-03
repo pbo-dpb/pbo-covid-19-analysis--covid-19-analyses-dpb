@@ -134,7 +134,7 @@ Please view the latest cost estimates prepared by the PBO in response to request
         "title": "COVID-19 : Analyses du DPB",
         "fullcostings": {
             "title": "Analyse de scénario",
-            "descriptor": "The table below summarizes the estimated cost of all COVID-19 response measures up to June 12, 2020. These measures are consistent with the PBO’s economic and fiscal scenario, published on June 18, 2020.",
+            "descriptor": "Le tableau ci-dessous résume le coût estimé de toutes les mesures d'intervention liées à la COVID-19 jusqu'au 12 juin 2020. Ces mesures sont conformes au scénario économique et fiscal du DPB, publié le 18 juin 2020.",
             "archived": {
                 "title": "Cette page a été archivée",
                 "label": "Archivé [2020-06-18]",

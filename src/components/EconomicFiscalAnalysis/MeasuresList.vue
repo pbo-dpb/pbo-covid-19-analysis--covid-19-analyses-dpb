@@ -1,5 +1,5 @@
 <template>
-  <ul class="divide-y divide-gray-200">
+  <ul class="">
     <li
       class="grid md:grid-cols-8 gap-2 py-2 md:py-1 even:bg-gray-100 invisible md:visible"
       :class="['grid-cols-' + $store.state.costedYearsCount]"
@@ -35,10 +35,10 @@
   </ul>
 </template>
 <script>
+import MeasuresListItem from "../CostingEconomicResponsePlan/MeasuresListItem/MeasuresListItem.vue";
 export default {
   components: {
-    measuresListItem: require("../CostingEconomicResponsePlan/MeasuresListItem/MeasuresListItem")
-      .default,
+   MeasuresListItem
   },
   props: {
     efaMeasures: {

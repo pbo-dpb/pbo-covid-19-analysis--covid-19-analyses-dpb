@@ -8,10 +8,10 @@
 </style>
 <template>
   <table>
-    <thead is="qs-costings-table-head"></thead>
+    <thead is="vue:qs-costings-table-head"></thead>
     <tbody>
       <tr
-        is="qs-costings-group-row"
+        is="vue:qs-costings-group-row"
         v-for="costing in costings"
         :key="costing.title_en"
         :costing="costing"
@@ -22,10 +22,13 @@
   
     <script>
 import collect from "collect.js";
+import QsCostingsTableHead from "./QsCostingsTableHead.vue"
+import QsCostingsGroupRow from "./QsCostingsGroupRow.vue"
+
 export default {
   components: {
-    qsCostingsTableHead: require("./QsCostingsTableHead.vue").default,
-    qsCostingsGroupRow: require("./QsCostingsGroupRow.vue").default
+    QsCostingsTableHead,
+    QsCostingsGroupRow
   },
   computed: {
     costings() {

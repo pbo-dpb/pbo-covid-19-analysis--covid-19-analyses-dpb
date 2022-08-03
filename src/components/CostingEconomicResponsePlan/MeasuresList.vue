@@ -35,9 +35,10 @@
   </ul>
 </template>
 <script>
+import MeasuresListItem from "./MeasuresListItem/MeasuresListItem.vue"
 export default {
   components: {
-    measuresListItem: require("./MeasuresListItem/MeasuresListItem").default,
+    MeasuresListItem
   },
   props: {
     measures: {
@@ -48,6 +49,6 @@ export default {
       type: Boolean,
       default: false,
     },
-  },
+  }
 };
 </script>

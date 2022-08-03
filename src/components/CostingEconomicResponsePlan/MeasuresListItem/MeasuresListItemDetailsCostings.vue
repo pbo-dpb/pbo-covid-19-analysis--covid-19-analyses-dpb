@@ -24,7 +24,7 @@
           v-for="costing in costings"
           :key="costing.id"
           :costing="costing"
-          is="measures-list-item-details-costings-costing"
+          is="vue:measures-list-item-details-costings-costing"
           :highlighted="highlightedCostingId === costing.id"
           :prefer-net-cost="preferNetCost"
         ></tr>
@@ -34,8 +34,12 @@
 </template>
 <script>
 import collect from "collect.js";
+import MeasuresListItemDetailsCostingsCosting from "./MeasuresListItemDetailsCostingsCosting.vue"
 
 export default {
+  components: {
+    MeasuresListItemDetailsCostingsCosting
+  },
   props: {
     measure: Object,
     highlightedCostingId: String,
@@ -44,10 +48,7 @@ export default {
       default: false,
     },
   },
-  components: {
-    measuresListItemDetailsCostingsCosting: require("./MeasuresListItemDetailsCostingsCosting")
-      .default,
-  },
+  
   computed: {
     costingsCount() {
       return collect(this.measure.costings).count();

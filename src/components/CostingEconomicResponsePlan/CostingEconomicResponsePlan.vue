@@ -14,10 +14,10 @@
 </template>
 <script>
 import { collect } from "collect.js";
-
+import MeasuresList from "./MeasuresList.vue"
 export default {
   components: {
-    measuresList: require("./MeasuresList").default,
+    MeasuresList
   },
   computed: {
     measures() {

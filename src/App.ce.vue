@@ -9,7 +9,7 @@
             <menu-view></menu-view>
           </nav>
           <div class="lg:col-span-3">
-            <router-view />
+            <router-view></router-view>
           </div>
         </section>
       </div>
@@ -18,10 +18,16 @@
 </template>
 
 <script>
+import TopHeader from "./components/TopHeader.vue";
+import MenuView from "./components/MenuView.vue";
+
 export default {
   components: {
-    topHeader: require("./components/TopHeader.vue").default,
-    menuView: require("./components/MenuView.vue").default,
-  },
+    TopHeader,
+    MenuView
+  }
 };
 </script>
+<style>
+@import "./index.css";
+</style>

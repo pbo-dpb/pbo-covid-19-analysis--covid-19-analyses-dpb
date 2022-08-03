@@ -4,7 +4,6 @@
 
 <script>
 import { Remarkable } from "remarkable";
-
 import collect from "collect.js";
 
 export default {

@@ -6,7 +6,7 @@
     <h3
       class="text-center text-lg pb-2 mb-2 border-b font-medium border-gray-100 leading-none text-gray-800"
     >
-      {{ measure.title[$root.language] }}
+      {{ measure.title[language] }}
     </h3>
 
     <div
@@ -23,7 +23,7 @@
       </h4>
 
       <div>
-        {{ note[$root.language] }}
+        {{ note[language] }}
       </div>
     </div>
 
@@ -36,7 +36,16 @@
 </template>
 
 <script>
+import MeasuresListItemDetailsCostings from "./MeasuresListItemDetailsCostings.vue"
 export default {
+  components: {
+    MeasuresListItemDetailsCostings
+  },
+  computed: {
+    language() {
+      return this.language;
+    },
+  },
   props: {
     measure: Object,
     highlightedCostingId: String,
@@ -45,9 +54,6 @@ export default {
       default: false,
     },
   },
-  components: {
-    measuresListItemDetailsCostings: require("./MeasuresListItemDetailsCostings")
-      .default,
-  },
+  
 };
 </script>

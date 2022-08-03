@@ -12,15 +12,15 @@
 
     <template v-if="groups">
       <table class="w-full mb-8">
-        <thead is="qs-costings-table-head"></thead>
+        <thead is="vue:qs-costings-table-head"></thead>
         <tbody
-          is="qs-costings-group"
+          is="vue:qs-costings-group"
           v-for="(costings, group) in groups"
           :group="group"
           :key="group"
           :costings="costings"
         ></tbody>
-        <tfoot is="qs-costings-table-foot"></tfoot>
+        <tfoot is="vue:qs-costings-table-foot"></tfoot>
       </table>
 
       <qs-costings-meta-table></qs-costings-meta-table>
@@ -34,7 +34,7 @@
           </tr>
         </tbody>
         <tr
-          is="qs-costings-group-row"
+          is="vue:qs-costings-group-row"
           v-for="costing in noIncrementalImpactCostings"
           :key="costing.title_en"
           :costing="costing"
@@ -42,18 +42,21 @@
       </table>
 
       <figcaption
-        style="text-align: left; font-size: 0.8em; caption-side: bottom"
-        class="mb-8 text-sm"
+        
+        class="mb-8 border-t border-gray-300 pt-4"
       >
         <markdown-content
           :content="$root.strings.fullcostings.figcaption_line1"
+          class="prose-sm"
         ></markdown-content>
         <markdown-content
           :content="$root.strings.fullcostings.figcaption_line2"
+          class="prose-sm"
         ></markdown-content>
         <br />
         <markdown-content
           :content="$root.strings.fullcostings.figcaption_line3"
+          class="prose-sm"
         ></markdown-content>
       </figcaption>
     </template>
@@ -62,14 +65,19 @@
   
     <script>
 import collect from "collect.js";
+import QsCostingsGroup from "./QsCostingsGroup.vue"
+import QsCostingsTableHead from "./QsCostingsTableHead.vue"
+import QsCostingsTableFoot from "./QsCostingsTableFoot.vue"
+import QsCostingsMetaTable from "./QsCostingsMetaTable.vue"
+import QsCostingsGroupRow from "./QsCostingsGroupRow.vue"
 
 export default {
   components: {
-    qsCostingsGroup: require("./QsCostingsGroup.vue").default,
-    qsCostingsTableHead: require("./QsCostingsTableHead.vue").default,
-    qsCostingsTableFoot: require("./QsCostingsTableFoot.vue").default,
-    qsCostingsMetaTable: require("./QsCostingsMetaTable.vue").default,
-    QsCostingsGroupRow: require("./QsCostingsGroupRow.vue").default,
+    QsCostingsGroup,
+    QsCostingsTableHead,
+    QsCostingsTableFoot,
+   QsCostingsMetaTable,
+    QsCostingsGroupRow
   },
   computed: {
     groups() {
