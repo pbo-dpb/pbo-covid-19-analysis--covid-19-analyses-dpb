@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <top-header></top-header>
 
     <main class="px-2 py-4">
       <div class="container mx-auto">
@@ -18,14 +17,12 @@
 </template>
 
 <script>
-import TopHeader from "./components/TopHeader.vue";
 import MenuView from "./components/MenuView.vue";
 
 export default {
   components: {
-    TopHeader,
     MenuView
-  }
+  },
 };
 </script>
 <style>
