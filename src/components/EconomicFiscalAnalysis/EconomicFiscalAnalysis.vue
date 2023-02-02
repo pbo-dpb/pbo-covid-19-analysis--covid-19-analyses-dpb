@@ -1,27 +1,29 @@
 <template>
   <div>
-    <breadcrumb-view
-      :links="[
-        {
-          title: $root.strings.efas.title,
-          destination: {
-            name: 'EfasHome',
-            params: {
-              language: $route.params.language,
-            },
+    <breadcrumb-view :links="[
+      {
+        title: $root.strings.efas.title,
+        destination: {
+          name: 'EfasHome',
+          params: {
+            language: $route.params.language,
           },
         },
-      ]"
-    ></breadcrumb-view>
+      },
+    ]"></breadcrumb-view>
     <list-view v-if="items" :items="items"></list-view>
   </div>
 </template>
 <script>
+import { mapState } from 'pinia'
+import piniaStore from '../../store/pinia-store'
+
 import collect from "collect.js";
 export default {
   computed: {
+    ...mapState(piniaStore, ['efas']),
     items() {
-      return collect(this.$store.state.efas)
+      return collect(this.efas)
         .sortByDesc("publication_date")
         .map((efa) => {
           return {

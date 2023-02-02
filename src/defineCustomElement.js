@@ -14,6 +14,9 @@ import ListView from "./components/ListView.vue"
 import legacyPayload from './store/data/legacyPayload.json'
 import Fuse from "fuse.js"
 import { reactive } from 'vue'
+import { createPinia } from 'pinia'
+const pinia = createPinia()
+
 
 const language = document.documentElement.lang;
 
@@ -26,6 +29,8 @@ export const defineCustomElement = (component, { plugins = [] }) =>
     },
     setup() {
       const app = createApp();
+
+      app.use(pinia)
       /**
        * Register global components
        */

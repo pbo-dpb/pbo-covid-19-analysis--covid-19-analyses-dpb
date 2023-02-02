@@ -1,4 +1,4 @@
-import { createStore } from 'vuex'
+import { defineStore } from 'pinia'
 
 import Measure from "./models/Measure"
 import Efa from "./models/Efa"
@@ -8,20 +8,25 @@ import strings from "../strings"
 const measures = import.meta.glob('./data/measures/*.json', { eager: true })
 const efas = import.meta.glob('./data/efas/*.json', { eager: true })
 
-const store = createStore({
-    state: {
-        measures: collect(measures).map(rawMeasure => new Measure(rawMeasure)).values().items,
-        efas: collect(efas).map(rawEfa => new Efa(rawEfa)).values().items,
-        settings: {
-            sortCostingsBy: "name"
-        },
-        costedYearsCount: Object.keys(strings["en"].costingerp.costed_years).length,
-    },
 
+export default defineStore('default', {
+    state: () => (
+        {
+            measures: collect(measures).map(rawMeasure => new Measure(rawMeasure)).values().items,
+            efas: collect(efas).map(rawEfa => new Efa(rawEfa)).values().items,
+            settings: {
+                sortCostingsBy: "name"
+            },
+        }
+    ),
     getters: {
-        // ...
         getEfaById: (state) => (id) => {
             return state.efas.find(efa => efa.id === id)
+        },
+
+        costedYearsCount: (state) => {
+            console.log("count");
+            return Object.keys(strings["en"].costingerp.costed_years).length;
         },
 
         getMeasureForCostingWithId: (state) => (id) => {
@@ -37,9 +42,5 @@ const store = createStore({
         getLatestEfa: (state) => () => {
             return collect(state.efas).sortByDesc("publication_date").first();
         },
-
-
     }
-
 })
-export default store;
