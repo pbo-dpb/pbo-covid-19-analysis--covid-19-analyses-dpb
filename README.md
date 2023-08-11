@@ -1,4 +1,8 @@
 # PBO's COVID-19 Analysis
+
+> [!IMPORTANT]  
+> The content of this tool is no longer updated. Only security and compatibility enhancements are performed.
+
 The PBO’s COVID-19 analysis products are designed to assist Canadians and parliamentarians gauge the potential implications of the pandemic on the Canadian economy and the Government’s finances.
 
 The tool provides access to all the PBO’s COVID-19 Analysis, including:
@@ -13,6 +17,10 @@ The tool provides access to all the PBO’s COVID-19 Analysis, including:
 
 
 # COVID-19 : Analyses du DPB
+
+> [!IMPORTANT]  
+> Le contenu de cet outil n'est plus mis à jour. Seules des améliorations de sécurité et de compatibilité sont apportées.
+
 Les produits d'analyse liées à la COVID-19 du DPB sont conçus pour aider les Canadiens et les parlementaires à évaluer les implications potentielles de la pandémie sur l'économie canadienne et les finances du gouvernement.
 
 Cet outil donne accès à toutes les analyses et autres travaux liées à la COVID-19 du DPB :
