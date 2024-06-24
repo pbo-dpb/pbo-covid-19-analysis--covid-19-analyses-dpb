@@ -7,7 +7,7 @@
           <nav class="lg:col-span-1">
             <menu-view></menu-view>
           </nav>
-          <div class="lg:col-span-3">
+          <div class="lg:col-span-3 dark:text-white">
             <router-view></router-view>
           </div>
         </section>
