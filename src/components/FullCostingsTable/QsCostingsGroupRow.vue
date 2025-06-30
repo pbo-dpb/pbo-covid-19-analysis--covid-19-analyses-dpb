@@ -83,8 +83,8 @@ tr > td {
           :aria-label="$root.strings.fullcostings.display_warning"
           @click="displayWarning=!displayWarning"
         >
-          <list-view-item-icon type="down" v-if="!displayWarning" class="ml-2 bg-blue-100 rounded hover:bg-blue-200 px-1 h-4 w-6"></list-view-item-icon>
-          <list-view-item-icon type="up" v-if="displayWarning" class="ml-2 bg-blue-100 rounded hover:bg-blue-200 px-1  h-4 w-6"></list-view-item-icon>
+          <list-view-item-icon type="down" v-if="!displayWarning" class="ml-2 bg-blue-100 rounded-sm hover:bg-blue-200 px-1 h-4 w-6"></list-view-item-icon>
+          <list-view-item-icon type="up" v-if="displayWarning" class="ml-2 bg-blue-100 rounded-sm hover:bg-blue-200 px-1  h-4 w-6"></list-view-item-icon>
         </div>
 
         <div
@@ -96,8 +96,8 @@ tr > td {
           :aria-label="$root.strings.fullcostings.display_note"
           @click="displayNote=!displayNote"
         >
-        <list-view-item-icon type="note"  v-if="!displayNote" class="ml-2 bg-blue-100 rounded hover:bg-blue-200 px-1 h-4 w-6"></list-view-item-icon>
-        <list-view-item-icon type="note" v-if="displayNote" class="ml-2 text-white bg-blue-800 rounded hover:bg-blue-700 px-1 h-4 w-6"></list-view-item-icon>
+        <list-view-item-icon type="note"  v-if="!displayNote" class="ml-2 bg-blue-100 rounded-sm hover:bg-blue-200 px-1 h-4 w-6"></list-view-item-icon>
+        <list-view-item-icon type="note" v-if="displayNote" class="ml-2 text-white bg-blue-800 rounded-sm hover:bg-blue-700 px-1 h-4 w-6"></list-view-item-icon>
 
         </div>
 

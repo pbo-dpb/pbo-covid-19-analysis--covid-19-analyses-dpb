@@ -7,7 +7,7 @@
       <button
         hidden
         title="$root.strings.options_label"
-        class="text-gray-700 rounded border border-gray-100 p-1 text-sm font-thin"
+        class="text-gray-700 rounded-sm border border-gray-100 p-1 text-sm font-thin"
         role="switch"
         :aria-checked="displaySettings"
         :class="{
@@ -24,7 +24,7 @@
     </aside>
     <nav
       v-if="displaySettings"
-      class="bg-gray-100 rounded border-gray-200 px-2 py-4 my-2"
+      class="bg-gray-100 rounded-sm border-gray-200 px-2 py-4 my-2"
     >
       <costings-tools-sorter></costings-tools-sorter>
     </nav>

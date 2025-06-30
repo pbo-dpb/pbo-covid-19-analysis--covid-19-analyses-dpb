@@ -12,7 +12,7 @@
     <div
       v-for="note in measure.notes"
       :key="note.en"
-      class="p-2 mb-2 rounded"
+      class="p-2 mb-2 rounded-sm"
       :class="{
         'bg-blue-100': note.type == 'info',
         'bg-orange-100': note.type == 'warning',

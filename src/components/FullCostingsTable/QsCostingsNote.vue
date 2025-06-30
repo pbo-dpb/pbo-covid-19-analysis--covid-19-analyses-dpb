@@ -1,5 +1,5 @@
 <template>
-  <div class="my-2 p-2 bg-gray-50 rounded text-sm" @click="interceptClick">
+  <div class="my-2 p-2 bg-gray-50 rounded-sm text-sm" @click="interceptClick">
     <markdown-content :content="note"></markdown-content>
   </div>
 </template>

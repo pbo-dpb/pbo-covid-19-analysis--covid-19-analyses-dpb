@@ -19,7 +19,7 @@
     >
       <div class="flex flex-row items-center w-auto">
         <div v-if="item.image" class="w-12 mr-2">
-          <img class="shadow" :src="item.image" />
+          <img class="shadow-sm" :src="item.image" />
         </div>
         <div>
           <template v-if="date">

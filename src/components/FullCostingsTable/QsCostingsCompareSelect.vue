@@ -9,7 +9,7 @@
         :id="'compare-select-' + _uid"
         v-model="$root.compareWithUpdate"
         @change="listen"
-        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded-sm leading-tight focus:outline-hidden focus:bg-white focus:border-gray-500"
       >
         <option :value="null">&mdash;</option>
         <option
