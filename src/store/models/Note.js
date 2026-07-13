@@ -1,4 +1,3 @@
-
 export default class Note {
     constructor(rawNote) {
         this.type = rawNote.type;
