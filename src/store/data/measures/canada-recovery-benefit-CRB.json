@@ -1,65 +1,65 @@
 {
-  "title": {
-    "en": "Canada Recovery Benefit (CRB)",
-    "fr": "Prestation Canadienne de la relance économique (PCRE)"
-  },
-  "notes": [],
-  "subtitle": {
-    "en": "",
-    "fr": ""
-  },
-  "costings": [
-    {
-      "id": "XLEG-2021-072-S",
-      "hasArtifacts": false,
-      "publication_date": "2021-04-27",
-      "cost": {
-        "gross": {
-          "20192020": 0,
-          "20202021": 15462,
-          "20212022": 11174
-        },
-        "net": {
-          "20192020": 0,
-          "20202021": 14498,
-          "20212022": 10487
-        }
-      }
+    "title": {
+        "en": "Canada Recovery Benefit (CRB)",
+        "fr": "Prestation Canadienne de la relance économique (PCRE)"
     },
-    {
-      "id": "LEG-2021-072-S",
-      "hasArtifacts": true,
-      "publication_date": "2021-03-18",
-      "cost": {
-        "gross": {
-          "20192020": 0,
-          "20202021": 15649,
-          "20212022": 8892
-        },
-        "net": {
-          "20192020": 0,
-          "20202021": 14620,
-          "20212022": 8318
-        }
-      }
+    "notes": [],
+    "subtitle": {
+        "en": "",
+        "fr": ""
     },
-    {
-      "id": "LEG-2021-045-S",
-      "hasArtifacts": true,
-      "publication_date": "2020-10-07",
-      "cost": {
-        "gross": {
-          "20192020": 0,
-          "20202021": 15079,
-          "20212022": 5615
+    "costings": [
+        {
+            "id": "XLEG-2021-072-S",
+            "hasArtifacts": false,
+            "publication_date": "2021-04-27",
+            "cost": {
+                "gross": {
+                    "20192020": 0,
+                    "20202021": 15462,
+                    "20212022": 11174
+                },
+                "net": {
+                    "20192020": 0,
+                    "20202021": 14498,
+                    "20212022": 10487
+                }
+            }
         },
-        "net": {
-          "20192020": 0,
-          "20202021": 12853,
-          "20212022": 5087
+        {
+            "id": "LEG-2021-072-S",
+            "hasArtifacts": true,
+            "publication_date": "2021-03-18",
+            "cost": {
+                "gross": {
+                    "20192020": 0,
+                    "20202021": 15649,
+                    "20212022": 8892
+                },
+                "net": {
+                    "20192020": 0,
+                    "20202021": 14620,
+                    "20212022": 8318
+                }
+            }
+        },
+        {
+            "id": "LEG-2021-045-S",
+            "hasArtifacts": true,
+            "publication_date": "2020-10-07",
+            "cost": {
+                "gross": {
+                    "20192020": 0,
+                    "20202021": 15079,
+                    "20212022": 5615
+                },
+                "net": {
+                    "20192020": 0,
+                    "20202021": 12853,
+                    "20212022": 5087
+                }
+            }
         }
-      }
-    }
-  ],
-  "hasFiscalImpact": true
+    ],
+    "hasFiscalImpact": true
 }

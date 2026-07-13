@@ -42,7 +42,6 @@ export default class Costing {
         this.note_fr = apiObject.note_fr;
         this.warning_en = apiObject.warning_en;
         this.warning_fr = apiObject.warning_fr;
-
     }
 
     updateWithId(updateId) {
@@ -52,9 +51,13 @@ export default class Costing {
     wasPartOfScenarioWithId(updateId) {
         const updateForId = this.updateWithId(updateId);
 
-        return collect(updateForId.numbers).reject((num) => {
-            return num === null;
-        }).count() ? updateForId : false;
+        return collect(updateForId.numbers)
+            .reject((num) => {
+                return num === null;
+            })
+            .count()
+            ? updateForId
+            : false;
     }
 
     get totalCost() {
@@ -62,11 +65,14 @@ export default class Costing {
     }
 
     get currentCostingUpdate() {
-        return collect(this.costing_updates).sortByDesc('update_id').first();
+        return collect(this.costing_updates).sortByDesc("update_id").first();
     }
 
     get currentCostingUpdateDate() {
-        return DateTime.fromString(this.currentCostingUpdate.update_id, 'yyyyMMdd');
+        return DateTime.fromString(
+            this.currentCostingUpdate.update_id,
+            "yyyyMMdd",
+        );
     }
 
     get isPboCosting() {
@@ -79,7 +85,9 @@ export default class Costing {
 
     get isLatestUpdateStale() {
         // A "stale" update is older than 7 days. Is used to automatically remove "updated" and "new" badges.
-        const oneWeekAfterLaunch = this.currentCostingUpdateDate.plus(Duration.fromObject({ days: 7 }));
+        const oneWeekAfterLaunch = this.currentCostingUpdateDate.plus(
+            Duration.fromObject({ days: 7 }),
+        );
         return oneWeekAfterLaunch < DateTime.local();
     }
 
@@ -88,7 +96,9 @@ export default class Costing {
     }
 
     get hasUpdatedArtifact() {
-        const updates = collect(JSON.parse(JSON.stringify(this.costing_updates))).sortByDesc("update_id");
+        const updates = collect(
+            JSON.parse(JSON.stringify(this.costing_updates)),
+        ).sortByDesc("update_id");
         const lastUpdate = updates.shift();
         const lastToLastUpdate = updates.first();
         let isUpdated = !this.isNew && lastUpdate.id != lastToLastUpdate.id;
@@ -96,14 +106,12 @@ export default class Costing {
     }
 
     get hasUpdatedNumbers() {
-
         return false;
         // TODO : Loop through numbers with similar pattern as hasUpdatedArtifact and check for diff.
         //return !this.isNew && !this.hasUpdatedArtifact && false;
     }
 
     toJson() {
-        return JSON.stringify(this, null, '\t');
+        return JSON.stringify(this, null, "\t");
     }
-
 }

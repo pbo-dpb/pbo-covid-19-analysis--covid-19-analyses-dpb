@@ -15,7 +15,6 @@ The tool provides access to all the PBO’s COVID-19 Analysis, including:
 
 [Available in production here](https://www.pbo-dpb.gc.ca/en/covid-19).
 
-
 # COVID-19 : Analyses du DPB
 
 > [!IMPORTANT]  
@@ -31,20 +30,22 @@ Cet outil donne accès à toutes les analyses et autres travaux liées à la COV
 - Le cadre de surveillance des dépenses du gouvernement du DPB pour la COVID-19.
 - Les précédentes analyses de scénario du DPB ont été archivées et sont également disponibles.
 
-[Disponible en production  ici](https://www.pbo-dpb.gc.ca/fr/covid-19).
-
+[Disponible en production ici](https://www.pbo-dpb.gc.ca/fr/covid-19).
 
 ## Project setup // Mise en route
+
 ```
 npm install
 ```
 
 ### Compiles and hot-reloads for development // Compilations et recharges à chaud pour le développement
+
 ```
 npm run dev
 ```
 
 ### Compiles and minifies for production // Compilation et miniaturisation pour la production
+
 ```
 npm run build
 ```

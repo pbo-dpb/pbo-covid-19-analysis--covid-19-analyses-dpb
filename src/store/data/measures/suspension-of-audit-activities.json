@@ -1,42 +1,42 @@
 {
-  "title": {
-    "en": "Suspension of Audit Activities",
-    "fr": "Suspension des activités de vérification"
-  },
-  "notes": [],
-  "subtitle": {
-    "en": "",
-    "fr": ""
-  },
-  "costings": [
-    {
-      "id": "XXLEG-2021-024-S",
-      "hasArtifacts": false,
-      "publication_date": "2020-09-29",
-      "cost": {
-        "20192020": 0,
-        "20202021": 749.81,
-        "20212022": -374.91
-      }
+    "title": {
+        "en": "Suspension of Audit Activities",
+        "fr": "Suspension des activités de vérification"
     },
-    {
-      "id": "XLEG-2021-024-S",
-      "hasArtifacts": false,
-      "publication_date": "2020-06-18",
-      "cost": {
-        "20192020": 0,
-        "20202021": 656.51
-      }
+    "notes": [],
+    "subtitle": {
+        "en": "",
+        "fr": ""
     },
-    {
-      "id": "LEG-2021-024-S",
-      "hasArtifacts": true,
-      "publication_date": "2020-06-04",
-      "cost": {
-        "20192020": 0,
-        "20202021": 616
-      }
-    }
-  ],
-  "hasFiscalImpact": true
+    "costings": [
+        {
+            "id": "XXLEG-2021-024-S",
+            "hasArtifacts": false,
+            "publication_date": "2020-09-29",
+            "cost": {
+                "20192020": 0,
+                "20202021": 749.81,
+                "20212022": -374.91
+            }
+        },
+        {
+            "id": "XLEG-2021-024-S",
+            "hasArtifacts": false,
+            "publication_date": "2020-06-18",
+            "cost": {
+                "20192020": 0,
+                "20202021": 656.51
+            }
+        },
+        {
+            "id": "LEG-2021-024-S",
+            "hasArtifacts": true,
+            "publication_date": "2020-06-04",
+            "cost": {
+                "20192020": 0,
+                "20202021": 616
+            }
+        }
+    ],
+    "hasFiscalImpact": true
 }

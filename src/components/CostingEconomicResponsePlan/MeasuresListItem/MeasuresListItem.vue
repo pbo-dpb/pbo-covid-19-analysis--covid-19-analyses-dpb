@@ -1,112 +1,110 @@
 <template>
-  <li class="py-2 md:py-1">
-    <div
-      class="grid md:grid-cols-8 gap-2 items-center"
-      :class="['grid-3']"
-    >
-      <div
-        class="text-center md:text-left"
-        :class="[
-          'col-span-3',
-          'md:col-span-5',
-        ]"
-      >
+    <li class="py-2 md:py-1">
         <div
-          role="switch"
-          class="font-medium cursor-pointer flex flex-row gap-2 items-center"
-          :aria-expanded="showDetails"
-          :aria-controls="'item-details-' + uid"
-          @click="showDetails = !showDetails"
-        >
-          <list-view-item-icon v-if="showDetails" type="down" class="h-4 w-4"></list-view-item-icon>
-          <list-view-item-icon v-else type="right" class="h-4 w-4"></list-view-item-icon>
-          
+            class="grid items-center gap-2 md:grid-cols-8"
+            :class="['grid-3']">
+            <div
+                class="text-center md:text-left"
+                :class="['col-span-3', 'md:col-span-5']">
+                <div
+                    role="switch"
+                    class="flex cursor-pointer flex-row items-center gap-2 font-medium"
+                    :aria-expanded="showDetails"
+                    :aria-controls="'item-details-' + uid"
+                    @click="showDetails = !showDetails">
+                    <list-view-item-icon
+                        v-if="showDetails"
+                        type="down"
+                        class="h-4 w-4"></list-view-item-icon>
+                    <list-view-item-icon
+                        v-else
+                        type="right"
+                        class="h-4 w-4"></list-view-item-icon>
 
+                    <span class="hover:underline">{{
+                        _measure.title[language]
+                    }}</span>
+                </div>
 
-          <span class="hover:underline">{{
-            _measure.title[language]
-          }}</span>
+                <div
+                    v-if="_measure.subtitle[language]"
+                    class="font-thin">
+                    {{ _measure.subtitle[language] }}
+                </div>
+            </div>
+
+            <div
+                v-for="year in cost.localizedCost(language, preferNetCost)"
+                :key="year.year + _measure.title.en"
+                class="col-span-1 text-center"
+                :class="{ italic: !_measure.hasFiscalImpact }">
+                <div class="text-sm font-thin text-gray-700 md:sr-only">
+                    {{ year.year }}
+                </div>
+                <costings-number :value="year.cost" />
+            </div>
         </div>
 
-        <div v-if="_measure.subtitle[language]" class="font-thin">
-          {{ _measure.subtitle[language] }}
-        </div>
-      </div>
-
-      <div
-        v-for="year in cost.localizedCost(language, preferNetCost)"
-        :key="year.year + _measure.title.en"
-        class="col-span-1 text-center"
-        :class="{ italic: !_measure.hasFiscalImpact }"
-      >
-        <div class="md:sr-only font-thin text-sm text-gray-700">
-          {{ year.year }}
-        </div>
-        <costings-number :value="year.cost" />
-      </div>
-    </div>
-
-    <measures-list-item-details
-      :id="`item-details-${uid}`"
-      :measure="_measure"
-      :highlighted-costing-id="highlightedCostingId"
-      v-if="showDetails"
-      :prefer-net-cost="preferNetCost"
-    ></measures-list-item-details>
-  </li>
+        <measures-list-item-details
+            :id="`item-details-${uid}`"
+            :measure="_measure"
+            :highlighted-costing-id="highlightedCostingId"
+            v-if="showDetails"
+            :prefer-net-cost="preferNetCost"></measures-list-item-details>
+    </li>
 </template>
 <script>
-import MeasuresListItemDetails from "./MeasuresListItemDetails.vue"
-import ListViewItemIcon from "../../ListViewItemIcon.vue";
+    import MeasuresListItemDetails from "./MeasuresListItemDetails.vue";
+    import ListViewItemIcon from "../../ListViewItemIcon.vue";
 
-export default {
-   components: {
-    MeasuresListItemDetails,
-    ListViewItemIcon
-},
-  props: {
-    measure: Object,
-    efaMeasure: Object,
-    highlightedCostingId: String,
-    preferNetCost: {
-      type: Boolean,
-      default: false,
-    },
-  },
+    export default {
+        components: {
+            MeasuresListItemDetails,
+            ListViewItemIcon,
+        },
+        props: {
+            measure: Object,
+            efaMeasure: Object,
+            highlightedCostingId: String,
+            preferNetCost: {
+                type: Boolean,
+                default: false,
+            },
+        },
 
-  computed: {
-    _measure() {
-      if (this.measure) return this.measure;
-      return this.efaMeasure.measure;
-    },
+        computed: {
+            _measure() {
+                if (this.measure) return this.measure;
+                return this.efaMeasure.measure;
+            },
 
-    language() {
-      return this.$root.language;
-    },
+            language() {
+                return this.$root.language;
+            },
 
-    cost() {
-      if (this.efaMeasure && this.efaMeasure.cost) {
-        return this.efaMeasure.cost;
-      }
+            cost() {
+                if (this.efaMeasure && this.efaMeasure.cost) {
+                    return this.efaMeasure.cost;
+                }
 
-      if (this.efaMeasure && this.highlightedCostingId) {
-        let highlightedCosting = this.efaMeasure.measure.getCostingWithId(
-          this.highlightedCostingId
-        );
-        if (highlightedCosting && highlightedCosting.cost)
-          return highlightedCosting.cost;
-      }
+                if (this.efaMeasure && this.highlightedCostingId) {
+                    let highlightedCosting =
+                        this.efaMeasure.measure.getCostingWithId(
+                            this.highlightedCostingId,
+                        );
+                    if (highlightedCosting && highlightedCosting.cost)
+                        return highlightedCosting.cost;
+                }
 
-      return this._measure.cost;
-    },
-  },
+                return this._measure.cost;
+            },
+        },
 
-  data() {
-    return {
-      showDetails: false,
-      uid: String(Math.random()).replace(/\D+/g, ""),
+        data() {
+            return {
+                showDetails: false,
+                uid: String(Math.random()).replace(/\D+/g, ""),
+            };
+        },
     };
-  },
- 
-};
 </script>
